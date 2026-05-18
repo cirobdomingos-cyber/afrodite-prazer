@@ -1,0 +1,25 @@
+# build artifacts
+design-handoff.zip
+*.zip
+node_modules/
+dist/
+build/
+
+# python caches
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# local-only working copies
+design-handoff/images_by_sku/_raw/
+
+# large raw image dump — the SKU-keyed version in images_by_sku/ is what we actually use.
+# Keep this commented if you want to track the raw page-grouped images too; it adds ~30MB.
+# design-handoff/images/

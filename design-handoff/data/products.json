@@ -1,0 +1,1902 @@
+[
+  {
+    "sku": "DS024",
+    "name": "Água Refrescante Corporal Dermosex - 100ml",
+    "price_brl": 69.8,
+    "catalog_page": null,
+    "brand": "Dermosex Mature",
+    "hero_image": "images_by_sku/DS024_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/DS024_hero.png"
+  },
+  {
+    "sku": "DS021",
+    "name": "Creme Corporal Super Hidratante- Dermosex - 220g",
+    "price_brl": 79.8,
+    "catalog_page": null,
+    "brand": "Dermosex Mature",
+    "hero_image": "images_by_sku/DS021_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/DS021_hero.png"
+  },
+  {
+    "sku": "DS022",
+    "name": "Sérum Íntimo Concentrado Hidratante Dermosex - 15ml",
+    "price_brl": 154.0,
+    "catalog_page": null,
+    "brand": "Dermosex Mature",
+    "hero_image": "images_by_sku/DS022_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/DS022_hero.png"
+  },
+  {
+    "sku": "DS006",
+    "name": "Sabonete Líquido Íntimo para Região Anal Dermosex - 200 ml",
+    "price_brl": 56.8,
+    "catalog_page": null,
+    "brand": "Dermosex",
+    "hero_image": "images_by_sku/DS006_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/DS006_hero.png"
+  },
+  {
+    "sku": "DS009",
+    "name": "Sabonete Íntimo em Barra Hidratante Dermosex - 90g",
+    "price_brl": 29.8,
+    "catalog_page": null,
+    "brand": "Dermosex",
+    "hero_image": "images_by_sku/DS009_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/DS009_hero.png"
+  },
+  {
+    "sku": "DS005",
+    "name": "Espuma Higienizadora Íntima Dermosex- 50ml",
+    "price_brl": 75.8,
+    "catalog_page": null,
+    "brand": "Dermosex",
+    "hero_image": "images_by_sku/DS005_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/DS005_hero.png"
+  },
+  {
+    "sku": "DS018",
+    "name": "Sabonete Intimo Hidratante Feminino Dermosex - 210ml",
+    "price_brl": 69.8,
+    "catalog_page": null,
+    "brand": "Dermosex",
+    "hero_image": "images_by_sku/DS018_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/DS018_hero.png"
+  },
+  {
+    "sku": "DS019",
+    "name": "Sabonete íntimo HIdratante Masculino Dermosex - 210ml",
+    "price_brl": 72.8,
+    "catalog_page": null,
+    "brand": "Dermosex",
+    "hero_image": "images_by_sku/DS019_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/DS019_hero.png"
+  },
+  {
+    "sku": "DS002",
+    "name": "Esfoliante Hidratante para Região Pélvica Dermosex - 120ml",
+    "price_brl": 79.8,
+    "catalog_page": null,
+    "brand": "Dermosex",
+    "hero_image": "images_by_sku/DS002_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/DS002_hero.png"
+  },
+  {
+    "sku": "DS004",
+    "name": "Creme Clareador para Virilha Dermosex - 60g",
+    "price_brl": 65.8,
+    "catalog_page": null,
+    "brand": "Dermosex",
+    "hero_image": "images_by_sku/DS004_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/DS004_hero.png"
+  },
+  {
+    "sku": "DS001",
+    "name": "Creme Hidratante para Região Pélvica Dermosex - 60g",
+    "price_brl": 69.8,
+    "catalog_page": null,
+    "brand": "Dermosex",
+    "hero_image": "images_by_sku/DS001_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/DS001_hero.png"
+  },
+  {
+    "sku": "DS007",
+    "name": "Gel Lubrificante e Hidratante Pélvico Dermosex - 220ml",
+    "price_brl": 74.8,
+    "catalog_page": null,
+    "brand": "Dermosex",
+    "hero_image": "images_by_sku/DS007_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/DS007_hero.png"
+  },
+  {
+    "sku": "DS008",
+    "name": "Desodorante Íntimo feminino Dermosex - 100ml/60 g",
+    "price_brl": 64.8,
+    "catalog_page": null,
+    "brand": "Dermosex",
+    "hero_image": "images_by_sku/DS008_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/DS008_hero.png"
+  },
+  {
+    "sku": "DS017",
+    "name": "Desodorante Íntimo Masculino Dermosex - 100ml/60g",
+    "price_brl": 69.8,
+    "catalog_page": null,
+    "brand": "Dermosex",
+    "hero_image": "images_by_sku/DS017_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/DS017_hero.png"
+  },
+  {
+    "sku": "DS012",
+    "name": "Óleo Mineral para Massagem Sensual - 145ml",
+    "price_brl": 59.8,
+    "catalog_page": 9,
+    "brand": "Dermosex",
+    "hero_image": "images_by_sku/DS012_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/DS012_hero.png"
+  },
+  {
+    "sku": "DS020",
+    "name": "Talco íntimo Dermosex - 100g",
+    "price_brl": 56.8,
+    "catalog_page": 9,
+    "brand": "Dermosex",
+    "hero_image": "images_by_sku/DS020_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/DS020_hero.png"
+  },
+  {
+    "sku": "DS003",
+    "name": "Tônico Purificante para Região Pélvica Dermosex - 120ml",
+    "price_brl": 69.8,
+    "catalog_page": 9,
+    "brand": "Dermosex",
+    "hero_image": "images_by_sku/DS003_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/DS003_hero.png"
+  },
+  {
+    "sku": "IA424",
+    "name": "Vibrador e Estimulador  Sugador Recarregável My Moment",
+    "price_brl": 349.0,
+    "catalog_page": 10,
+    "brand": "Dermosex Mature (My Series)",
+    "hero_image": "images_by_sku/IA424_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA424_hero.png"
+  },
+  {
+    "sku": "IA449",
+    "name": "Estimulador de Clitóris Sugador Recarregável My Touch",
+    "price_brl": 329.0,
+    "catalog_page": 10,
+    "brand": "Dermosex Mature (My Series)",
+    "hero_image": "images_by_sku/IA449_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA449_hero.png"
+  },
+  {
+    "sku": "AS346",
+    "name": "Sabonete Íntimo em Barra Natural Sex - 90g",
+    "price_brl": 21.8,
+    "catalog_page": 11,
+    "brand": "Natural Sex",
+    "hero_image": "images_by_sku/AS346_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/AS346_hero.png"
+  },
+  {
+    "sku": "AS347",
+    "name": "Sabonete Íntimo Líquido Natural Sex - 250ml",
+    "price_brl": 52.8,
+    "catalog_page": 11,
+    "brand": "Natural Sex",
+    "hero_image": "images_by_sku/AS347_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/AS347_hero.png"
+  },
+  {
+    "sku": "BS003",
+    "name": "Argila Verde para Região Pélvica Biosex - 40g",
+    "price_brl": 29.8,
+    "catalog_page": 11,
+    "brand": "Biosex",
+    "hero_image": "images_by_sku/BS003_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/BS003_hero.png"
+  },
+  {
+    "sku": "BS005",
+    "name": "Blend de Óleos p/ Massagem Sensual Biosex - 145ml",
+    "price_brl": 49.8,
+    "catalog_page": 11,
+    "brand": "Biosex",
+    "hero_image": "images_by_sku/BS005_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/BS005_hero.png"
+  },
+  {
+    "sku": "BS001",
+    "name": "Sabonete Íntimo Líquido de Coco Biosex - 220ml",
+    "price_brl": 54.8,
+    "catalog_page": 11,
+    "brand": "Biosex",
+    "hero_image": "images_by_sku/BS001_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/BS001_hero.png"
+  },
+  {
+    "sku": "BS002",
+    "name": "Gel Lubrificante pra Região Pélvica Biosex - 220ml",
+    "price_brl": 54.8,
+    "catalog_page": 11,
+    "brand": "Biosex",
+    "hero_image": "images_by_sku/BS002_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/BS002_hero.png"
+  },
+  {
+    "sku": "LV015",
+    "name": "Vela Hidratante Beijável Olove Chocolate - 70g",
+    "price_brl": 69.8,
+    "catalog_page": 11,
+    "brand": "Olove",
+    "hero_image": "images_by_sku/LV015_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/LV015_hero.png"
+  },
+  {
+    "sku": "LV016",
+    "name": "Vela Hidratante Beijável Olove Morango - 70g",
+    "price_brl": 69.8,
+    "catalog_page": 11,
+    "brand": "Olove",
+    "hero_image": "images_by_sku/LV016_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/LV016_hero.png"
+  },
+  {
+    "sku": "LV024",
+    "name": "Mousse beijável para massagem corporal Olove Milkshake - 50ml",
+    "price_brl": 59.8,
+    "catalog_page": 11,
+    "brand": "Olove",
+    "hero_image": "images_by_sku/LV024_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/LV024_hero.png"
+  },
+  {
+    "sku": "LV014",
+    "name": "Gel Excitante Beijável Olove Grego - 15g",
+    "price_brl": 49.8,
+    "catalog_page": 11,
+    "brand": "Olove",
+    "hero_image": "images_by_sku/LV014_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/LV014_hero.png"
+  },
+  {
+    "sku": "LV025",
+    "name": "",
+    "price_brl": 69.8,
+    "catalog_page": 11,
+    "brand": "Olove",
+    "hero_image": "images_by_sku/LV025_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/LV025_hero.png"
+  },
+  {
+    "sku": "LV012",
+    "name": "Hidratante Sensual Beijável Olove Pink Jelly Chiclete - 250g",
+    "price_brl": 69.8,
+    "catalog_page": 18,
+    "brand": "Olove",
+    "hero_image": "images_by_sku/LV012_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/LV012_hero.png"
+  },
+  {
+    "sku": "LV013",
+    "name": "Hidratante Sensual Beijável Olove Purple Jelly Amora 250g",
+    "price_brl": 69.8,
+    "catalog_page": 18,
+    "brand": "Olove",
+    "hero_image": "images_by_sku/LV013_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/LV013_hero.png"
+  },
+  {
+    "sku": "LV017",
+    "name": "Óleo Beijável Olove Sentidos Chiclete - 30ml",
+    "price_brl": 24.0,
+    "catalog_page": 18,
+    "brand": "Olove",
+    "hero_image": "images_by_sku/LV017_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/LV017_hero.png"
+  },
+  {
+    "sku": "LV019",
+    "name": "Óleo Beijável Olove Sentidos Morango - 30ml",
+    "price_brl": 24.0,
+    "catalog_page": 18,
+    "brand": "Olove",
+    "hero_image": "images_by_sku/LV019_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/LV019_hero.png"
+  },
+  {
+    "sku": "LV020",
+    "name": "Óleo Beijável OLove Sentidos Algodão Doce - 30ml",
+    "price_brl": 24.0,
+    "catalog_page": 18,
+    "brand": "Olove",
+    "hero_image": "images_by_sku/LV020_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/LV020_hero.png"
+  },
+  {
+    "sku": "LV018",
+    "name": "Óleo Beijável Olove Sentidos Menta Ice- 30ml",
+    "price_brl": 24.0,
+    "catalog_page": 19,
+    "brand": "Olove",
+    "hero_image": "images_by_sku/LV018_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/LV018_hero.png"
+  },
+  {
+    "sku": "LV021",
+    "name": "Óleo Beijável Olove Sentidos Mel",
+    "price_brl": 24.0,
+    "catalog_page": 19,
+    "brand": "Olove",
+    "hero_image": "images_by_sku/LV021_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/LV021_hero.png"
+  },
+  {
+    "sku": "LV022",
+    "name": "Gel Excitante Beijável Loveshock Morango Olove- 15 g",
+    "price_brl": 49.8,
+    "catalog_page": 19,
+    "brand": "Olove",
+    "hero_image": "images_by_sku/LV022_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/LV022_hero.png"
+  },
+  {
+    "sku": "LV023",
+    "name": "Gel Excitante Beijável Loveshock Chiclete Olove -  15g 80",
+    "price_brl": 49.8,
+    "catalog_page": 19,
+    "brand": "Olove",
+    "hero_image": "images_by_sku/LV023_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/LV023_hero.png"
+  },
+  {
+    "sku": "LV029",
+    "name": "Perfume Feromônio Sensual Olove Seduction - 55 ml",
+    "price_brl": 119.8,
+    "catalog_page": 19,
+    "brand": "Olove",
+    "hero_image": "images_by_sku/LV029_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/LV029_hero.png"
+  },
+  {
+    "sku": "LV028",
+    "name": "Perfume Feromônio Sensual Olove Sexy - 55ml",
+    "price_brl": 119.8,
+    "catalog_page": 19,
+    "brand": "Olove",
+    "hero_image": "images_by_sku/LV028_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/LV028_hero.png"
+  },
+  {
+    "sku": "LV027",
+    "name": "Perfume Feromônio Sensual Olove Instinto - 50 ml",
+    "price_brl": 119.8,
+    "catalog_page": 19,
+    "brand": "Olove",
+    "hero_image": "images_by_sku/LV027_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/LV027_hero.png"
+  },
+  {
+    "sku": "LV007",
+    "name": "Óleo para Massagem Sensual Olove Massage - 120ml",
+    "price_brl": 49.8,
+    "catalog_page": 19,
+    "brand": "Olove",
+    "hero_image": "images_by_sku/LV007_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/LV007_hero.png"
+  },
+  {
+    "sku": "LV008",
+    "name": "Desodorante Íntimo Olove Seduction - 60g/100ml",
+    "price_brl": 49.8,
+    "catalog_page": 19,
+    "brand": "Olove",
+    "hero_image": "images_by_sku/LV008_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/LV008_hero.png"
+  },
+  {
+    "sku": "LV009",
+    "name": "Mousse Corporal Efervescente Olove Explosion - 100g/150ml",
+    "price_brl": 89.8,
+    "catalog_page": 19,
+    "brand": "Olove",
+    "hero_image": "images_by_sku/LV009_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/LV009_hero.png"
+  },
+  {
+    "sku": "LV001",
+    "name": "Gel Excitante Olove Beijável Amoracita - 10g",
+    "price_brl": 49.8,
+    "catalog_page": 19,
+    "brand": "Olove",
+    "hero_image": "images_by_sku/LV001_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/LV001_hero.png"
+  },
+  {
+    "sku": "LV002",
+    "name": "Gel Excitante Olove Beijável Melancita - 10g",
+    "price_brl": 49.8,
+    "catalog_page": 19,
+    "brand": "Olove",
+    "hero_image": "images_by_sku/LV002_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/LV002_hero.png"
+  },
+  {
+    "sku": "LV005",
+    "name": "Gel Excitante Olove Strong - 10g",
+    "price_brl": 49.8,
+    "catalog_page": 22,
+    "brand": "Olove",
+    "hero_image": "images_by_sku/LV005_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/LV005_hero.png"
+  },
+  {
+    "sku": "LV006",
+    "name": "Gel Prolongador Olove Control+ - 10g",
+    "price_brl": 49.8,
+    "catalog_page": 22,
+    "brand": "Olove",
+    "hero_image": "images_by_sku/LV006_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/LV006_hero.png"
+  },
+  {
+    "sku": "LV011",
+    "name": "Spray bucal Olove Gulosa - chiclete - 15ml",
+    "price_brl": 49.8,
+    "catalog_page": 22,
+    "brand": "Olove",
+    "hero_image": "images_by_sku/LV011_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/LV011_hero.png"
+  },
+  {
+    "sku": "LV010",
+    "name": "Refrescante Bucal Extra Forte Olove Refresh - 30ml",
+    "price_brl": 49.8,
+    "catalog_page": 22,
+    "brand": "Olove",
+    "hero_image": "images_by_sku/LV010_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/LV010_hero.png"
+  },
+  {
+    "sku": "LV003",
+    "name": "Gel Lubrificante Beijável Olove Gelatto Morango- 30g",
+    "price_brl": 49.8,
+    "catalog_page": 22,
+    "brand": "Olove",
+    "hero_image": "images_by_sku/LV003_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/LV003_hero.png"
+  },
+  {
+    "sku": "LV004",
+    "name": "Gel Excitante Beijável Olove Muchacha  - 10g",
+    "price_brl": 49.8,
+    "catalog_page": 22,
+    "brand": "Olove",
+    "hero_image": "images_by_sku/LV004_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/LV004_hero.png"
+  },
+  {
+    "sku": "AS350",
+    "name": "Deo Colônia Afrodisíaca The Secret - 50ml",
+    "price_brl": 129.0,
+    "catalog_page": 23,
+    "brand": "The Secret",
+    "hero_image": "images_by_sku/AS350_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/AS350_hero.png"
+  },
+  {
+    "sku": "AS351",
+    "name": "Deo Colônia Afrodisíaca The Secret Gold - 50ml",
+    "price_brl": 129.0,
+    "catalog_page": 23,
+    "brand": "The Secret",
+    "hero_image": "images_by_sku/AS351_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/AS351_hero.png"
+  },
+  {
+    "sku": "AS349",
+    "name": "Gel  Esfoliante The Secret Gold - 220ml",
+    "price_brl": 49.0,
+    "catalog_page": 23,
+    "brand": "The Secret",
+    "hero_image": "images_by_sku/AS349_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/AS349_hero.png"
+  },
+  {
+    "sku": "AS342",
+    "name": "Body Splash The Secret 3 em 1 - 200ml",
+    "price_brl": 89.8,
+    "catalog_page": 23,
+    "brand": "The Secret",
+    "hero_image": "images_by_sku/AS342_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/AS342_hero.png"
+  },
+  {
+    "sku": "AS345",
+    "name": "Body Splash The Secret Gold 3 em 1  - 200ml",
+    "price_brl": 89.8,
+    "catalog_page": 23,
+    "brand": "The Secret",
+    "hero_image": "images_by_sku/AS345_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/AS345_hero.png"
+  },
+  {
+    "sku": "AS348",
+    "name": "Creme Esfoliante The Secret - 220ml",
+    "price_brl": 49.0,
+    "catalog_page": 23,
+    "brand": "The Secret",
+    "hero_image": "images_by_sku/AS348_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/AS348_hero.png"
+  },
+  {
+    "sku": "AS334",
+    "name": "Creme Hidratante The Secret - 220ml",
+    "price_brl": 54.8,
+    "catalog_page": 27,
+    "brand": "The Secret",
+    "hero_image": "images_by_sku/AS334_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/AS334_hero.png"
+  },
+  {
+    "sku": "AS220",
+    "name": "Elixir Da Sedução The Secret 10 em 1 - 200ml",
+    "price_brl": 89.8,
+    "catalog_page": 27,
+    "brand": "The Secret",
+    "hero_image": "images_by_sku/AS220_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/AS220_hero.png"
+  },
+  {
+    "sku": "AS319",
+    "name": "Elixir da Sedução The Secret Gold 10 em 1 - 200 ml",
+    "price_brl": 89.8,
+    "catalog_page": 27,
+    "brand": "The Secret",
+    "hero_image": "images_by_sku/AS319_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/AS319_hero.png"
+  },
+  {
+    "sku": "AS289",
+    "name": "Elixir da Sedução Hombre 12 em 1 - 200ml",
+    "price_brl": 75.8,
+    "catalog_page": 27,
+    "brand": "Hombre",
+    "hero_image": "images_by_sku/AS289_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/AS289_hero.png"
+  },
+  {
+    "sku": "AS279",
+    "name": "Vela Para Massagem Sensual Tantra Ylang Ylang - 80g",
+    "price_brl": 69.0,
+    "catalog_page": 28,
+    "brand": "Tantra",
+    "hero_image": "images_by_sku/AS279_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/AS279_hero.png"
+  },
+  {
+    "sku": "AS362",
+    "name": "Óleo Sensual Beijável Tantric Morango - 120 ml Óleo Sensual Para Massagem Sensual Tantric Mystic Argan - 120 ml Óleo Sensual Para Massagem Sensual Tantric Bergamota - 120 ml",
+    "price_brl": 89.8,
+    "catalog_page": 28,
+    "brand": "Tantra",
+    "hero_image": "images_by_sku/AS362_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/AS362_hero.png"
+  },
+  {
+    "sku": "AS363",
+    "name": "Óleo Sensual Beijável Tantric Morango - 120 ml Óleo Sensual Para Massagem Sensual Tantric Mystic Argan - 120 ml Óleo Sensual Para Massagem Sensual Tantric Bergamota - 120 ml",
+    "price_brl": 89.8,
+    "catalog_page": 28,
+    "brand": "Tantra",
+    "hero_image": "images_by_sku/AS363_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/AS363_hero.png"
+  },
+  {
+    "sku": "AS361",
+    "name": "Óleo Sensual Beijável Tantric Morango - 120 ml Óleo Sensual Para Massagem Sensual Tantric Mystic Argan - 120 ml Óleo Sensual Para Massagem Sensual Tantric Bergamota - 120 ml",
+    "price_brl": 89.8,
+    "catalog_page": 28,
+    "brand": "Tantra",
+    "hero_image": "images_by_sku/AS361_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/AS361_hero.png"
+  },
+  {
+    "sku": "AS062",
+    "name": "Gel Lubrificante Lubrisex - 60g",
+    "price_brl": 29.8,
+    "catalog_page": 28,
+    "brand": "Lubrisex",
+    "hero_image": "images_by_sku/AS062_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/AS062_hero.png"
+  },
+  {
+    "sku": "AS140",
+    "name": "Gel Lubrificante com Aquecimento Lubrisex Hot - 60g",
+    "price_brl": 35.8,
+    "catalog_page": 28,
+    "brand": "Lubrisex",
+    "hero_image": "images_by_sku/AS140_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/AS140_hero.png"
+  },
+  {
+    "sku": "AS343",
+    "name": "Gel Lubrificante Lubrisex Deslize - 60g",
+    "price_brl": 54.8,
+    "catalog_page": 28,
+    "brand": "Lubrisex",
+    "hero_image": "images_by_sku/AS343_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/AS343_hero.png"
+  },
+  {
+    "sku": "AS288",
+    "name": "Gel Lubrificante Lubrisex Premium - 60g",
+    "price_brl": 75.8,
+    "catalog_page": 28,
+    "brand": "Lubrisex",
+    "hero_image": "images_by_sku/AS288_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/AS288_hero.png"
+  },
+  {
+    "sku": "AS296",
+    "name": "Gel Lubrificante Beijável Lubrisex Peppermint - 60g",
+    "price_brl": 35.8,
+    "catalog_page": 28,
+    "brand": "Lubrisex",
+    "hero_image": "images_by_sku/AS296_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/AS296_hero.png"
+  },
+  {
+    "sku": "AS290",
+    "name": "Gel Lubrificante Beijável Lubrisex Morango Hot - 60 g",
+    "price_brl": 35.8,
+    "catalog_page": 28,
+    "brand": "Lubrisex",
+    "hero_image": "images_by_sku/AS290_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/AS290_hero.png"
+  },
+  {
+    "sku": "AS294",
+    "name": "Gel Lubrificante Beijável Lubrisex Algodão Doce - 60g",
+    "price_brl": 35.8,
+    "catalog_page": 33,
+    "brand": "Lubrisex",
+    "hero_image": "images_by_sku/AS294_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/AS294_hero.png"
+  },
+  {
+    "sku": "AS295",
+    "name": "Gel Lubrificante Beijável Black Mentol Extra Forte - 60g",
+    "price_brl": 35.8,
+    "catalog_page": 33,
+    "brand": "Lubrisex",
+    "hero_image": "images_by_sku/AS295_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/AS295_hero.png"
+  },
+  {
+    "sku": "FE001",
+    "name": "Kit de Dilatadores Vaginais Feminist Lisos - 8 un",
+    "price_brl": 229.0,
+    "catalog_page": 33,
+    "brand": "Feminist",
+    "hero_image": "images_by_sku/FE001_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/FE001_hero.png"
+  },
+  {
+    "sku": "AS359",
+    "name": "Gel Lubrificante Hidra Confort - 220g",
+    "price_brl": 69.8,
+    "catalog_page": 33,
+    "brand": "Feminist",
+    "hero_image": "images_by_sku/AS359_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/AS359_hero.png"
+  },
+  {
+    "sku": "AS360",
+    "name": "Gel Lubrificante Hidra Confort - 70g",
+    "price_brl": 34.8,
+    "catalog_page": 33,
+    "brand": "Feminist",
+    "hero_image": "images_by_sku/AS360_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/AS360_hero.png"
+  },
+  {
+    "sku": "IA383",
+    "name": "Kit de Dilatadores Vaginais 3 em 1 Feminist - 03 un",
+    "price_brl": 140.0,
+    "catalog_page": 33,
+    "brand": "Feminist",
+    "hero_image": "images_by_sku/IA383_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA383_hero.png"
+  },
+  {
+    "sku": "IA352",
+    "name": "Vibrador Multivelocidade para Pompoarismo Feminist - Rosa",
+    "price_brl": 39.0,
+    "catalog_page": 33,
+    "brand": "Feminist",
+    "hero_image": "images_by_sku/IA352_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA352_hero.png"
+  },
+  {
+    "sku": "IA410",
+    "name": "Disco Menstrual Feminist A - 30 ML",
+    "price_brl": 43.75,
+    "catalog_page": 36,
+    "brand": "Feminist",
+    "hero_image": "images_by_sku/IA410_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA410_hero.png"
+  },
+  {
+    "sku": "IA411",
+    "name": "Disco Menstrual Feminist B - 50 ML",
+    "price_brl": 43.75,
+    "catalog_page": 36,
+    "brand": "Feminist",
+    "hero_image": "images_by_sku/IA411_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA411_hero.png"
+  },
+  {
+    "sku": "IA412",
+    "name": "Bag de Silicone para Disco Menstrual",
+    "price_brl": 16.0,
+    "catalog_page": 36,
+    "brand": "Feminist",
+    "hero_image": "images_by_sku/IA412_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA412_hero.png"
+  },
+  {
+    "sku": "PC058",
+    "name": "Coletor Menstrual Feminist Modelo B - 25 ml",
+    "price_brl": 37.5,
+    "catalog_page": 36,
+    "brand": "Feminist",
+    "hero_image": "images_by_sku/PC058_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/PC058_hero.png"
+  },
+  {
+    "sku": "PA060",
+    "name": "Cone para Pompoarismo Feminist Rosa - 20g",
+    "price_brl": 20.0,
+    "catalog_page": 36,
+    "brand": "Feminist",
+    "hero_image": "images_by_sku/PA060_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/PA060_hero.png"
+  },
+  {
+    "sku": "PA061",
+    "name": "Cone para Pompoarismo Feminist Amarelo - 32g",
+    "price_brl": 20.0,
+    "catalog_page": 36,
+    "brand": "Feminist",
+    "hero_image": "images_by_sku/PA061_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/PA061_hero.png"
+  },
+  {
+    "sku": "PA062",
+    "name": "Cone para Pompoarismo Feminist Marfim - 45g",
+    "price_brl": 20.0,
+    "catalog_page": 36,
+    "brand": "Feminist",
+    "hero_image": "images_by_sku/PA062_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/PA062_hero.png"
+  },
+  {
+    "sku": "PA063",
+    "name": "Cone para Pompoarismo Feminist Verde - 57g",
+    "price_brl": 20.0,
+    "catalog_page": 36,
+    "brand": "Feminist",
+    "hero_image": "images_by_sku/PA063_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/PA063_hero.png"
+  },
+  {
+    "sku": "PA064",
+    "name": "Cone para Pompoarismo Feminist Azul - 70g",
+    "price_brl": 20.0,
+    "catalog_page": 36,
+    "brand": "Feminist",
+    "hero_image": "images_by_sku/PA064_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/PA064_hero.png"
+  },
+  {
+    "sku": "PC065",
+    "name": "Kit para Pompoarismo Feminist com 5 Cones",
+    "price_brl": 99.89,
+    "catalog_page": 36,
+    "brand": "Feminist",
+    "hero_image": "images_by_sku/PC065_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/PC065_hero.png"
+  },
+  {
+    "sku": "PA067",
+    "name": "Conjunto Ben-Wa Feminist com 02 Bolas - Rosa Bebê",
+    "price_brl": 25.0,
+    "catalog_page": 38,
+    "brand": "Feminist",
+    "hero_image": "images_by_sku/PA067_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/PA067_hero.png"
+  },
+  {
+    "sku": "PA068",
+    "name": "Conjunto Ben-Wa Feminist com 02 Bolas - Marfim",
+    "price_brl": 25.0,
+    "catalog_page": 38,
+    "brand": "Feminist",
+    "hero_image": "images_by_sku/PA068_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/PA068_hero.png"
+  },
+  {
+    "sku": "PA069",
+    "name": "Conjunto Ben-Wa Feminist com 04 Bolas - Rosa Bebê",
+    "price_brl": 25.0,
+    "catalog_page": 38,
+    "brand": "Feminist",
+    "hero_image": "images_by_sku/PA069_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/PA069_hero.png"
+  },
+  {
+    "sku": "PA070",
+    "name": "Conjunto Ben-Wa Feminist com 04 Bolas - Marfim",
+    "price_brl": 25.0,
+    "catalog_page": 38,
+    "brand": "Feminist",
+    "hero_image": "images_by_sku/PA070_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/PA070_hero.png"
+  },
+  {
+    "sku": "PC066",
+    "name": "Kit Pompoar para Exercícios de Pompoarismo Feminist",
+    "price_brl": 89.9,
+    "catalog_page": 38,
+    "brand": "Feminist",
+    "hero_image": "images_by_sku/PC066_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/PC066_hero.png"
+  },
+  {
+    "sku": "PC051",
+    "name": "Toalha Compacta Descartável para Higiene Feminist - 10 Un",
+    "price_brl": 27.8,
+    "catalog_page": 38,
+    "brand": "Feminist",
+    "hero_image": "images_by_sku/PC051_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/PC051_hero.png"
+  },
+  {
+    "sku": "IA431R",
+    "name": "Estimulador clitóris recarregável Magic Rabbit 3 em 1",
+    "price_brl": 399.0,
+    "catalog_page": 39,
+    "brand": "By Ingrid Guimarães",
+    "hero_image": "images_by_sku/IA431R_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA431R_hero.png"
+  },
+  {
+    "sku": "AS339",
+    "name": "Gel Excitante Feminino Prazer Dela - 10 ml",
+    "price_brl": 51.8,
+    "catalog_page": 39,
+    "brand": "By Ingrid Guimarães",
+    "hero_image": "images_by_sku/AS339_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/AS339_hero.png"
+  },
+  {
+    "sku": "IA431L",
+    "name": "Gel Excitante Feminino Prazer Dela - 10 ml",
+    "price_brl": 51.8,
+    "catalog_page": 39,
+    "brand": "By Ingrid Guimarães",
+    "hero_image": "images_by_sku/IA431L_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA431L_hero.png"
+  },
+  {
+    "sku": "IA468",
+    "name": "Vibrador Recarregável Sweet Vibe Mexe",
+    "price_brl": 330.0,
+    "catalog_page": 39,
+    "brand": "Sweet Vibe",
+    "hero_image": "images_by_sku/IA468_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA468_hero.png"
+  },
+  {
+    "sku": "IA467",
+    "name": "Vibrador Recarregável Sweet Vibe Revira",
+    "price_brl": 330.0,
+    "catalog_page": 39,
+    "brand": "Sweet Vibe",
+    "hero_image": "images_by_sku/IA467_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA467_hero.png"
+  },
+  {
+    "sku": "IA453R",
+    "name": "Dedeira Vibratória Recarregável Sweet Vibe Cafuné",
+    "price_brl": 129.0,
+    "catalog_page": 43,
+    "brand": "Sweet Vibe",
+    "hero_image": "images_by_sku/IA453R_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA453R_hero.png"
+  },
+  {
+    "sku": "IA453L",
+    "name": "Dedeira Vibratória Recarregável Sweet Vibe Cafuné",
+    "price_brl": 129.0,
+    "catalog_page": 43,
+    "brand": "Sweet Vibe",
+    "hero_image": "images_by_sku/IA453L_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA453L_hero.png"
+  },
+  {
+    "sku": "IA420AZ",
+    "name": "IA420AM Vibrador Multivelocidade Sweet Vibe Dengo",
+    "price_brl": 125.0,
+    "catalog_page": 43,
+    "brand": "Sweet Vibe",
+    "hero_image": "images_by_sku/IA420AZ_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA420AZ_hero.png"
+  },
+  {
+    "sku": "IA420VE",
+    "name": "IA420AM Vibrador Multivelocidade Sweet Vibe Dengo",
+    "price_brl": 125.0,
+    "catalog_page": 43,
+    "brand": "Sweet Vibe",
+    "hero_image": "images_by_sku/IA420VE_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA420VE_hero.png"
+  },
+  {
+    "sku": "IA450S",
+    "name": "Estimulador Clitóris Recarregável Sweet Vibe Xêro",
+    "price_brl": 149.0,
+    "catalog_page": 43,
+    "brand": "Sweet Vibe",
+    "hero_image": "images_by_sku/IA450S_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA450S_hero.png"
+  },
+  {
+    "sku": "IA450V",
+    "name": "Estimulador Clitóris Recarregável Sweet Vibe Xêro",
+    "price_brl": 149.0,
+    "catalog_page": 43,
+    "brand": "Sweet Vibe",
+    "hero_image": "images_by_sku/IA450V_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA450V_hero.png"
+  },
+  {
+    "sku": "IA456",
+    "name": "Masturbador Sweet Vibe Aconchego",
+    "price_brl": 119.8,
+    "catalog_page": 43,
+    "brand": "Sweet Vibe",
+    "hero_image": "images_by_sku/IA456_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA456_hero.png"
+  },
+  {
+    "sku": "IA451",
+    "name": "Vibrador Tripla Estimulação Pulse Recarregável Go Vibe Jazz",
+    "price_brl": 349.0,
+    "catalog_page": 43,
+    "brand": "Go Vibe",
+    "hero_image": "images_by_sku/IA451_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA451_hero.png"
+  },
+  {
+    "sku": "IA406",
+    "name": "Cápsula Vibratória Multivelocidade Recarregável Go Vibe Pink",
+    "price_brl": 100.0,
+    "catalog_page": 43,
+    "brand": "Go Vibe",
+    "hero_image": "images_by_sku/IA406_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA406_hero.png"
+  },
+  {
+    "sku": "IA363",
+    "name": "Cápsula Vibratória Mult. Recarregável Go Vibe Yellow",
+    "price_brl": 100.0,
+    "catalog_page": 43,
+    "brand": "Go Vibe",
+    "hero_image": "images_by_sku/IA363_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA363_hero.png"
+  },
+  {
+    "sku": "IA362",
+    "name": "Cápsula Vibratória Mult. Recarregável Go Vibe Purple",
+    "price_brl": 100.0,
+    "catalog_page": 43,
+    "brand": "Go Vibe",
+    "hero_image": "images_by_sku/IA362_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA362_hero.png"
+  },
+  {
+    "sku": "IA360",
+    "name": "Cápsula Vibratória Mult. Recarregável Go Vibe Red",
+    "price_brl": 100.0,
+    "catalog_page": 43,
+    "brand": "Go Vibe",
+    "hero_image": "images_by_sku/IA360_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA360_hero.png"
+  },
+  {
+    "sku": "IA407",
+    "name": "Cápsula Vibratória Mult. Recarregável Go Vibe Black",
+    "price_brl": 100.0,
+    "catalog_page": 43,
+    "brand": "Go Vibe",
+    "hero_image": "images_by_sku/IA407_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA407_hero.png"
+  },
+  {
+    "sku": "IA415",
+    "name": "Dedeira Vibratória Recarregável Go Vibe Bia",
+    "price_brl": 99.0,
+    "catalog_page": 49,
+    "brand": "Go Vibe",
+    "hero_image": "images_by_sku/IA415_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA415_hero.png"
+  },
+  {
+    "sku": "IA309",
+    "name": "Dedeira Vibratória Recarregável Go Vibe Lia",
+    "price_brl": 99.0,
+    "catalog_page": 49,
+    "brand": "Go Vibe",
+    "hero_image": "images_by_sku/IA309_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA309_hero.png"
+  },
+  {
+    "sku": "IA433",
+    "name": "Estimulador de Clitóris Recarregável Go Vibe Mia",
+    "price_brl": 299.0,
+    "catalog_page": 49,
+    "brand": "Go Vibe",
+    "hero_image": "images_by_sku/IA433_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA433_hero.png"
+  },
+  {
+    "sku": "IA380",
+    "name": "Vibrador e Estimulador de Clitóris Recarregável Go Vibe You",
+    "price_brl": 239.2,
+    "catalog_page": 49,
+    "brand": "Go Vibe",
+    "hero_image": "images_by_sku/IA380_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA380_hero.png"
+  },
+  {
+    "sku": "IA444",
+    "name": "Estimulador de Clitóris Recarregável Go Vibe Love",
+    "price_brl": 228.65,
+    "catalog_page": 49,
+    "brand": "Go Vibe",
+    "hero_image": "images_by_sku/IA444_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA444_hero.png"
+  },
+  {
+    "sku": "IA442",
+    "name": "Vibrador Recarregável Go Vibe Girls",
+    "price_brl": 299.0,
+    "catalog_page": 52,
+    "brand": "Go Vibe",
+    "hero_image": "images_by_sku/IA442_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA442_hero.png"
+  },
+  {
+    "sku": "IA432",
+    "name": "Vibrador e Estimulador Recarregável Go Vibe Lis",
+    "price_brl": 299.0,
+    "catalog_page": 52,
+    "brand": "Go Vibe",
+    "hero_image": "images_by_sku/IA432_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA432_hero.png"
+  },
+  {
+    "sku": "IA454R",
+    "name": "Dildo com Ventosa e  Vibrador Recarregável Go Vibe Nina",
+    "price_brl": 280.0,
+    "catalog_page": 52,
+    "brand": "Go Vibe",
+    "hero_image": "images_by_sku/IA454R_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA454R_hero.png"
+  },
+  {
+    "sku": "IA454A",
+    "name": "Dildo com Ventosa e  Vibrador Recarregável Go Vibe Nina",
+    "price_brl": 280.0,
+    "catalog_page": 52,
+    "brand": "Go Vibe",
+    "hero_image": "images_by_sku/IA454A_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA454A_hero.png"
+  },
+  {
+    "sku": "IA452",
+    "name": "Vibrador de Calcinha Estimulador Recarregável Go Vibe Cora 84",
+    "price_brl": 288.15,
+    "catalog_page": 52,
+    "brand": "Go Vibe",
+    "hero_image": "images_by_sku/IA452_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA452_hero.png"
+  },
+  {
+    "sku": "IA423",
+    "name": "Estimulador de Clitóris Recarregável Go Vibe Jack",
+    "price_brl": 229.0,
+    "catalog_page": 52,
+    "brand": "Go Vibe",
+    "hero_image": "images_by_sku/IA423_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA423_hero.png"
+  },
+  {
+    "sku": "IA457",
+    "name": "Anel Vibratório Go Vibe Zac",
+    "price_brl": 219.8,
+    "catalog_page": 52,
+    "brand": "Go Vibe",
+    "hero_image": "images_by_sku/IA457_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA457_hero.png"
+  },
+  {
+    "sku": "IA458",
+    "name": "Anel Vibratório Go Vibe Sky",
+    "price_brl": 219.8,
+    "catalog_page": 52,
+    "brand": "Go Vibe",
+    "hero_image": "images_by_sku/IA458_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA458_hero.png"
+  },
+  {
+    "sku": "IA465",
+    "name": "Estimulador de Clitóris Recarregável Sensevibe Multi",
+    "price_brl": 379.0,
+    "catalog_page": 52,
+    "brand": "Sensevibe",
+    "hero_image": "images_by_sku/IA465_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA465_hero.png"
+  },
+  {
+    "sku": "IA466",
+    "name": "Vibrador e Estimulador Recarregável Sensevibe Curve",
+    "price_brl": 449.0,
+    "catalog_page": 52,
+    "brand": "Sensevibe",
+    "hero_image": "images_by_sku/IA466_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA466_hero.png"
+  },
+  {
+    "sku": "IA464",
+    "name": "Anel Vibratório Recarregável Sensivibe Ring",
+    "price_brl": 349.0,
+    "catalog_page": 52,
+    "brand": "Sensevibe",
+    "hero_image": "images_by_sku/IA464_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA464_hero.png"
+  },
+  {
+    "sku": "IA445",
+    "name": "Vibrador Recarregável Sensevibe Digital Couple",
+    "price_brl": 520.0,
+    "catalog_page": 52,
+    "brand": "Sensevibe",
+    "hero_image": "images_by_sku/IA445_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA445_hero.png"
+  },
+  {
+    "sku": "IA446",
+    "name": "Vibrador Recarregável Sensevibe Digital Rabbit",
+    "price_brl": 460.0,
+    "catalog_page": 56,
+    "brand": "Sensevibe",
+    "hero_image": "images_by_sku/IA446_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA446_hero.png"
+  },
+  {
+    "sku": "IA448",
+    "name": "Vibrador Recarregável Sensevibe Digital Wand",
+    "price_brl": 560.0,
+    "catalog_page": 56,
+    "brand": "Sensevibe",
+    "hero_image": "images_by_sku/IA448_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA448_hero.png"
+  },
+  {
+    "sku": "IA447",
+    "name": "Estimulador Sugador de Clitóris Sensevibe Digital Suck",
+    "price_brl": 390.0,
+    "catalog_page": 56,
+    "brand": "Sensevibe",
+    "hero_image": "images_by_sku/IA447_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA447_hero.png"
+  },
+  {
+    "sku": "IA321",
+    "name": "Estimulador de Clitóris Recarregável Sensevibe Smart",
+    "price_brl": 499.0,
+    "catalog_page": 56,
+    "brand": "Sensevibe",
+    "hero_image": "images_by_sku/IA321_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA321_hero.png"
+  },
+  {
+    "sku": "IA305",
+    "name": "Estimulador de Clitóris Recarregável Sensevibe Fast",
+    "price_brl": 248.74,
+    "catalog_page": 56,
+    "brand": "Sensevibe",
+    "hero_image": "images_by_sku/IA305_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA305_hero.png"
+  },
+  {
+    "sku": "IA355",
+    "name": "Vibrador Recarregável Sensevibe Ultrasonic",
+    "price_brl": 99.9,
+    "catalog_page": 56,
+    "brand": "Sensevibe",
+    "hero_image": "images_by_sku/IA355_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA355_hero.png"
+  },
+  {
+    "sku": "IA353",
+    "name": "Vibrador Recarregável Sensevibe Couple",
+    "price_brl": 449.8,
+    "catalog_page": 56,
+    "brand": "Sensevibe",
+    "hero_image": "images_by_sku/IA353_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA353_hero.png"
+  },
+  {
+    "sku": "IA400",
+    "name": "Vibrador Estimulador Recarregável Sensevibe Double",
+    "price_brl": 199.0,
+    "catalog_page": 56,
+    "brand": "Sensevibe",
+    "hero_image": "images_by_sku/IA400_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA400_hero.png"
+  },
+  {
+    "sku": "IA357",
+    "name": "Cápsula Vibratória Mult. Recarregável Sensevibe Sweet",
+    "price_brl": 124.99,
+    "catalog_page": 56,
+    "brand": "Sensevibe",
+    "hero_image": "images_by_sku/IA357_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA357_hero.png"
+  },
+  {
+    "sku": "IA356",
+    "name": "Cápsula Multivelocidade Recarregável Sensevibe Cute",
+    "price_brl": 124.99,
+    "catalog_page": 56,
+    "brand": "Sensevibe",
+    "hero_image": "images_by_sku/IA356_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA356_hero.png"
+  },
+  {
+    "sku": "IA401",
+    "name": "Estimulador de Clitóris Recarregável Sensevibe Slim",
+    "price_brl": 239.0,
+    "catalog_page": 59,
+    "brand": "Sensevibe",
+    "hero_image": "images_by_sku/IA401_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA401_hero.png"
+  },
+  {
+    "sku": "IA405",
+    "name": "Vibrador e Sugador Recarregável Sensevibe Mega Rabbit",
+    "price_brl": 399.0,
+    "catalog_page": 59,
+    "brand": "Sensevibe",
+    "hero_image": "images_by_sku/IA405_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA405_hero.png"
+  },
+  {
+    "sku": "IA390",
+    "name": "Vibrador e Estimulador Recarregável Sensevibe Crazy",
+    "price_brl": 62.51,
+    "catalog_page": 59,
+    "brand": "Sensevibe",
+    "hero_image": "images_by_sku/IA390_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA390_hero.png"
+  },
+  {
+    "sku": "IA403",
+    "name": "Cápsula Vibratória Mult. Recarregável Sensevibe All",
+    "price_brl": 86.25,
+    "catalog_page": 61,
+    "brand": "Sensevibe",
+    "hero_image": "images_by_sku/IA403_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA403_hero.png"
+  },
+  {
+    "sku": "IA354",
+    "name": "Vibrador Potente Masculino Recarregável Sensevibe Men",
+    "price_brl": 240.0,
+    "catalog_page": 61,
+    "brand": "Sensevibe",
+    "hero_image": "images_by_sku/IA354_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA354_hero.png"
+  },
+  {
+    "sku": "IA434C",
+    "name": "Masturbador Sensevibe Hand Control",
+    "price_brl": 59.0,
+    "catalog_page": 62,
+    "brand": "Sensevibe",
+    "hero_image": "images_by_sku/IA434C_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA434C_hero.png"
+  },
+  {
+    "sku": "IA434E",
+    "name": "Masturbador Sensevibe Hand Experience",
+    "price_brl": 59.0,
+    "catalog_page": 62,
+    "brand": "Sensevibe",
+    "hero_image": "images_by_sku/IA434E_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA434E_hero.png"
+  },
+  {
+    "sku": "IA434S",
+    "name": "Masturbador Sensevibe Hand Speed",
+    "price_brl": 59.0,
+    "catalog_page": 62,
+    "brand": "Sensevibe",
+    "hero_image": "images_by_sku/IA434S_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA434S_hero.png"
+  },
+  {
+    "sku": "IA418",
+    "name": "Estimulador de Clitóris Recarregável Dona Suck",
+    "price_brl": 249.98,
+    "catalog_page": 62,
+    "brand": "Dona",
+    "hero_image": "images_by_sku/IA418_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA418_hero.png"
+  },
+  {
+    "sku": "IA409",
+    "name": "Vibrador Multivelocidade Dona Intense",
+    "price_brl": 248.77,
+    "catalog_page": 62,
+    "brand": "Dona",
+    "hero_image": "images_by_sku/IA409_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA409_hero.png"
+  },
+  {
+    "sku": "IA384",
+    "name": "Vibrador Multivelocidade Recarregável Dona Rabbit",
+    "price_brl": 248.76,
+    "catalog_page": 62,
+    "brand": "Dona",
+    "hero_image": "images_by_sku/IA384_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA384_hero.png"
+  },
+  {
+    "sku": "IA396",
+    "name": "Vibrador Multivelocidade Recarregável Dona Point",
+    "price_brl": 111.27,
+    "catalog_page": 62,
+    "brand": "Dona",
+    "hero_image": "images_by_sku/IA396_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA396_hero.png"
+  },
+  {
+    "sku": "IA413",
+    "name": "Vibrador e Estimulador Multivelocidade Dona Funny",
+    "price_brl": 87.5,
+    "catalog_page": 62,
+    "brand": "Dona",
+    "hero_image": "images_by_sku/IA413_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA413_hero.png"
+  },
+  {
+    "sku": "IA459",
+    "name": "Anel Peniano Go Play Tri",
+    "price_brl": 59.8,
+    "catalog_page": 65,
+    "brand": "Go Play",
+    "hero_image": "images_by_sku/IA459_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA459_hero.png"
+  },
+  {
+    "sku": "IA414",
+    "name": "Dildo com Ventosa Go Play Rainbow - 17,4 cm x 3,5 cm",
+    "price_brl": 129.0,
+    "catalog_page": 65,
+    "brand": "Go Play",
+    "hero_image": "images_by_sku/IA414_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA414_hero.png"
+  },
+  {
+    "sku": "IA436",
+    "name": "Dildo com Ventosa Go Play Íris",
+    "price_brl": 140.0,
+    "catalog_page": 65,
+    "brand": "Go Play",
+    "hero_image": "images_by_sku/IA436_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA436_hero.png"
+  },
+  {
+    "sku": "IA437",
+    "name": "Dildo com Ventosa e Vibro Go Play Íris",
+    "price_brl": 180.0,
+    "catalog_page": 65,
+    "brand": "Go Play",
+    "hero_image": "images_by_sku/IA437_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA437_hero.png"
+  },
+  {
+    "sku": "IA438LA",
+    "name": "Dildo com Ventosa Go Play Star",
+    "price_brl": 156.0,
+    "catalog_page": 69,
+    "brand": "Go Play",
+    "hero_image": "images_by_sku/IA438LA_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA438LA_hero.png"
+  },
+  {
+    "sku": "IA438LI",
+    "name": "Dildo com Ventosa Go Play Star",
+    "price_brl": 156.0,
+    "catalog_page": 69,
+    "brand": "Go Play",
+    "hero_image": "images_by_sku/IA438LI_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA438LI_hero.png"
+  },
+  {
+    "sku": "IA318",
+    "name": "Mini Masturbador Go Play Boy Classic",
+    "price_brl": 30.0,
+    "catalog_page": 69,
+    "brand": "Go Play",
+    "hero_image": "images_by_sku/IA318_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA318_hero.png"
+  },
+  {
+    "sku": "IA460",
+    "name": "Anel Peniano Go Play Duo",
+    "price_brl": 59.8,
+    "catalog_page": 69,
+    "brand": "Go Play",
+    "hero_image": "images_by_sku/IA460_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA460_hero.png"
+  },
+  {
+    "sku": "IA461",
+    "name": "Anel Peniano Go Play Hold",
+    "price_brl": 59.8,
+    "catalog_page": 69,
+    "brand": "Go Play",
+    "hero_image": "images_by_sku/IA461_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA461_hero.png"
+  },
+  {
+    "sku": "IA463",
+    "name": "Anel Peniano Go Play Cape",
+    "price_brl": 59.8,
+    "catalog_page": 69,
+    "brand": "Go Play",
+    "hero_image": "images_by_sku/IA463_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA463_hero.png"
+  },
+  {
+    "sku": "IA462",
+    "name": "Anel Peniano Go Play Tube 86",
+    "price_brl": 89.8,
+    "catalog_page": 69,
+    "brand": "Go Play",
+    "hero_image": "images_by_sku/IA462_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA462_hero.png"
+  },
+  {
+    "sku": "IA332L",
+    "name": "Plug Anal em Silicone Go Play Niu",
+    "price_brl": 39.9,
+    "catalog_page": 69,
+    "brand": "Go Play",
+    "hero_image": "images_by_sku/IA332L_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA332L_hero.png"
+  },
+  {
+    "sku": "IA332P",
+    "name": "Plug Anal em Silicone Go Play Niu",
+    "price_brl": 39.9,
+    "catalog_page": 69,
+    "brand": "Go Play",
+    "hero_image": "images_by_sku/IA332P_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA332P_hero.png"
+  },
+  {
+    "sku": "IA333L",
+    "name": "Plug Anal Pequeno em Silicone Go Play Ben - 7,5 x 3 cm",
+    "price_brl": 39.9,
+    "catalog_page": 69,
+    "brand": "Go Play",
+    "hero_image": "images_by_sku/IA333L_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA333L_hero.png"
+  },
+  {
+    "sku": "IA333P",
+    "name": "Plug Anal Pequeno em Silicone Go Play Ben - 7,5 x 3 cm",
+    "price_brl": 39.9,
+    "catalog_page": 69,
+    "brand": "Go Play",
+    "hero_image": "images_by_sku/IA333P_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA333P_hero.png"
+  },
+  {
+    "sku": "IA367",
+    "name": "Plug Anal Metal Go Play Sam - Rose Gold",
+    "price_brl": 59.0,
+    "catalog_page": 69,
+    "brand": "Go Play",
+    "hero_image": "images_by_sku/IA367_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA367_hero.png"
+  },
+  {
+    "sku": "IA392",
+    "name": "Plug Anal Metal Go Play Gil Furta-Cor - 7 cm x 2,5 cm",
+    "price_brl": 50.0,
+    "catalog_page": 69,
+    "brand": "Go Play",
+    "hero_image": "images_by_sku/IA392_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA392_hero.png"
+  },
+  {
+    "sku": "IA368",
+    "name": "Plug Anal Metal Go Play Teo - Rose Gold",
+    "price_brl": 69.0,
+    "catalog_page": 69,
+    "brand": "Go Play",
+    "hero_image": "images_by_sku/IA368_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA368_hero.png"
+  },
+  {
+    "sku": "IA228",
+    "name": "Plug Anal Metal Butt Cromado - Pequeno 7,2 x 2,5cm",
+    "price_brl": 29.0,
+    "catalog_page": 69,
+    "brand": "Cosméticos & Acessórios",
+    "hero_image": "images_by_sku/IA228_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA228_hero.png"
+  },
+  {
+    "sku": "IA229",
+    "name": "Plug Anal Metal Butt Cromado - Médio  8,2 x 3,3",
+    "price_brl": 39.0,
+    "catalog_page": 69,
+    "brand": "Cosméticos & Acessórios",
+    "hero_image": "images_by_sku/IA229_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA229_hero.png"
+  },
+  {
+    "sku": "IA230",
+    "name": "Plug Anal Metal Heart  Cromado – 6,5 x 3,2cm",
+    "price_brl": 36.0,
+    "catalog_page": 69,
+    "brand": "Cosméticos & Acessórios",
+    "hero_image": "images_by_sku/IA230_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA230_hero.png"
+  },
+  {
+    "sku": "IA324",
+    "name": "Plug Anal Metal Luck Cromado - 6,5 cm x 2,5 cm",
+    "price_brl": 52.8,
+    "catalog_page": 69,
+    "brand": "Cosméticos & Acessórios",
+    "hero_image": "images_by_sku/IA324_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA324_hero.png"
+  },
+  {
+    "sku": "IA234",
+    "name": "Plug Anal Butt Cat Com Cauda Em Pelúcia  Cromado",
+    "price_brl": 55.0,
+    "catalog_page": 69,
+    "brand": "Cosméticos & Acessórios",
+    "hero_image": "images_by_sku/IA234_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/IA234_hero.png"
+  },
+  {
+    "sku": "AS341",
+    "name": "Gel Excitante Feminino em Gotas My Secret - 15ml",
+    "price_brl": 49.8,
+    "catalog_page": 72,
+    "brand": "Cosméticos & Acessórios",
+    "hero_image": "images_by_sku/AS341_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/AS341_hero.png"
+  },
+  {
+    "sku": "AS083",
+    "name": "Creme Hidratante Sensual Sexy - 200ml",
+    "price_brl": 40.8,
+    "catalog_page": 72,
+    "brand": "Cosméticos & Acessórios",
+    "hero_image": "images_by_sku/AS083_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/AS083_hero.png"
+  },
+  {
+    "sku": "AS233R",
+    "name": "Gel Nuru para Massagem Sensual Sensation Gel - 220ml",
+    "price_brl": 38.8,
+    "catalog_page": 75,
+    "brand": "Cosméticos & Acessórios",
+    "hero_image": "images_by_sku/AS233R_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/AS233R_hero.png"
+  },
+  {
+    "sku": "AS333",
+    "name": "Desodorante Íntimo Morango - 90ml/50g",
+    "price_brl": 52.8,
+    "catalog_page": 75,
+    "brand": "Cosméticos & Acessórios",
+    "hero_image": "images_by_sku/AS333_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/AS333_hero.png"
+  },
+  {
+    "sku": "AS214",
+    "name": "Disposição Sexual Masculina Testoviril - 60 Cap",
+    "price_brl": 64.8,
+    "catalog_page": 75,
+    "brand": "Cosméticos & Acessórios",
+    "hero_image": "images_by_sku/AS214_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/AS214_hero.png"
+  },
+  {
+    "sku": "AS222",
+    "name": "Disposição Sexual Feminina Sex Femme - 60 Cap",
+    "price_brl": 64.8,
+    "catalog_page": 75,
+    "brand": "Cosméticos & Acessórios",
+    "hero_image": "images_by_sku/AS222_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/AS222_hero.png"
+  },
+  {
+    "sku": "EN015",
+    "name": "Rejuvenescedor do Cabelo, Pele e Unha Beauty Femme – 60 Cap",
+    "price_brl": 64.8,
+    "catalog_page": 75,
+    "brand": "Cosméticos & Acessórios",
+    "hero_image": "images_by_sku/EN015_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/EN015_hero.png"
+  },
+  {
+    "sku": "KA101P",
+    "name": "Rejuvenescedor do Cabelo, Pele e Unha Beauty Femme – 60 Cap",
+    "price_brl": 64.8,
+    "catalog_page": 75,
+    "brand": "Cosméticos & Acessórios",
+    "hero_image": "images_by_sku/KA101P_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/KA101P_hero.png"
+  },
+  {
+    "sku": "KA088P",
+    "name": "Rejuvenescedor do Cabelo, Pele e Unha Beauty Femme – 60 Cap",
+    "price_brl": 64.8,
+    "catalog_page": 75,
+    "brand": "Cosméticos & Acessórios",
+    "hero_image": "images_by_sku/KA088P_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/KA088P_hero.png"
+  },
+  {
+    "sku": "KA088B",
+    "name": "Rejuvenescedor do Cabelo, Pele e Unha Beauty Femme – 60 Cap",
+    "price_brl": 64.8,
+    "catalog_page": 75,
+    "brand": "Cosméticos & Acessórios",
+    "hero_image": "images_by_sku/KA088B_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/KA088B_hero.png"
+  },
+  {
+    "sku": "KA101V",
+    "name": "Kit Sensual Body Tailandês Kit Sensual Calcinha Tailandesa",
+    "price_brl": 60.8,
+    "catalog_page": 75,
+    "brand": "Cosméticos & Acessórios",
+    "hero_image": "images_by_sku/KA101V_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/KA101V_hero.png"
+  },
+  {
+    "sku": "KA088V",
+    "name": "Kit Sensual Body Tailandês Kit Sensual Calcinha Tailandesa",
+    "price_brl": 60.8,
+    "catalog_page": 75,
+    "brand": "Cosméticos & Acessórios",
+    "hero_image": "images_by_sku/KA088V_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/KA088V_hero.png"
+  },
+  {
+    "sku": "BA031",
+    "name": "Jogo de Tabuleiro Sensual para Casais Maithuna 76",
+    "price_brl": 78.99,
+    "catalog_page": 75,
+    "brand": "Cosméticos & Acessórios",
+    "hero_image": "images_by_sku/BA031_hero.png",
+    "thumb_image": null,
+    "primary_image": "images_by_sku/BA031_hero.png"
+  }
+]

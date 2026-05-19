@@ -4,11 +4,11 @@ Build SKU -> image mapping using BOTH:
   B) Same on the back-of-book price-list pages (78-87)     -> "thumb" image
 
 Outputs:
-  design-handoff/images_by_sku/{SKU}_hero.png
-  design-handoff/images_by_sku/{SKU}_thumb.png
-  design-handoff/data/products.json   (rewritten with image paths added)
-  design-handoff/data/mapping_review.html  (visual QA page)
-  design-handoff/data/mapping_unmatched.json (SKUs with no match in either source)
+  catalog-source/images_by_sku/{SKU}_hero.png
+  catalog-source/images_by_sku/{SKU}_thumb.png
+  catalog-source/data/products.json   (rewritten with image paths added)
+  catalog-source/data/mapping_review.html  (visual QA page)
+  catalog-source/data/mapping_unmatched.json (SKUs with no match in either source)
 """
 
 import json
@@ -19,7 +19,7 @@ import pathlib
 import pymupdf
 
 PDF = pathlib.Path(r"c:/repo/afrodite-prazer/Catalogo-A-Sos-Sensual-1-Edicao-Com-Preco-2026.pdf")
-ROOT = pathlib.Path(r"c:/repo/afrodite-prazer/design-handoff")
+ROOT = pathlib.Path(r"c:/repo/afrodite-prazer/catalog-source")
 DATA_DIR = ROOT / "data"
 SKU_DIR = ROOT / "images_by_sku"
 SKU_DIR.mkdir(parents=True, exist_ok=True)

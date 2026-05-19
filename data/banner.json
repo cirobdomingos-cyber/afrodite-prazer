@@ -1,0 +1,9 @@
+{
+  "_README": "Banner promocional do topo. Setar 'active' como false esconde o banner sem precisar deletar a config. Mantenha curto: eyebrow (1-2 palavras), title (até 8 palavras), subtitle (1 linha). O cta_href pode apontar para uma âncora (#por-onde-comecar) ou URL externa.",
+  "active": false,
+  "eyebrow": "Edição limitada",
+  "title": "20% na linha Dermosex",
+  "subtitle": "Promoção válida até 31 de dezembro",
+  "cta_label": "Ver produtos",
+  "cta_href": "#por-onde-comecar"
+}

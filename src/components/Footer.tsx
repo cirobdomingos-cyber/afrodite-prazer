@@ -20,8 +20,9 @@ export default function Footer() {
             <p className={styles.eyebrow}>Navegar</p>
             <ul>
               <li><Link href="/">Início</Link></li>
+              <li><Link href="/#sobre">Sobre</Link></li>
+              <li><Link href="/#por-onde-comecar">Curadoria</Link></li>
               <li><Link href="/guia">Guia gratuito</Link></li>
-              <li><Link href="/produtos">Curadoria</Link></li>
             </ul>
           </div>
           <div>

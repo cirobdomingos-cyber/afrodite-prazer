@@ -10,13 +10,13 @@ export default function HomePage() {
     <>
       <Banner />
 
-      <section className={`${styles.hero} sec-verde`}>
+      <section className={`${styles.hero} sec-roxo`}>
         <ShellIcon size={56} className={styles.shell} />
         <h1 className={styles.headline}>
           Afrodite,
           <em>prazer.</em>
         </h1>
-        <p className={styles.tagline}>Onde o prazer é liberdade.</p>
+        <p className={styles.tagline}>Onde o desejo encontra o cuidado.</p>
 
         <div className={styles.ctas}>
           <Link href="/guia" className="btn btn-primary">
@@ -48,7 +48,7 @@ export default function HomePage() {
         <CuratedSection key={section.id} section={section} index={i} />
       ))}
 
-      <section className={`${styles.cookie} sec-verde`}>
+      <section className={`${styles.cookie} sec-roxo`}>
         <div className="wrap">
           <span className="eyebrow gold">Como funciona</span>
           <p className={styles.cookieLead}>

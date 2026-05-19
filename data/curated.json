@@ -1,0 +1,177 @@
+{
+  "_README": "Curadoria editorial — 18 SKUs em 5 seções + favoritos. Cecília: substitua o campo 'editorial' por suas próprias 2-3 linhas. O 'affiliate_url' precisa ser o link de afiliada A Sós com UTM. Imagens vivem em /public/products/{SKU}_hero.png.",
+  "sections": [
+    {
+      "id": "favoritos",
+      "title": "Meus favoritos",
+      "subtitle": "Os produtos que eu mesma uso e indico — uma curadoria pequena, honesta, sem pressa.",
+      "skus": ["DS022", "IA424", "IA468", "PC065", "LV015"]
+    },
+    {
+      "id": "comecar",
+      "title": "Pra começar do zero",
+      "subtitle": "Para quem está chegando agora — produtos básicos de cuidado íntimo, ticket baixo, sem mistério.",
+      "skus": ["DS009", "DS018", "DS001", "DS006"]
+    },
+    {
+      "id": "autoconhecimento",
+      "title": "Pra autoconhecimento",
+      "subtitle": "Vibradores e estimuladores selecionados — descoberta no seu ritmo, no seu silêncio.",
+      "skus": ["IA468", "IA467", "PC065", "FE001"]
+    },
+    {
+      "id": "maturidade",
+      "title": "Pra menopausa e maturidade",
+      "subtitle": "Linha Dermosex Mature e Feminist — hidratação íntima, conforto, dignidade — pensada para o corpo que muda.",
+      "skus": ["DS022", "DS021", "DS024", "IA424"]
+    },
+    {
+      "id": "casal",
+      "title": "Pra casal",
+      "subtitle": "Velas beijáveis, óleos, géis — convites discretos para a presença a dois.",
+      "skus": ["LV015", "LV014", "LV024"]
+    }
+  ],
+  "products": [
+    {
+      "sku": "DS022",
+      "name": "Sérum Íntimo Concentrado Hidratante Dermosex — 15ml",
+      "brand": "Dermosex Mature",
+      "price_brl": 154.0,
+      "image": "/products/DS022_hero.png",
+      "editorial": "Para quando a hidratação simples não basta. Um sérum concentrado que entrega conforto íntimo em poucas gotas — discreto, sem cheiro, sem perfume.",
+      "affiliate_url": "https://www.asossensual.com.br/produto/DS022?utm_source=afroditeprazer&utm_medium=catalogo&utm_campaign=curadoria",
+      "featured": true
+    },
+    {
+      "sku": "IA424",
+      "name": "Vibrador e Estimulador Sugador Recarregável My Moment",
+      "brand": "Dermosex Mature",
+      "price_brl": 349.0,
+      "image": "/products/IA424_hero.png",
+      "editorial": "Pensado para quem está se reaproximando do próprio prazer — a sucção é suave, ajustável, e o silêncio do motor surpreende.",
+      "affiliate_url": "https://www.asossensual.com.br/produto/IA424?utm_source=afroditeprazer&utm_medium=catalogo&utm_campaign=curadoria",
+      "featured": true
+    },
+    {
+      "sku": "IA468",
+      "name": "Vibrador Recarregável Sweet Vibe Mexe",
+      "brand": "Sweet Vibe",
+      "price_brl": 330.0,
+      "image": "/products/IA468_hero.png",
+      "editorial": "Um clássico. Discreto na bolsa, generoso no uso — o tipo de produto que aguenta o tempo da descoberta.",
+      "affiliate_url": "https://www.asossensual.com.br/produto/IA468?utm_source=afroditeprazer&utm_medium=catalogo&utm_campaign=curadoria",
+      "featured": true
+    },
+    {
+      "sku": "IA467",
+      "name": "Vibrador Recarregável Sweet Vibe Revira",
+      "brand": "Sweet Vibe",
+      "price_brl": 330.0,
+      "image": "/products/IA467_hero.png",
+      "editorial": "Movimento rotativo, três velocidades. Para quem já se conhece um pouco e quer testar outra textura de prazer."
+    , "affiliate_url": "https://www.asossensual.com.br/produto/IA467?utm_source=afroditeprazer&utm_medium=catalogo&utm_campaign=curadoria"
+    },
+    {
+      "sku": "PC065",
+      "name": "Kit para Pompoarismo Feminist — 5 cones",
+      "brand": "Feminist",
+      "price_brl": 99.89,
+      "image": "/products/PC065_hero.png",
+      "editorial": "Pompoarismo é fortalecimento — e fortalecimento é prazer. Cinco cones em peso progressivo, prática diária de 10 minutos.",
+      "affiliate_url": "https://www.asossensual.com.br/produto/PC065?utm_source=afroditeprazer&utm_medium=catalogo&utm_campaign=curadoria",
+      "featured": true
+    },
+    {
+      "sku": "FE001",
+      "name": "Kit de Dilatadores Vaginais Feminist Lisos — 8 un",
+      "brand": "Feminist",
+      "price_brl": 229.0,
+      "image": "/products/FE001_hero.png",
+      "editorial": "Para vaginismo, pós-parto, menopausa — ou simplesmente para entender o próprio corpo com calma. Tamanhos progressivos, silicone médico.",
+      "affiliate_url": "https://www.asossensual.com.br/produto/FE001?utm_source=afroditeprazer&utm_medium=catalogo&utm_campaign=curadoria"
+    },
+    {
+      "sku": "DS009",
+      "name": "Sabonete Íntimo em Barra Hidratante Dermosex — 90g",
+      "brand": "Dermosex",
+      "price_brl": 29.8,
+      "image": "/products/DS009_hero.png",
+      "editorial": "O básico bem-feito. pH equilibrado, sem fragrância agressiva — para o dia a dia, sem precisar pensar muito.",
+      "affiliate_url": "https://www.asossensual.com.br/produto/DS009?utm_source=afroditeprazer&utm_medium=catalogo&utm_campaign=curadoria"
+    },
+    {
+      "sku": "DS018",
+      "name": "Sabonete Íntimo Hidratante Feminino Dermosex — 210ml",
+      "brand": "Dermosex",
+      "price_brl": 69.8,
+      "image": "/products/DS018_hero.png",
+      "editorial": "Versão líquida do clássico Dermosex. Espuma leve, ação hidratante real — não só limpeza, também cuidado.",
+      "affiliate_url": "https://www.asossensual.com.br/produto/DS018?utm_source=afroditeprazer&utm_medium=catalogo&utm_campaign=curadoria"
+    },
+    {
+      "sku": "DS001",
+      "name": "Creme Hidratante para Região Pélvica Dermosex — 60g",
+      "brand": "Dermosex",
+      "price_brl": 69.8,
+      "image": "/products/DS001_hero.png",
+      "editorial": "Hidratação localizada, leve, sem brilho. Pode entrar na rotina de pele do mesmo jeito que um sérum facial.",
+      "affiliate_url": "https://www.asossensual.com.br/produto/DS001?utm_source=afroditeprazer&utm_medium=catalogo&utm_campaign=curadoria"
+    },
+    {
+      "sku": "DS006",
+      "name": "Sabonete Líquido Íntimo para Região Anal Dermosex — 200ml",
+      "brand": "Dermosex",
+      "price_brl": 56.8,
+      "image": "/products/DS006_hero.png",
+      "editorial": "Formulação específica para a região — pH adequado, fórmula suave, dispenser prático.",
+      "affiliate_url": "https://www.asossensual.com.br/produto/DS006?utm_source=afroditeprazer&utm_medium=catalogo&utm_campaign=curadoria"
+    },
+    {
+      "sku": "DS021",
+      "name": "Creme Corporal Super Hidratante Dermosex — 220g",
+      "brand": "Dermosex Mature",
+      "price_brl": 79.8,
+      "image": "/products/DS021_hero.png",
+      "editorial": "Hidratação corporal de absorção rápida, sem perfume, sem grude. Bom para depois do banho — e para qualquer hora do dia.",
+      "affiliate_url": "https://www.asossensual.com.br/produto/DS021?utm_source=afroditeprazer&utm_medium=catalogo&utm_campaign=curadoria"
+    },
+    {
+      "sku": "DS024",
+      "name": "Água Refrescante Corporal Dermosex — 100ml",
+      "brand": "Dermosex Mature",
+      "price_brl": 69.8,
+      "image": "/products/DS024_hero.png",
+      "editorial": "Para os fogachos da menopausa — borrifa, refresca, encerra. Discreto na bolsa, generoso no alívio.",
+      "affiliate_url": "https://www.asossensual.com.br/produto/DS024?utm_source=afroditeprazer&utm_medium=catalogo&utm_campaign=curadoria"
+    },
+    {
+      "sku": "LV015",
+      "name": "Vela Hidratante Beijável Olove Chocolate — 70g",
+      "brand": "Olove",
+      "price_brl": 69.8,
+      "image": "/products/LV015_hero.png",
+      "editorial": "Acende, derrete, vira óleo morno de massagem. Cheiro discreto de cacau — sem aquele apelo de doce barato.",
+      "affiliate_url": "https://www.asossensual.com.br/produto/LV015?utm_source=afroditeprazer&utm_medium=catalogo&utm_campaign=curadoria",
+      "featured": true
+    },
+    {
+      "sku": "LV014",
+      "name": "Gel Excitante Beijável Olove Grego — 15g",
+      "brand": "Olove",
+      "price_brl": 49.8,
+      "image": "/products/LV014_hero.png",
+      "editorial": "Gel concentrado, efeito esquenta-esfria. Dura mais do que se imagina — uma gota é suficiente.",
+      "affiliate_url": "https://www.asossensual.com.br/produto/LV014?utm_source=afroditeprazer&utm_medium=catalogo&utm_campaign=curadoria"
+    },
+    {
+      "sku": "LV024",
+      "name": "Mousse Beijável para Massagem Olove Milkshake — 50ml",
+      "brand": "Olove",
+      "price_brl": 59.8,
+      "image": "/products/LV024_hero.png",
+      "editorial": "Textura de mousse, sabor leve, espalha bem. Funciona pra massagem corporal e pra brincar a dois.",
+      "affiliate_url": "https://www.asossensual.com.br/produto/LV024?utm_source=afroditeprazer&utm_medium=catalogo&utm_campaign=curadoria"
+    }
+  ]
+}

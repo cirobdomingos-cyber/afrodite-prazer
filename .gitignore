@@ -1,9 +1,22 @@
 # build artifacts
-design-handoff.zip
 *.zip
 node_modules/
 dist/
 build/
+
+# next.js
+.next/
+out/
+next-env.d.ts
+
+# env
+.env
+.env.local
+.env.*.local
+!.env.local.example
+
+# leads fallback log (dev only — if BREVO_API_KEY missing)
+data/leads.local.jsonl
 
 # python caches
 __pycache__/
@@ -18,8 +31,5 @@ venv/
 Thumbs.db
 
 # local-only working copies
-design-handoff/images_by_sku/_raw/
-
-# large raw image dump — the SKU-keyed version in images_by_sku/ is what we actually use.
-# Keep this commented if you want to track the raw page-grouped images too; it adds ~30MB.
-# design-handoff/images/
+catalog-source/images_by_sku/_raw/
+catalog-source/images/

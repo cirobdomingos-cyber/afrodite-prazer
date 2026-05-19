@@ -2,7 +2,7 @@
   position: sticky;
   top: 0;
   z-index: 50;
-  background: color-mix(in srgb, var(--verde) 92%, transparent);
+  background: color-mix(in srgb, var(--roxo) 92%, transparent);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border-bottom: 0.5px solid rgba(232, 222, 196, 0.12);
@@ -45,7 +45,7 @@
 .menu {
   display: flex;
   align-items: center;
-  gap: 32px;
+  gap: 26px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -57,10 +57,15 @@
   text-transform: uppercase;
   font-weight: 400;
   opacity: 0.8;
-  transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease, color 0.25s ease;
 }
 
-.menu a:hover { opacity: 1; }
+.menu a:hover { opacity: 1; color: var(--ouro); }
+
+@media (max-width: 900px) {
+  .menu { gap: 18px; }
+  .menu a { font-size: 10.5px; letter-spacing: 0.18em; }
+}
 
 @media (max-width: 760px) {
   .menu { display: none; }

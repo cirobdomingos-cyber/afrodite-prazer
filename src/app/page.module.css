@@ -1,13 +1,15 @@
+/* ---------- Hero ---------- */
 .hero {
-  min-height: 88vh;
+  min-height: 72vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 140px 24px 120px;
+  padding: 120px 24px 100px;
   position: relative;
   overflow: hidden;
+  scroll-margin-top: 80px;
 }
 
 .hero::after {
@@ -18,12 +20,12 @@
   pointer-events: none;
 }
 
-.shell { color: var(--ouro); margin-bottom: 32px; opacity: 0.92; }
+.shell { color: var(--ouro); margin-bottom: 28px; opacity: 0.92; }
 
 .headline {
   font-family: var(--serif);
   font-weight: 300;
-  font-size: clamp(56px, 12vw, 150px);
+  font-size: clamp(56px, 11vw, 130px);
   line-height: 0.95;
   margin: 0;
   letter-spacing: -0.01em;
@@ -43,23 +45,14 @@
   font-family: var(--serif);
   font-style: italic;
   font-weight: 400;
-  font-size: clamp(20px, 2.4vw, 30px);
-  margin: 36px 0 0;
+  font-size: clamp(20px, 2.4vw, 28px);
+  margin: 32px 0 0;
   color: color-mix(in srgb, var(--osso) 88%, transparent);
   max-width: 28ch;
 }
 
-.sub {
-  margin: 28px auto 0;
-  max-width: 46ch;
-  font-size: 14px;
-  line-height: 1.75;
-  opacity: 0.72;
-  font-weight: 300;
-}
-
 .ctas {
-  margin-top: 48px;
+  margin-top: 44px;
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
@@ -68,46 +61,65 @@
   z-index: 1;
 }
 
-.scroll {
-  margin-top: 72px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 14px;
-  font-size: 10.5px;
-  letter-spacing: 0.28em;
-  text-transform: uppercase;
-  opacity: 0.55;
-  position: relative;
-  z-index: 1;
+/* ---------- Sobre ---------- */
+.about {
+  padding: clamp(80px, 11vw, 130px) 0;
+  text-align: center;
+  scroll-margin-top: 80px;
 }
 
-.scroll :global(.rule) { height: 40px; }
+.about :global(.eyebrow) { margin-bottom: 36px; display: inline-block; }
 
-/* ---- Manifesto ---- */
-.manifesto { text-align: center; }
-
-.quote {
+.aboutLead {
   font-family: var(--serif);
   font-weight: 300;
-  font-size: clamp(22px, 2.6vw, 32px);
-  line-height: 1.5;
+  font-size: clamp(24px, 2.8vw, 36px);
+  line-height: 1.4;
+  margin: 0 auto;
   max-width: 32ch;
-  margin: 0 auto;
-  color: color-mix(in srgb, var(--tinta) 92%, transparent);
+  color: var(--tinta);
 }
-.quote p { margin: 0 0 1.4em; }
-.quote p:last-child { margin: 0; }
 
-/* ---- Curadoria teaser ---- */
-.curadoria { text-align: center; }
-.curadoriaIntro {
-  font-family: var(--serif);
+.aboutLead em {
   font-style: italic;
-  font-size: clamp(20px, 2.2vw, 28px);
-  line-height: 1.55;
-  max-width: 38ch;
-  margin: 0 auto;
-  color: color-mix(in srgb, var(--osso) 82%, transparent);
+  font-weight: 400;
+  color: var(--ouro);
 }
-.curadoriaCtas { margin-top: 48px; display: flex; justify-content: center; }
+
+.aboutBody {
+  font-size: clamp(15px, 1.4vw, 17px);
+  line-height: 1.75;
+  margin: 36px auto 0;
+  max-width: 50ch;
+  color: color-mix(in srgb, var(--tinta) 72%, transparent);
+}
+
+/* ---------- Cookie disclosure ---------- */
+.cookie {
+  padding: clamp(80px, 11vw, 130px) 0;
+  text-align: center;
+  scroll-margin-top: 80px;
+}
+
+.cookie :global(.eyebrow) { margin-bottom: 28px; }
+
+.cookieLead {
+  font-family: var(--serif);
+  font-weight: 300;
+  font-size: clamp(22px, 2.6vw, 30px);
+  line-height: 1.45;
+  margin: 0 auto;
+  max-width: 36ch;
+  color: var(--osso);
+}
+
+.cookieLead em { font-style: italic; font-weight: 400; color: var(--ouro); }
+.cookieLead strong { font-weight: 500; color: var(--ouro); }
+
+.cookieFine {
+  font-size: 13px;
+  line-height: 1.7;
+  margin: 28px auto 0;
+  max-width: 48ch;
+  opacity: 0.62;
+}

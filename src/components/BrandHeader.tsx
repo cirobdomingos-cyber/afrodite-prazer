@@ -3,9 +3,11 @@ import ShellIcon from "./ShellIcon";
 import styles from "./BrandHeader.module.css";
 
 const NAV = [
-  { href: "/", label: "Início" },
-  { href: "/guia", label: "Guia gratuito" },
-  { href: "/produtos", label: "Curadoria" },
+  { href: "/#por-onde-comecar", label: "Cuidado" },
+  { href: "/#para-os-sentidos", label: "Sentidos" },
+  { href: "/#conhecer-pelo-toque", label: "Toque" },
+  { href: "/#novas-descobertas", label: "Descobertas" },
+  { href: "/guia", label: "Guia" },
 ] as const;
 
 export default function BrandHeader() {

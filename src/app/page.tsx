@@ -1,84 +1,65 @@
 import Link from "next/link";
+import Banner from "@/components/Banner";
+import CuratedSection from "@/components/CuratedSection";
 import ShellIcon from "@/components/ShellIcon";
+import { sections } from "@/lib/products";
 import styles from "./page.module.css";
 
 export default function HomePage() {
   return (
     <>
-      <section className={`${styles.hero} sec-verde`}>
-        <ShellIcon size={64} className={styles.shell} />
+      <Banner />
+
+      <section className={`${styles.hero} sec-roxo`}>
+        <ShellIcon size={56} className={styles.shell} />
         <h1 className={styles.headline}>
           Afrodite,
           <em>prazer.</em>
         </h1>
-        <p className={styles.tagline}>Onde o prazer é liberdade.</p>
-        <p className={styles.sub}>
-          Um espaço para conversa, descoberta e autocuidado íntimo feminino — no seu ritmo,
-          no seu silêncio.
-        </p>
+        <p className={styles.tagline}>Onde o desejo encontra o cuidado.</p>
 
         <div className={styles.ctas}>
           <Link href="/guia" className="btn btn-primary">
             Baixar guia gratuito
           </Link>
-          <Link href="/produtos" className="btn">
+          <Link href="#por-onde-comecar" className="btn">
             Ver a curadoria
           </Link>
         </div>
-
-        <div className={styles.scroll}>
-          <span>Role</span>
-          <span className="rule" />
-        </div>
       </section>
 
-      <section className={`${styles.manifesto} sec-creme`}>
+      <section id="sobre" className={`${styles.about} sec-creme`}>
         <div className="wrap">
-          <div className="section-head">
-            <span className="eyebrow">Manifesto</span>
-            <h2>
-              <em>O essencial</em>
-              <br />
-              não precisa gritar.
-            </h2>
-          </div>
-
-          <div className={styles.quote}>
-            <p>
-              Afrodite nasceu do mar. Da espuma. Do silêncio. Daquilo que floresce sem pedir
-              permissão.
-            </p>
-            <p>
-              E talvez o prazer feminino seja assim também — coisa que floresce no tempo dela,
-              não na pressa de ninguém.
-            </p>
-            <p>
-              Prazer também é saúde. É presença. É intimidade consigo mesma. Não existe certo
-              ou errado no tempo do desejo — existe escuta, descoberta, confiança.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section className={`${styles.curadoria} sec-verde`}>
-        <div className="wrap">
-          <div className="section-head">
-            <span className="eyebrow">Sobre a curadoria</span>
-            <h2>
-              Uma seleção pequena, <em>honesta.</em>
-            </h2>
-          </div>
-
-          <p className={styles.curadoriaIntro}>
-            Não é uma vitrine. São produtos que eu mesma testei, escolhidos com critério —
-            organizados por necessidade, não por categoria.
+          <span className="eyebrow gold">Sobre</span>
+          <p className={styles.aboutLead}>
+            Afrodite nasceu do mar, da espuma, do silêncio — daquilo que floresce sem
+            pedir permissão. <em>Aqui também:</em> prazer feminino é coisa que floresce
+            no seu tempo, não na pressa de ninguém.
           </p>
+          <p className={styles.aboutBody}>
+            Esta é uma curadoria editorial honesta sobre saúde íntima, autoconhecimento
+            e prazer. Cada produto foi escolhido com critério — pelo que entrega, pelo
+            que evita prometer, pelo respeito ao seu ritmo.
+          </p>
+        </div>
+      </section>
 
-          <div className={styles.curadoriaCtas}>
-            <Link href="/produtos" className="btn">
-              Conhecer os produtos
-            </Link>
-          </div>
+      {sections.map((section, i) => (
+        <CuratedSection key={section.id} section={section} index={i} />
+      ))}
+
+      <section className={`${styles.cookie} sec-roxo`}>
+        <div className="wrap">
+          <span className="eyebrow gold">Como funciona</span>
+          <p className={styles.cookieLead}>
+            Cada link aqui leva ao site da <em>A Sós Sensual</em>. Se você gostar de
+            qualquer outra coisa por lá e comprar nos próximos <strong>30 dias</strong>,
+            parte sustenta esta curadoria — sem custo extra pra você.
+          </p>
+          <p className={styles.cookieFine}>
+            Clique, navegue, conheça. O preço para você é o mesmo. A comissão é o que
+            permite que este espaço continue existindo.
+          </p>
         </div>
       </section>
     </>

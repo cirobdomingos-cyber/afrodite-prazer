@@ -16,6 +16,7 @@ export type CuratedSection = {
   title: string;
   subtitle: string;
   skus: string[];
+  guide_pdf?: string;
 };
 
 const all: Product[] = curated.products as Product[];

@@ -1,8 +1,8 @@
 """
 Extract structured catalog data + product images from the A Sós PDF.
 Outputs:
-  design-handoff/data/products.json    — all products with SKU, name, price, brand, page
-  design-handoff/images/page_NN_img_K.png — every embedded image, grouped by page
+  catalog-source/data/products.json    — all products with SKU, name, price, brand, page
+  catalog-source/images/page_NN_img_K.png — every embedded image, grouped by page
 """
 
 import json
@@ -12,7 +12,7 @@ import pathlib
 import pymupdf
 
 PDF = pathlib.Path(r"c:/repo/afrodite-prazer/Catalogo-A-Sos-Sensual-1-Edicao-Com-Preco-2026.pdf")
-ROOT = pathlib.Path(r"c:/repo/afrodite-prazer/design-handoff")
+ROOT = pathlib.Path(r"c:/repo/afrodite-prazer/catalog-source")
 DATA_DIR = ROOT / "data"
 IMG_DIR = ROOT / "images"
 

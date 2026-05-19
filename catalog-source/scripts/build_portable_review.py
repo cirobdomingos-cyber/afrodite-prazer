@@ -11,7 +11,7 @@ import pathlib
 
 from PIL import Image
 
-ROOT = pathlib.Path(r"c:/repo/afrodite-prazer/design-handoff")
+ROOT = pathlib.Path(r"c:/repo/afrodite-prazer/catalog-source")
 DATA = ROOT / "data" / "products.json"
 OUT = ROOT / "mapping_review_portable.html"
 MAX_EDGE = 280

@@ -1,0 +1,226 @@
+/* ============================================================
+   AFRODITE · PRAZER — "As 7 etapas"
+   Experiência de leitura mobile-first (rolagem vertical)
+   Sistema derivado do brand book (Ed. VI · 2026)
+   ============================================================ */
+:root{
+  --aubergine:#391B3D;
+  --aubergine-deep:#2A1230;
+  --vinho:#5C1E27;
+  --ouro:#B8862E;
+  --ouro-luz:#D7A94B;
+  --terracota:#B86A4E;
+  --creme:#F1E7D2;
+  --creme-2:#F6EFDF;
+  --ink:#43342A;
+  --ink-soft:#8A765F;
+  --sage:#7E8B6F;
+
+  --display:'DM Serif Display',Georgia,serif;
+  --voz:'Cormorant Garamond',Georgia,serif;
+  --corpo:'Inter',system-ui,-apple-system,sans-serif;
+
+  --col:560px;       /* largura da coluna de leitura */
+  --pad:clamp(26px,7vw,46px);
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--aubergine-deep);
+  font-family:var(--corpo);color:var(--ink);
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+}
+
+/* barra de progresso de leitura */
+.progress{position:fixed;top:0;left:0;height:2px;width:0;z-index:50;
+  background:linear-gradient(90deg,var(--ouro),var(--ouro-luz));transition:width .12s linear}
+
+/* coluna / "livro" */
+.book{max-width:var(--col);margin:0 auto;background:var(--creme);
+  overflow:hidden;box-shadow:0 0 80px -20px rgba(0,0,0,.8)}
+
+/* ---------- blocos de leitura ---------- */
+section{position:relative}
+.read{padding:clamp(46px,11vw,72px) var(--pad)}
+.read.tight{padding-top:0}
+
+.kicker{font-size:11px;letter-spacing:.34em;text-transform:uppercase;
+  color:var(--terracota);font-weight:600;margin:0 0 22px;display:flex;align-items:center;gap:12px}
+.kicker::before{content:"";width:24px;height:1px;background:var(--terracota);opacity:.65}
+
+h2.title{font-family:var(--display);font-weight:400;line-height:1.06;
+  font-size:clamp(30px,8.5vw,40px);color:var(--aubergine);margin:0 0 24px;letter-spacing:-.01em}
+h2.title .ac{color:var(--terracota);font-style:italic}
+
+.lede{font-family:var(--voz);font-style:italic;font-weight:500;
+  font-size:clamp(20px,5.6vw,24px);line-height:1.42;color:var(--aubergine);opacity:.9;margin:0 0 26px}
+
+p.body{font-size:clamp(16px,4.4vw,17.5px);line-height:1.78;color:var(--ink);
+  margin:0 0 18px;text-wrap:pretty}
+.body b,.body strong{color:var(--aubergine);font-weight:600}
+
+.sub{font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--terracota);
+  font-weight:600;margin:34px 0 14px;display:flex;align-items:center;gap:12px}
+.sub::before{content:"";width:18px;height:1px;background:var(--terracota);opacity:.6}
+
+/* exercícios */
+.exer{margin:20px 0}
+.exer h4{font-family:var(--voz);font-style:italic;font-weight:600;font-size:clamp(19px,5vw,21px);
+  color:var(--aubergine);margin:0 0 5px}
+.exer p{font-size:clamp(15.5px,4.3vw,17px);line-height:1.72;margin:0;color:var(--ink)}
+
+/* listas */
+ul.practice{list-style:none;margin:8px 0;padding:0}
+ul.practice li{position:relative;padding:11px 0 11px 28px;font-size:clamp(15.5px,4.3vw,17px);
+  line-height:1.55;color:var(--ink);border-bottom:1px solid rgba(67,52,42,.1)}
+ul.practice li:last-child{border-bottom:0}
+ul.practice li::before{content:"";position:absolute;left:0;top:19px;width:14px;height:1px;background:var(--ouro)}
+
+/* pull / citação dentro da leitura */
+.pull{font-family:var(--voz);font-style:italic;font-size:clamp(21px,5.6vw,25px);line-height:1.46;
+  color:var(--vinho);border-left:2px solid var(--ouro);padding:4px 0 4px 22px;margin:26px 0}
+
+/* ---------- OBSERVAÇÃO HUMANA (linha isolada) ---------- */
+.obs{padding:clamp(40px,10vw,60px) var(--pad);text-align:center}
+.obs p{font-family:var(--voz);font-style:italic;font-size:clamp(23px,6.4vw,30px);line-height:1.34;
+  color:var(--aubergine);margin:18px 0 0;max-width:18ch;margin-left:auto;margin-right:auto}
+
+/* onda dourada (traço da marca) */
+.wave{display:block;margin:0 auto;color:var(--ouro)}
+.wave path{fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round}
+
+/* ---------- PERGUNTA DE REFLEXÃO (imersiva) ---------- */
+.reflect{background:var(--aubergine);color:var(--creme);text-align:center;
+  padding:clamp(72px,18vw,110px) var(--pad);display:flex;flex-direction:column;align-items:center;gap:26px}
+.reflect .lab{font-size:10.5px;letter-spacing:.38em;text-transform:uppercase;color:var(--ouro);font-weight:600}
+.reflect p{font-family:var(--voz);font-style:italic;font-size:clamp(26px,7.4vw,36px);line-height:1.28;
+  color:var(--creme);margin:0;max-width:16ch}
+.reflect .wave{color:var(--ouro-luz)}
+
+/* ---------- PAUSA AFRODITE (imersiva) ---------- */
+.pausa{background:var(--aubergine);color:var(--creme);text-align:center;
+  padding:clamp(74px,18vw,118px) var(--pad);display:flex;flex-direction:column;align-items:center;gap:24px;
+  position:relative}
+.pausa.vinho{background:var(--vinho)}
+.pausa .lab{font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--ouro);font-weight:600;
+  display:flex;align-items:center;gap:10px}
+.pausa .num{font-family:var(--voz);font-style:italic;letter-spacing:0;text-transform:none;font-size:15px;color:var(--ouro-luz)}
+.pausa p{font-family:var(--voz);font-style:italic;font-size:clamp(22px,6vw,28px);line-height:1.5;
+  color:var(--creme);margin:0;max-width:22ch}
+.pausa .wave{color:var(--ouro-luz)}
+
+/* ---------- DIVISÓRIA full-bleed (foto) ---------- */
+.divider{position:relative;min-height:92vh;display:flex;align-items:flex-end;color:var(--creme);overflow:hidden}
+.divider img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.divider::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(42,18,48,.28) 0%,rgba(42,18,48,.2) 26%,rgba(42,18,48,.7) 60%,rgba(42,18,48,.96) 100%)}
+.divider .cap{position:relative;z-index:1;padding:84px var(--pad) clamp(48px,12vw,72px);
+  background:linear-gradient(180deg,transparent,rgba(34,14,38,.55) 70%)}
+.divider .step{font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--ouro-luz);
+  margin-bottom:18px;display:flex;align-items:center;gap:10px}
+.divider .q{font-family:var(--voz);font-style:italic;font-size:clamp(28px,7.8vw,40px);line-height:1.16;
+  margin:0;max-width:14ch;text-shadow:0 2px 30px rgba(0,0,0,.55)}
+.divider .step{text-shadow:0 1px 16px rgba(0,0,0,.6)}
+.divider .q .ac{color:#E7B563}
+
+/* ---------- PLACA / respiro com foto + citação ---------- */
+.plate{position:relative;min-height:90vh;display:flex;align-items:flex-end;color:var(--creme);overflow:hidden}
+.plate img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.plate::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(42,18,48,.22) 0%,rgba(42,18,48,.2) 28%,rgba(42,18,48,.72) 62%,rgba(42,18,48,.96) 100%)}
+.plate .cap{position:relative;z-index:1;padding:84px var(--pad) clamp(46px,12vw,70px);
+  background:linear-gradient(180deg,transparent,rgba(34,14,38,.55) 70%)}
+.plate .cap p{font-family:var(--voz);font-style:italic;font-size:clamp(26px,7vw,36px);line-height:1.24;
+  margin:0;max-width:15ch;text-shadow:0 2px 30px rgba(0,0,0,.55)}
+.plate .cap p .ac{color:#E7B563}
+
+/* ---------- FERRAMENTA AFRODITE (card na leitura) ---------- */
+.tool{margin:34px 0;padding:30px var(--pad);background:var(--creme-2);
+  border-top:1px solid rgba(184,134,46,.45);border-bottom:1px solid rgba(184,134,46,.45);
+  margin-left:calc(-1*var(--pad));margin-right:calc(-1*var(--pad))}
+.tool .lab{font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--ouro);font-weight:600;
+  display:flex;align-items:center;gap:10px;margin:14px 0 12px}
+.tool p{font-size:clamp(15px,4.2vw,16.5px);line-height:1.66;color:var(--ink);margin:0 0 16px}
+.tool .slot{display:inline-flex;align-items:center;gap:9px;font-family:var(--corpo);font-size:11px;
+  letter-spacing:.18em;text-transform:uppercase;color:var(--ink-soft);
+  border:1px dashed rgba(184,134,46,.6);border-radius:40px;padding:9px 18px}
+.tool .slot::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--ouro);opacity:.7}
+.tool .wave{margin:0}
+
+/* ---------- número de etapa (marca d'água) ---------- */
+.stepwm{position:absolute;font-family:var(--display);font-size:clamp(160px,42vw,230px);line-height:1;
+  color:var(--ouro);opacity:.09;top:-8px;right:-6px;pointer-events:none;user-select:none}
+
+/* ---------- CAPA ---------- */
+.cover{background:var(--aubergine);color:var(--creme);min-height:100vh;
+  display:flex;flex-direction:column;align-items:center;text-align:center;padding:clamp(40px,9vw,60px) var(--pad)}
+.cover .top{font-size:11px;letter-spacing:.42em;text-transform:uppercase;color:var(--ouro);margin-bottom:clamp(28px,7vw,44px)}
+.cover .arch{width:min(70%,260px);aspect-ratio:3/3.7;border-radius:130px 130px 8px 8px;overflow:hidden;
+  border:1px solid rgba(184,134,46,.5);box-shadow:0 30px 60px -30px #000}
+.cover .arch img{width:100%;height:100%;object-fit:cover;object-position:50% 30%}
+.cover h1{font-family:var(--display);font-weight:400;font-size:clamp(34px,9.6vw,46px);line-height:1.05;
+  color:var(--creme);margin:clamp(30px,7vw,42px) 0 4px;max-width:13ch}
+.cover h1 .ac{color:var(--terracota);font-style:italic}
+.cover .vii{font-family:var(--voz);font-style:italic;font-size:clamp(48px,13vw,64px);color:var(--ouro);line-height:.9;margin:6px 0 18px}
+.cover .sub{font-family:var(--voz);font-style:italic;font-size:clamp(19px,5.2vw,22px);line-height:1.44;
+  color:var(--creme);opacity:.84;max-width:24ch}
+.cover .mark{margin-top:auto;padding-top:36px;display:flex;flex-direction:column;align-items:center;gap:11px}
+.cover .mark .name{font-size:11px;letter-spacing:.4em;text-transform:uppercase;color:var(--ouro)}
+.cover .scrollcue{font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--creme);opacity:.5;
+  display:flex;flex-direction:column;align-items:center;gap:7px}
+.cover .scrollcue::after{content:"";width:1px;height:26px;background:linear-gradient(var(--ouro),transparent)}
+
+.shell path{stroke:var(--ouro)}
+
+/* ---------- CHECKLIST ---------- */
+.clist{margin-top:8px}
+.clist .it{display:grid;grid-template-columns:34px 1fr;gap:0 16px;align-items:baseline;
+  padding:18px 0;border-bottom:1px solid rgba(67,52,42,.16)}
+.clist .n{font-family:var(--voz);font-style:italic;font-size:22px;color:var(--ouro)}
+.clist .t{font-size:clamp(15.5px,4.3vw,17px);color:var(--ink)}
+.clist .t small{display:block;font-family:var(--voz);font-style:italic;color:var(--ink-soft);font-size:13.5px;margin-top:2px}
+.clist .t .line{display:block;margin-top:10px;height:1px;background:repeating-linear-gradient(90deg,rgba(184,134,46,.5) 0 8px,transparent 8px 14px)}
+
+/* ---------- 21 PERGUNTAS ---------- */
+.qgroup{margin-bottom:26px}
+.qgroup h5{font-family:var(--voz);font-style:italic;font-size:clamp(19px,5vw,21px);color:var(--terracota);
+  margin:0 0 8px;display:flex;align-items:center;gap:12px}
+.qgroup h5::after{content:"";flex:1;height:1px;background:var(--terracota);opacity:.32}
+.qgroup ol{list-style:none;margin:0;padding:0}
+.qgroup li{position:relative;padding:8px 0 8px 30px;font-size:clamp(15px,4.2vw,16.5px);line-height:1.5;color:var(--ink)}
+.qgroup li .qn{position:absolute;left:0;top:8px;font-family:var(--voz);font-style:italic;font-size:16px;color:var(--ouro)}
+
+/* ---------- ENCERRAMENTO ---------- */
+.closing{background:var(--aubergine);color:var(--creme);text-align:center;
+  padding:clamp(72px,16vw,104px) var(--pad);display:flex;flex-direction:column;align-items:center}
+.closing .kicker{color:var(--ouro);justify-content:center}
+.closing .kicker::before{background:var(--ouro);opacity:.7}
+.closing h2{font-family:var(--display);font-weight:400;font-size:clamp(32px,9vw,44px);line-height:1.06;
+  color:var(--creme);margin:0 0 6px}
+.closing h2 .ac{color:var(--terracota);font-style:italic}
+.closing .rule{width:50px;height:1px;background:var(--ouro);margin:18px 0 34px}
+.closing p{font-size:clamp(16px,4.4vw,17.5px);line-height:1.8;margin:0 0 16px;max-width:30ch;color:var(--creme);opacity:.9}
+.closing .em{font-family:var(--voz);font-style:italic;font-size:clamp(22px,6vw,27px);color:var(--ouro-luz);margin:14px 0;opacity:1}
+.closing .sig{font-family:var(--voz);font-style:italic;font-size:clamp(40px,11vw,54px);color:var(--terracota);margin-top:20px}
+
+/* ---------- PRÓXIMOS PASSOS ---------- */
+.next .step3{margin:24px 0}
+.next .step3 h4{font-family:var(--voz);font-style:italic;font-size:clamp(20px,5.4vw,23px);color:var(--aubergine);margin:0 0 4px}
+.next .step3 p{font-size:clamp(15.5px,4.3vw,16.5px);line-height:1.66;margin:0;color:var(--ink)}
+.next .step3 .ig{color:var(--ouro);font-weight:600}
+
+/* ---------- CONTRACAPA ---------- */
+.back{background:var(--vinho);color:var(--creme);text-align:center;min-height:88vh;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;padding:clamp(60px,14vw,90px) var(--pad);position:relative}
+.back .top{position:absolute;top:clamp(40px,9vw,60px);left:0;right:0;font-size:11px;letter-spacing:.4em;
+  text-transform:uppercase;color:var(--ouro)}
+.back .q{font-family:var(--voz);font-style:italic;font-size:clamp(24px,6.6vw,31px);line-height:1.42;color:var(--creme);max-width:19ch;margin:0 auto}
+.back .q .ac{color:#E7B563}
+.back .foot{position:absolute;bottom:clamp(44px,10vw,64px);left:0;right:0;display:flex;flex-direction:column;align-items:center;gap:9px}
+.back .foot .name{font-size:12px;letter-spacing:.4em;text-transform:uppercase;color:var(--ouro)}
+.back .foot .ig{font-size:10px;letter-spacing:.26em;text-transform:uppercase;color:var(--creme);opacity:.6}
+
+@media (min-width:600px){
+  .book{margin-top:36px;margin-bottom:36px;border-radius:3px}
+}

@@ -1,0 +1,231 @@
+{
+  "success": [
+    {
+      "sku": "DS009",
+      "images": 3
+    }
+  ],
+  "failed": [
+    {
+      "sku": "DS005",
+      "error": "503 Server Error: Service Unavailable for url: https://meuhotlink.com.br/AlkoNfZku"
+    },
+    {
+      "sku": "DS018",
+      "error": "503 Server Error: Service Unavailable for url: https://meuhotlink.com.br/AlkTVRDTI"
+    },
+    {
+      "sku": "DS002",
+      "error": "503 Server Error: Service Unavailable for url: https://meuhotlink.com.br/AlkoNonSn"
+    },
+    {
+      "sku": "DS004",
+      "error": "503 Server Error: Service Unavailable for url: https://meuhotlink.com.br/AlkXVZjBL"
+    },
+    {
+      "sku": "DS001",
+      "error": "503 Server Error: Service Unavailable for url: https://meuhotlink.com.br/AlkLchlnP"
+    },
+    {
+      "sku": "DS006",
+      "error": "503 Server Error: Service Unavailable for url: https://meuhotlink.com.br/AlkymWYCM"
+    },
+    {
+      "sku": "DS007",
+      "error": "503 Server Error: Service Unavailable for url: https://meuhotlink.com.br/AlklRDZcO"
+    },
+    {
+      "sku": "DS008",
+      "error": "503 Server Error: Service Unavailable for url: https://meuhotlink.com.br/AlksXmwUg"
+    },
+    {
+      "sku": "DS012",
+      "error": "503 Server Error: Service Unavailable for url: https://meuhotlink.com.br/AlkF_H_bT"
+    },
+    {
+      "sku": "DS020",
+      "error": "503 Server Error: Service Unavailable for url: https://meuhotlink.com.br/AlkjdecZY"
+    },
+    {
+      "sku": "DS003",
+      "error": "503 Server Error: Service Unavailable for url: https://meuhotlink.com.br/AlkVyfnqi"
+    },
+    {
+      "sku": "DS011",
+      "error": "503 Server Error: Service Unavailable for url: https://meuhotlink.com.br/AlkhBuZtB"
+    },
+    {
+      "sku": "LV017",
+      "error": "503 Server Error: Service Unavailable for url: https://meuhotlink.com.br/AlkQE-Jem"
+    },
+    {
+      "sku": "LV019",
+      "error": "503 Server Error: Service Unavailable for url: https://meuhotlink.com.br/AlkiniHEV"
+    },
+    {
+      "sku": "LV020",
+      "error": "503 Server Error: Service Unavailable for url: https://meuhotlink.com.br/AlkvaJQTk"
+    },
+    {
+      "sku": "LV018",
+      "error": "503 Server Error: Service Unavailable for url: https://meuhotlink.com.br/AlkJ-AOOQ"
+    },
+    {
+      "sku": "LV021",
+      "error": "503 Server Error: Service Unavailable for url: https://meuhotlink.com.br/AlkrlVSnq"
+    },
+    {
+      "sku": "LV022",
+      "error": "503 Server Error: Service Unavailable for url: https://meuhotlink.com.br/AlkUSYXxA"
+    },
+    {
+      "sku": "LV023",
+      "error": "503 Server Error: Service Unavailable for url: https://meuhotlink.com.br/AlkCXTXYZ"
+    },
+    {
+      "sku": "LV007",
+      "error": "503 Server Error: Service Unavailable for url: https://meuhotlink.com.br/AlkUsqEdS"
+    },
+    {
+      "sku": "LV008",
+      "error": "503 Server Error: Service Unavailable for url: https://meuhotlink.com.br/AlkRTrgNq"
+    },
+    {
+      "sku": "LV009",
+      "error": "503 Server Error: Service Unavailable for url: https://meuhotlink.com.br/AlkGYEOgB"
+    },
+    {
+      "sku": "LV001",
+      "error": "503 Server Error: Service Unavailable for url: https://meuhotlink.com.br/AlkVNMwOG"
+    },
+    {
+      "sku": "LV002",
+      "error": "503 Server Error: Service Unavailable for url: https://meuhotlink.com.br/AlknAAANe"
+    },
+    {
+      "sku": "LV005",
+      "error": "503 Server Error: Service Unavailable for url: https://meuhotlink.com.br/AlkFQWzoZ"
+    },
+    {
+      "sku": "LV006",
+      "error": "503 Server Error: Service Unavailable for url: https://meuhotlink.com.br/AlkTbCdPP"
+    },
+    {
+      "sku": "LV011",
+      "error": "503 Server Error: Service Unavailable for url: https://meuhotlink.com.br/AlkNxNAxi"
+    },
+    {
+      "sku": "LV010",
+      "error": "503 Server Error: Service Unavailable for url: https://meuhotlink.com.br/AlkQoLnaK"
+    },
+    {
+      "sku": "LV003",
+      "error": "503 Server Error: Service Unavailable for url: https://meuhotlink.com.br/AlkVTSiTO"
+    },
+    {
+      "sku": "LV004",
+      "error": "503 Server Error: Service Unavailable for url: https://meuhotlink.com.br/AlkmgiXyz"
+    },
+    {
+      "sku": "AS359",
+      "error": "503 Server Error: Service Unavailable for url: https://meuhotlink.com.br/AlkbnuN-R"
+    },
+    {
+      "sku": "AS360",
+      "error": "503 Server Error: Service Unavailable for url: https://meuhotlink.com.br/AlkwsgdKi"
+    },
+    {
+      "sku": "IA410",
+      "error": "503 Server Error: Service Unavailable for url: https://meuhotlink.com.br/AlkxVizpZ"
+    },
+    {
+      "sku": "IA411",
+      "error": "503 Server Error: Service Unavailable for url: https://meuhotlink.com.br/AlkaTxbuw"
+    },
+    {
+      "sku": "PC051",
+      "error": "503 Server Error: Service Unavailable for url: https://meuhotlink.com.br/AlktcAIEh"
+    },
+    {
+      "sku": "IA453R",
+      "error": "503 Server Error: Service Unavailable for url: https://meuhotlink.com.br/AlkmbhLEd"
+    },
+    {
+      "sku": "IA453L",
+      "error": "503 Server Error: Service Unavailable for url: https://meuhotlink.com.br/AlkrYkWaK"
+    },
+    {
+      "sku": "IA420AZ",
+      "error": "503 Server Error: Service Unavailable for url: https://meuhotlink.com.br/AlkLqcTLA"
+    },
+    {
+      "sku": "IA420VE",
+      "error": "503 Server Error: Service Unavailable for url: https://meuhotlink.com.br/AlkZnFGUr"
+    },
+    {
+      "sku": "IA450S",
+      "error": "503 Server Error: Service Unavailable for url: https://meuhotlink.com.br/AlkQZCGKG"
+    },
+    {
+      "sku": "IA450V",
+      "error": "503 Server Error: Service Unavailable for url: https://meuhotlink.com.br/AlkvdhkAj"
+    },
+    {
+      "sku": "IA406",
+      "error": "503 Server Error: Service Unavailable for url: https://meuhotlink.com.br/AlkfPKIlb"
+    },
+    {
+      "sku": "IA363",
+      "error": "503 Server Error: Service Unavailable for url: https://meuhotlink.com.br/AlkyX_Xgt"
+    },
+    {
+      "sku": "IA362",
+      "error": "503 Server Error: Service Unavailable for url: https://meuhotlink.com.br/AlktoeDfo"
+    },
+    {
+      "sku": "IA360",
+      "error": "503 Server Error: Service Unavailable for url: https://meuhotlink.com.br/AlkzdKUcK"
+    },
+    {
+      "sku": "IA407",
+      "error": "503 Server Error: Service Unavailable for url: https://meuhotlink.com.br/AlkQHmgXv"
+    },
+    {
+      "sku": "AS341",
+      "error": "503 Server Error: Service Unavailable for url: https://meuhotlink.com.br/AlkBGJduJ"
+    },
+    {
+      "sku": "IA305",
+      "error": "503 Server Error: Service Unavailable for url: https://meuhotlink.com.br/AlkHAnZDp"
+    },
+    {
+      "sku": "KA218",
+      "error": "503 Server Error: Service Unavailable for url: https://meuhotlink.com.br/AlktTEDQe"
+    },
+    {
+      "sku": "KA344",
+      "error": "503 Server Error: Service Unavailable for url: https://meuhotlink.com.br/Alk-BUPsQ"
+    },
+    {
+      "sku": "KA216",
+      "error": "503 Server Error: Service Unavailable for url: https://meuhotlink.com.br/AlkNhTnet"
+    },
+    {
+      "sku": "KA217",
+      "error": "503 Server Error: Service Unavailable for url: https://meuhotlink.com.br/AlkfWKSHJ"
+    },
+    {
+      "sku": "KA215",
+      "error": "503 Server Error: Service Unavailable for url: https://meuhotlink.com.br/AlkTRziyh"
+    },
+    {
+      "sku": "LV016",
+      "error": "503 Server Error: Service Unavailable for url: https://meuhotlink.com.br/AlkSKpVDe"
+    },
+    {
+      "sku": "LV015",
+      "error": "503 Server Error: Service Unavailable for url: https://meuhotlink.com.br/AlkJMLflv"
+    }
+  ],
+  "no_images": []
+}

@@ -1,0 +1,110 @@
+.section {
+  padding: clamp(80px, 12vw, 140px) 0;
+  scroll-margin-top: 76px;
+}
+.section + .section { padding-top: 0; }
+
+.head {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 36px;
+  align-items: baseline;
+  margin-bottom: 64px;
+  padding-bottom: 36px;
+  border-bottom: 0.5px solid color-mix(in srgb, var(--tinta) 18%, transparent);
+}
+
+.num {
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 28px;
+  color: var(--ouro);
+  line-height: 1;
+}
+
+.title {
+  font-family: var(--serif);
+  font-weight: 300;
+  font-size: clamp(32px, 4.5vw, 52px);
+  line-height: 1.05;
+  margin: 0 0 14px;
+  color: var(--tinta);
+  letter-spacing: -0.005em;
+}
+
+.subtitle {
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(17px, 1.6vw, 21px);
+  line-height: 1.55;
+  margin: 0;
+  color: color-mix(in srgb, var(--tinta) 70%, transparent);
+  max-width: 56ch;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+}
+
+@media (max-width: 1080px) {
+  .grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 860px) {
+  .grid { grid-template-columns: repeat(2, 1fr); gap: 22px; }
+}
+@media (max-width: 520px) {
+  .grid { grid-template-columns: 1fr; }
+  .head { grid-template-columns: 1fr; gap: 12px; }
+}
+
+.guide {
+  margin-top: 56px;
+  display: flex;
+  justify-content: center;
+}
+
+.guideLink {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 28px 56px;
+  border: 0.5px solid color-mix(in srgb, var(--tinta) 28%, transparent);
+  background: color-mix(in srgb, var(--creme-2) 80%, var(--osso));
+  transition: border-color 0.25s ease, background 0.25s ease, transform 0.25s ease;
+  text-align: center;
+}
+.guideLink:hover {
+  border-color: var(--ouro);
+  background: var(--creme-2);
+  transform: translateY(-1px);
+}
+
+.guideEyebrow {
+  font-family: var(--sans);
+  font-weight: 500;
+  font-size: 10.5px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--terracota);
+}
+
+.guideTitle {
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 22px;
+  color: var(--tinta);
+  line-height: 1.2;
+}
+
+.guideMeta {
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--tinta) 55%, transparent);
+}

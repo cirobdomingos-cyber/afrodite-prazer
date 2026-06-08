@@ -1,0 +1,138 @@
+.section {
+  padding: clamp(96px, 14vw, 160px) 0;
+  min-height: calc(100vh - 80px);
+}
+
+.layout {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(40px, 6vw, 96px);
+  align-items: center;
+}
+
+@media (max-width: 860px) {
+  .layout { grid-template-columns: 1fr; gap: 72px; }
+}
+
+/* ---- Mockup ---- */
+.mockupCol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.mockup {
+  position: relative;
+  width: 100%;
+  max-width: 360px;
+  aspect-ratio: 3 / 4;
+  perspective: 1200px;
+}
+
+.mockupCover {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(155deg, var(--creme) 0%, var(--osso) 100%);
+  color: var(--tinta);
+  padding: clamp(28px, 6%, 44px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow:
+    0 30px 60px -20px rgba(0, 0, 0, 0.55),
+    -8px 0 0 -2px rgba(184, 134, 46, 0.35);
+  transform: rotateY(-6deg);
+  border-left: 0.5px solid rgba(26, 20, 16, 0.18);
+}
+
+.mockupEyebrow {
+  font-family: var(--sans);
+  font-weight: 500;
+  font-size: 10.5px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--terracota);
+}
+
+.mockupTitle {
+  font-family: var(--serif);
+  font-weight: 300;
+  font-size: clamp(28px, 4vw, 40px);
+  line-height: 1.05;
+  margin: 0;
+  letter-spacing: -0.005em;
+}
+.mockupTitle em {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--ouro);
+}
+
+.mockupBrand {
+  font-family: var(--serif);
+  font-weight: 300;
+  font-size: 16px;
+  color: color-mix(in srgb, var(--tinta) 70%, transparent);
+}
+.mockupBrand em { font-style: italic; font-weight: 400; color: var(--ouro); }
+
+.mockupCaption {
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  opacity: 0.55;
+  margin: 0;
+  text-align: center;
+}
+
+/* ---- Form column ---- */
+.formCol { display: flex; flex-direction: column; gap: 20px; }
+
+.headline {
+  font-family: var(--serif);
+  font-weight: 300;
+  font-size: clamp(36px, 4.8vw, 56px);
+  line-height: 1.05;
+  margin: 8px 0 0;
+  letter-spacing: -0.005em;
+}
+.headline em { font-style: italic; font-weight: 400; color: var(--ouro); }
+
+.lead {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: clamp(18px, 1.8vw, 22px);
+  line-height: 1.55;
+  margin: 0;
+  color: color-mix(in srgb, var(--osso) 85%, transparent);
+  max-width: 38ch;
+}
+
+.bullets {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.bullets li {
+  position: relative;
+  padding-left: 22px;
+  font-size: 14.5px;
+  line-height: 1.65;
+  opacity: 0.85;
+}
+.bullets li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.7em;
+  width: 10px;
+  height: 1px;
+  background: var(--ouro);
+}

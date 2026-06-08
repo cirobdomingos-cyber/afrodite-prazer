@@ -1,0 +1,455 @@
+{
+  "_README": "Curadoria completa — 47 SKUs em 4 seções. Substitua o campo 'editorial' por suas próprias 2-3 linhas. O 'affiliate_url' precisa ser o link de afiliada A Sós com UTM rastreável (cookie 30 dias). Imagens vivem em /public/products/{SKU}_hero.png.",
+  "sections": [
+    {
+      "id": "por-onde-comecar",
+      "title": "Por onde começar",
+      "subtitle": "Cuidado íntimo de base — a rotina que dá conforto, hidrata, protege. Sem mistério, sem promessa exagerada.",
+      "skus": ["DS006","DS009","DS005","DS018","DS002","DS004","DS001","DS007","DS008","DS012","DS020","DS003"],
+      "guide_pdf": "/guias/dermosex-passo-a-passo.pdf"
+    },
+    {
+      "id": "para-os-sentidos",
+      "title": "Para os sentidos",
+      "subtitle": "Óleos beijáveis, géis, mousses — convites discretos ao toque, ao gosto, à brincadeira. Sozinha ou a dois.",
+      "skus": ["LV017","LV019","LV020","LV018","LV021","LV022","LV023","LV007","LV008","LV009","LV001","LV002","LV005","LV006","LV011","LV010","LV003","LV004"]
+    },
+    {
+      "id": "conhecer-pelo-toque",
+      "title": "Conhecer pelo toque",
+      "subtitle": "Cápsulas, dedeiras, estimuladores — pequenos, discretos, fáceis de entender. Por onde começar a explorar.",
+      "skus": ["IA406","IA363","IA362","IA360","IA407","IA453R","IA453L","IA420AZ","IA420VE","IA450S","IA450V"]
+    },
+    {
+      "id": "novas-descobertas",
+      "title": "Novas descobertas",
+      "subtitle": "Coisas que você talvez não soubesse que existiam — disco menstrual, toalha compacta, lubrificante diário, gel em gotas. Pequenas adições, grande efeito.",
+      "skus": ["AS359","AS360","IA410","IA411","PC051","AS341"]
+    }
+  ],
+  "products": [
+    {
+      "sku": "DS006",
+      "name": "Sabonete Líquido Íntimo para Região Anal Dermosex — 200ml",
+      "brand": "Dermosex",
+      "price_brl": 56.80,
+      "image": "/products/DS006_hero.png",
+      "editorial": "Para quem cuida de toda a região íntima com atenção. Formulado especificamente para a mucosa anal — mais sensível, precisa de um pH diferente.",
+      "affiliate_url": "https://www.asossensual.com.br/produto/DS006?utm_source=afroditeprazer&utm_medium=site&utm_campaign=curadoria"
+    },
+    {
+      "sku": "DS009",
+      "name": "Sabonete Íntimo em Barra Hidratante Dermosex — 90g",
+      "brand": "Dermosex",
+      "price_brl": 29.80,
+      "image": "/products/DS009_hero.png",
+      "editorial": "Formato sólido para quem quer menos embalagem. Hidrata enquanto limpa, compacto o suficiente para a mala de viagem.",
+      "affiliate_url": "https://www.asossensual.com.br/produto/DS009?utm_source=afroditeprazer&utm_medium=site&utm_campaign=curadoria"
+    },
+    {
+      "sku": "DS005",
+      "name": "Espuma Higienizadora Íntima Dermosex — 50ml",
+      "brand": "Dermosex",
+      "price_brl": 75.80,
+      "image": "/products/DS005_hero.png",
+      "editorial": "Formato mousse, aplicação fácil. Para o dia a dia que precisa de praticidade sem abrir mão do cuidado específico.",
+      "affiliate_url": "https://www.asossensual.com.br/produto/DS005?utm_source=afroditeprazer&utm_medium=site&utm_campaign=curadoria"
+    },
+    {
+      "sku": "DS018",
+      "name": "Sabonete Íntimo Hidratante Feminino Dermosex — 210ml",
+      "brand": "Dermosex",
+      "price_brl": 69.80,
+      "image": "/products/DS018_hero.png",
+      "editorial": "O básico bem-feito. Espuma leve, ação hidratante real — para a rotina diária que merece mais do que sabonete comum.",
+      "affiliate_url": "https://www.asossensual.com.br/produto/DS018?utm_source=afroditeprazer&utm_medium=site&utm_campaign=curadoria"
+    },
+    {
+      "sku": "DS002",
+      "name": "Esfoliante Hidratante para Região Pélvica Dermosex — 120ml",
+      "brand": "Dermosex",
+      "price_brl": 79.80,
+      "image": "/products/DS002_hero.png",
+      "editorial": "Uma vez por semana, no banho. Suavidade na esfoliação e hidratação na sequência — para textura, viço, pele renovada.",
+      "affiliate_url": "https://www.asossensual.com.br/produto/DS002?utm_source=afroditeprazer&utm_medium=site&utm_campaign=curadoria"
+    },
+    {
+      "sku": "DS004",
+      "name": "Creme Clareador para Virilha Dermosex — 60g",
+      "brand": "Dermosex",
+      "price_brl": 65.80,
+      "image": "/products/DS004_hero.png",
+      "editorial": "Clareamento gradual, sem apressar o processo. Uso noturno, resultado em semanas — aceitar o ritmo já é parte do cuidado.",
+      "affiliate_url": "https://www.asossensual.com.br/produto/DS004?utm_source=afroditeprazer&utm_medium=site&utm_campaign=curadoria"
+    },
+    {
+      "sku": "DS001",
+      "name": "Creme Hidratante para Região Pélvica Dermosex — 60g",
+      "brand": "Dermosex",
+      "price_brl": 69.80,
+      "image": "/products/DS001_hero.png",
+      "editorial": "Hidratação localizada, leve, sem brilho. Pode entrar na rotina de pele como um sérum facial — uso diário, gesto curto.",
+      "affiliate_url": "https://www.asossensual.com.br/produto/DS001?utm_source=afroditeprazer&utm_medium=site&utm_campaign=curadoria"
+    },
+    {
+      "sku": "DS007",
+      "name": "Gel Lubrificante e Hidratante Pélvico Dermosex — 220ml",
+      "brand": "Dermosex",
+      "price_brl": 74.80,
+      "image": "/products/DS007_hero.png",
+      "editorial": "Lubrificante para uso diário — não só para o sexo, mas para o conforto de existir no próprio corpo. Sem perfume, base aquosa.",
+      "affiliate_url": "https://www.asossensual.com.br/produto/DS007?utm_source=afroditeprazer&utm_medium=site&utm_campaign=curadoria"
+    },
+    {
+      "sku": "DS008",
+      "name": "Desodorante Íntimo Feminino Dermosex — 100ml/60g",
+      "brand": "Dermosex",
+      "price_brl": 64.80,
+      "image": "/products/DS008_hero.png",
+      "editorial": "Sensação limpa, sem cobrir o natural. Para o dia longo, o movimento, o calor — presença discreta.",
+      "affiliate_url": "https://www.asossensual.com.br/produto/DS008?utm_source=afroditeprazer&utm_medium=site&utm_campaign=curadoria"
+    },
+    {
+      "sku": "DS012",
+      "name": "Óleo Mineral para Massagem Sensual Dermosex — 145ml",
+      "brand": "Dermosex",
+      "price_brl": 59.80,
+      "image": "/products/DS012_hero.png",
+      "editorial": "Óleo leve para massagem sensual. Escorrega bem, absorve sem grudar — para rituais a dois ou para você mesma.",
+      "affiliate_url": "https://www.asossensual.com.br/produto/DS012?utm_source=afroditeprazer&utm_medium=site&utm_campaign=curadoria"
+    },
+    {
+      "sku": "DS020",
+      "name": "Talco Íntimo Dermosex — 100g",
+      "brand": "Dermosex",
+      "price_brl": 56.80,
+      "image": "/products/DS020_hero.png",
+      "editorial": "Para o atrito, o calor, o dia longo. Sem perfume forte, sem excesso — conforto que se coloca e se esquece.",
+      "affiliate_url": "https://www.asossensual.com.br/produto/DS020?utm_source=afroditeprazer&utm_medium=site&utm_campaign=curadoria"
+    },
+    {
+      "sku": "DS003",
+      "name": "Tônico Purificante para Região Pélvica Dermosex — 120ml",
+      "brand": "Dermosex",
+      "price_brl": 69.80,
+      "image": "/products/DS003_hero.png",
+      "editorial": "Borrife após o banho, deixe secar. Dez segundos de gesto, dias de diferença.",
+      "affiliate_url": "https://www.asossensual.com.br/produto/DS003?utm_source=afroditeprazer&utm_medium=site&utm_campaign=curadoria"
+    },
+    {
+      "sku": "LV017",
+      "name": "Óleo Beijável Olove Sentidos Chiclete — 30ml",
+      "brand": "Olove",
+      "price_brl": 24.00,
+      "image": "/products/LV017_hero.png",
+      "editorial": "Doce mas não enjoativo. Pequeno o suficiente pra caber na nécessaire — discreto o suficiente pra ser surpresa.",
+      "affiliate_url": "https://www.asossensual.com.br/produto/LV017?utm_source=afroditeprazer&utm_medium=site&utm_campaign=curadoria"
+    },
+    {
+      "sku": "LV019",
+      "name": "Óleo Beijável Olove Sentidos Morango — 30ml",
+      "brand": "Olove",
+      "price_brl": 24.00,
+      "image": "/products/LV019_hero.png",
+      "editorial": "Leve, beijável, frutado. Intercambiável com o chiclete — depende do humor do dia.",
+      "affiliate_url": "https://www.asossensual.com.br/produto/LV019?utm_source=afroditeprazer&utm_medium=site&utm_campaign=curadoria"
+    },
+    {
+      "sku": "LV020",
+      "name": "Óleo Beijável Olove Sentidos Algodão Doce — 30ml",
+      "brand": "Olove",
+      "price_brl": 24.00,
+      "image": "/products/LV020_hero.png",
+      "editorial": "Doce de um jeito suave, quase tímido. Para quem quer algo presente sem ser intenso.",
+      "affiliate_url": "https://www.asossensual.com.br/produto/LV020?utm_source=afroditeprazer&utm_medium=site&utm_campaign=curadoria"
+    },
+    {
+      "sku": "LV018",
+      "name": "Óleo Beijável Olove Sentidos Menta Ice — 30ml",
+      "brand": "Olove",
+      "price_brl": 24.00,
+      "image": "/products/LV018_hero.png",
+      "editorial": "O toque refrescante da linha. Sensação mentolada que surpreende — começar com pouco é a regra.",
+      "affiliate_url": "https://www.asossensual.com.br/produto/LV018?utm_source=afroditeprazer&utm_medium=site&utm_campaign=curadoria"
+    },
+    {
+      "sku": "LV021",
+      "name": "Óleo Beijável Olove Sentidos Mel — 30ml",
+      "brand": "Olove",
+      "price_brl": 24.00,
+      "image": "/products/LV021_hero.png",
+      "editorial": "O mais clássico da linha. Sabor natural, quase não precisa de apresentação — combina com tudo.",
+      "affiliate_url": "https://www.asossensual.com.br/produto/LV021?utm_source=afroditeprazer&utm_medium=site&utm_campaign=curadoria"
+    },
+    {
+      "sku": "LV022",
+      "name": "Gel Excitante Beijável Loveshock Morango Olove — 15g",
+      "brand": "Olove",
+      "price_brl": 49.80,
+      "image": "/products/LV022_hero.png",
+      "editorial": "Gel excitante com sabor morango e efeito esquenta. Loveshock é a linha mais concentrada da Olove — pouco serve.",
+      "affiliate_url": "https://www.asossensual.com.br/produto/LV022?utm_source=afroditeprazer&utm_medium=site&utm_campaign=curadoria"
+    },
+    {
+      "sku": "LV023",
+      "name": "Gel Excitante Beijável Loveshock Chiclete Olove — 15g",
+      "brand": "Olove",
+      "price_brl": 49.80,
+      "image": "/products/LV023_hero.png",
+      "editorial": "Mesmo efeito Loveshock, sabor chiclete. Para quem prefere o doce conhecido em vez do frutado.",
+      "affiliate_url": "https://www.asossensual.com.br/produto/LV023?utm_source=afroditeprazer&utm_medium=site&utm_campaign=curadoria"
+    },
+    {
+      "sku": "LV007",
+      "name": "Óleo para Massagem Sensual Olove Massage — 120ml",
+      "brand": "Olove",
+      "price_brl": 49.80,
+      "image": "/products/LV007_hero.png",
+      "editorial": "Mais encorpado que os óleos Sentidos, desenvolvido para deslizamento. Para rituais mais longos.",
+      "affiliate_url": "https://www.asossensual.com.br/produto/LV007?utm_source=afroditeprazer&utm_medium=site&utm_campaign=curadoria"
+    },
+    {
+      "sku": "LV008",
+      "name": "Desodorante Íntimo Olove Seduction — 60g/100ml",
+      "brand": "Olove",
+      "price_brl": 49.80,
+      "image": "/products/LV008_hero.png",
+      "editorial": "Cheiro discreto, longa duração — pensado pra ser percebido só quando se quer ser percebida.",
+      "affiliate_url": "https://www.asossensual.com.br/produto/LV008?utm_source=afroditeprazer&utm_medium=site&utm_campaign=curadoria"
+    },
+    {
+      "sku": "LV009",
+      "name": "Mousse Corporal Efervescente Olove Explosion — 100g/150ml",
+      "brand": "Olove",
+      "price_brl": 89.80,
+      "image": "/products/LV009_hero.png",
+      "editorial": "Aplica na pele e efervesce sob o toque. Sensação inesperada, brincadeira boa — vale o passo extra.",
+      "affiliate_url": "https://www.asossensual.com.br/produto/LV009?utm_source=afroditeprazer&utm_medium=site&utm_campaign=curadoria"
+    },
+    {
+      "sku": "LV001",
+      "name": "Gel Excitante Olove Beijável Amoracita — 10g",
+      "brand": "Olove",
+      "price_brl": 49.80,
+      "image": "/products/LV001_hero.png",
+      "editorial": "Gel excitante com efeito mais suave. Boa entrada para quem está começando a explorar essa categoria.",
+      "affiliate_url": "https://www.asossensual.com.br/produto/LV001?utm_source=afroditeprazer&utm_medium=site&utm_campaign=curadoria"
+    },
+    {
+      "sku": "LV002",
+      "name": "Gel Excitante Olove Beijável Melancita — 10g",
+      "brand": "Olove",
+      "price_brl": 49.80,
+      "image": "/products/LV002_hero.png",
+      "editorial": "Sabor melancia com efeito excitante. Para quem gosta de combinar o sensorial com o lúdico.",
+      "affiliate_url": "https://www.asossensual.com.br/produto/LV002?utm_source=afroditeprazer&utm_medium=site&utm_campaign=curadoria"
+    },
+    {
+      "sku": "LV005",
+      "name": "Gel Excitante Olove Strong — 10g",
+      "brand": "Olove",
+      "price_brl": 49.80,
+      "image": "/products/LV005_hero.png",
+      "editorial": "A versão mais intensa dos excitantes Olove. Não é o começo — é o próximo nível para quem já conhece.",
+      "affiliate_url": "https://www.asossensual.com.br/produto/LV005?utm_source=afroditeprazer&utm_medium=site&utm_campaign=curadoria"
+    },
+    {
+      "sku": "LV006",
+      "name": "Gel Prolongador Olove Control+ — 10g",
+      "brand": "Olove",
+      "price_brl": 49.80,
+      "image": "/products/LV006_hero.png",
+      "editorial": "Gel prolongador — diminui a hipersensibilidade sem eliminar o prazer. Para quem quer durar mais no próprio ritmo.",
+      "affiliate_url": "https://www.asossensual.com.br/produto/LV006?utm_source=afroditeprazer&utm_medium=site&utm_campaign=curadoria"
+    },
+    {
+      "sku": "LV011",
+      "name": "Spray Bucal Olove Gulosa Chiclete — 15ml",
+      "brand": "Olove",
+      "price_brl": 49.80,
+      "image": "/products/LV011_hero.png",
+      "editorial": "Refrescância de chiclete num spray pequeno. Para o beijo longo, para começar bem o dia.",
+      "affiliate_url": "https://www.asossensual.com.br/produto/LV011?utm_source=afroditeprazer&utm_medium=site&utm_campaign=curadoria"
+    },
+    {
+      "sku": "LV010",
+      "name": "Refrescante Bucal Extra Forte Olove Refresh — 30ml",
+      "brand": "Olove",
+      "price_brl": 49.80,
+      "image": "/products/LV010_hero.png",
+      "editorial": "Refrescante bucal mais duradouro que o spray. Para quando o momento precisa de mais presença.",
+      "affiliate_url": "https://www.asossensual.com.br/produto/LV010?utm_source=afroditeprazer&utm_medium=site&utm_campaign=curadoria"
+    },
+    {
+      "sku": "LV003",
+      "name": "Gel Lubrificante Beijável Olove Gelatto Morango — 30g",
+      "brand": "Olove",
+      "price_brl": 49.80,
+      "image": "/products/LV003_hero.png",
+      "editorial": "Lubrifica, hidrata, tem gosto bom. Três coisas em 30g — à base d'água, seguro com preservativo.",
+      "affiliate_url": "https://www.asossensual.com.br/produto/LV003?utm_source=afroditeprazer&utm_medium=site&utm_campaign=curadoria"
+    },
+    {
+      "sku": "LV004",
+      "name": "Gel Excitante Beijável Olove Muchacha — 10g",
+      "brand": "Olove",
+      "price_brl": 49.80,
+      "image": "/products/LV004_hero.png",
+      "editorial": "Gel excitante beijável com sabor tropical. Um dos favoritos da linha — pela combinação de aroma e efeito.",
+      "affiliate_url": "https://www.asossensual.com.br/produto/LV004?utm_source=afroditeprazer&utm_medium=site&utm_campaign=curadoria"
+    },
+    {
+      "sku": "IA406",
+      "name": "Cápsula Vibratória Multivelocidade Recarregável Go Vibe Pink",
+      "brand": "Go Vibe",
+      "price_brl": 100.00,
+      "image": "/products/IA406_hero.png",
+      "editorial": "Clássica. Pequena, silenciosa, eficaz — por onde começar a explorar. Em rosa.",
+      "affiliate_url": "https://www.asossensual.com.br/produto/IA406?utm_source=afroditeprazer&utm_medium=site&utm_campaign=curadoria"
+    },
+    {
+      "sku": "IA363",
+      "name": "Cápsula Vibratória Multivelocidade Recarregável Go Vibe Yellow",
+      "brand": "Go Vibe",
+      "price_brl": 100.00,
+      "image": "/products/IA363_hero.png",
+      "editorial": "Discrição colorida. Para levar na bolsa sem explicações — em amarelo.",
+      "affiliate_url": "https://www.asossensual.com.br/produto/IA363?utm_source=afroditeprazer&utm_medium=site&utm_campaign=curadoria"
+    },
+    {
+      "sku": "IA362",
+      "name": "Cápsula Vibratória Multivelocidade Recarregável Go Vibe Purple",
+      "brand": "Go Vibe",
+      "price_brl": 100.00,
+      "image": "/products/IA362_hero.png",
+      "editorial": "A versão roxa da Go Vibe. Clássica no desempenho, com personalidade visual.",
+      "affiliate_url": "https://www.asossensual.com.br/produto/IA362?utm_source=afroditeprazer&utm_medium=site&utm_campaign=curadoria"
+    },
+    {
+      "sku": "IA360",
+      "name": "Cápsula Vibratória Multivelocidade Recarregável Go Vibe Red",
+      "brand": "Go Vibe",
+      "price_brl": 100.00,
+      "image": "/products/IA360_hero.png",
+      "editorial": "Em vermelho — um pouco mais audaciosa na aparência, igual em desempenho.",
+      "affiliate_url": "https://www.asossensual.com.br/produto/IA360?utm_source=afroditeprazer&utm_medium=site&utm_campaign=curadoria"
+    },
+    {
+      "sku": "IA407",
+      "name": "Cápsula Vibratória Multivelocidade Recarregável Go Vibe Black",
+      "brand": "Go Vibe",
+      "price_brl": 100.00,
+      "image": "/products/IA407_hero.png",
+      "editorial": "A mais discreta visualmente. Preta, sem chamar atenção — perfeita para a nécessaire.",
+      "affiliate_url": "https://www.asossensual.com.br/produto/IA407?utm_source=afroditeprazer&utm_medium=site&utm_campaign=curadoria"
+    },
+    {
+      "sku": "IA453R",
+      "name": "Dedeira Vibratória Recarregável Sweet Vibe Cafuné — Rosa",
+      "brand": "Sweet Vibe",
+      "price_brl": 129.00,
+      "image": "/products/IA453R_hero.png",
+      "editorial": "Dedeira recarregável — você guia, você decide a pressão. Silicone macio, várias intensidades, bateria boa. Em rosa.",
+      "affiliate_url": "https://www.asossensual.com.br/produto/IA453R?utm_source=afroditeprazer&utm_medium=site&utm_campaign=curadoria"
+    },
+    {
+      "sku": "IA453L",
+      "name": "Dedeira Vibratória Recarregável Sweet Vibe Cafuné — Lilás",
+      "brand": "Sweet Vibe",
+      "price_brl": 129.00,
+      "image": "/products/IA453L_hero.png",
+      "editorial": "O mesmo Cafuné em lilás. Mesmo desempenho — a cor é da preferência.",
+      "affiliate_url": "https://www.asossensual.com.br/produto/IA453L?utm_source=afroditeprazer&utm_medium=site&utm_campaign=curadoria"
+    },
+    {
+      "sku": "IA420AZ",
+      "name": "Vibrador Multivelocidade Sweet Vibe Dengo — Azul",
+      "brand": "Sweet Vibe",
+      "price_brl": 125.00,
+      "image": "/products/IA420AZ_hero.png",
+      "editorial": "Vibrador pequeno e versátil, fácil de usar. Formato concentrado, vários modos de vibração. Em azul.",
+      "affiliate_url": "https://www.asossensual.com.br/produto/IA420AZ?utm_source=afroditeprazer&utm_medium=site&utm_campaign=curadoria"
+    },
+    {
+      "sku": "IA420VE",
+      "name": "Vibrador Multivelocidade Sweet Vibe Dengo — Verde",
+      "brand": "Sweet Vibe",
+      "price_brl": 125.00,
+      "image": "/products/IA420VE_hero.png",
+      "editorial": "Dengo na versão verde. Compacto, discreto — entrega bem.",
+      "affiliate_url": "https://www.asossensual.com.br/produto/IA420VE?utm_source=afroditeprazer&utm_medium=site&utm_campaign=curadoria"
+    },
+    {
+      "sku": "IA450S",
+      "name": "Estimulador Clitóris Recarregável Sweet Vibe Xêro — Salmão",
+      "brand": "Sweet Vibe",
+      "price_brl": 149.00,
+      "image": "/products/IA450S_hero.png",
+      "editorial": "Estimulador de clitóris recarregável. Para quem quer experimentar uma sensação diferente da cápsula — o passo seguinte natural. Em salmão.",
+      "affiliate_url": "https://www.asossensual.com.br/produto/IA450S?utm_source=afroditeprazer&utm_medium=site&utm_campaign=curadoria"
+    },
+    {
+      "sku": "IA450V",
+      "name": "Estimulador Clitóris Recarregável Sweet Vibe Xêro — Violeta",
+      "brand": "Sweet Vibe",
+      "price_brl": 149.00,
+      "image": "/products/IA450V_hero.png",
+      "editorial": "Xêro em violeta. Mesma entrega, mais discrição visual.",
+      "affiliate_url": "https://www.asossensual.com.br/produto/IA450V?utm_source=afroditeprazer&utm_medium=site&utm_campaign=curadoria"
+    },
+    {
+      "sku": "AS359",
+      "name": "Gel Lubrificante Hidra Confort Feminist — 220g",
+      "brand": "Feminist",
+      "price_brl": 69.80,
+      "image": "/products/AS359_hero.png",
+      "editorial": "Lubrificante hidratante para uso diário. A versão grande — para ter em casa, sem preocupação com acabar. Base aquosa, seguro para todos os tipos de uso.",
+      "affiliate_url": "https://www.asossensual.com.br/produto/AS359?utm_source=afroditeprazer&utm_medium=site&utm_campaign=curadoria"
+    },
+    {
+      "sku": "AS360",
+      "name": "Gel Lubrificante Hidra Confort Feminist — 70g",
+      "brand": "Feminist",
+      "price_brl": 34.80,
+      "image": "/products/AS360_hero.png",
+      "editorial": "A versão compacta do Hidra Confort. Mesmo gel hidratante, formato de bolsa — para a viagem, a nécessaire, o fora de casa.",
+      "affiliate_url": "https://www.asossensual.com.br/produto/AS360?utm_source=afroditeprazer&utm_medium=site&utm_campaign=curadoria"
+    },
+    {
+      "sku": "IA410",
+      "name": "Disco Menstrual Feminist A — 30ml",
+      "brand": "Feminist",
+      "price_brl": 43.75,
+      "image": "/products/IA410_hero.png",
+      "editorial": "Para fluxo leve a moderado. Silicone médico, até 12 horas de uso — menos lixo, menos custo recorrente do que o absorvente.",
+      "affiliate_url": "https://www.asossensual.com.br/produto/IA410?utm_source=afroditeprazer&utm_medium=site&utm_campaign=curadoria"
+    },
+    {
+      "sku": "IA411",
+      "name": "Disco Menstrual Feminist B — 50ml",
+      "brand": "Feminist",
+      "price_brl": 43.75,
+      "image": "/products/IA411_hero.png",
+      "editorial": "Capacidade maior para fluxo intenso. Mesmo silicone, mesmo tempo de uso — a versão para os dias mais cheios.",
+      "affiliate_url": "https://www.asossensual.com.br/produto/IA411?utm_source=afroditeprazer&utm_medium=site&utm_campaign=curadoria"
+    },
+    {
+      "sku": "PC051",
+      "name": "Toalha Compacta Descartável Feminist — 10 un",
+      "brand": "Feminist",
+      "price_brl": 27.80,
+      "image": "/products/PC051_hero.png",
+      "editorial": "Toalha compactada descartável — expande com água. Para o ginásio, a viagem, o carro. Discreta no fundo da bolsa.",
+      "affiliate_url": "https://www.asossensual.com.br/produto/PC051?utm_source=afroditeprazer&utm_medium=site&utm_campaign=curadoria"
+    },
+    {
+      "sku": "AS341",
+      "name": "Gel Excitante Feminino em Gotas My Secret — 15ml",
+      "brand": "My Secret",
+      "price_brl": 49.80,
+      "image": "/products/AS341_hero.png",
+      "editorial": "Concentrado em gotas, efeito esquenta-esfria localizado. Uma gota serve — para quem quer um detalhe novo sem grande entrada.",
+      "affiliate_url": "https://www.asossensual.com.br/produto/AS341?utm_source=afroditeprazer&utm_medium=site&utm_campaign=curadoria"
+    }
+  ]
+}

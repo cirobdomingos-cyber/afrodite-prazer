@@ -1,0 +1,39 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 420px;
+  width: 100%;
+}
+
+.fine {
+  margin-top: 24px;
+  font-size: 11px;
+  line-height: 1.65;
+  letter-spacing: 0.02em;
+  opacity: 0.55;
+}
+
+.error {
+  margin-top: 18px;
+  font-size: 13px;
+  color: var(--terracota);
+}
+
+.success { max-width: 460px; }
+
+.successTitle {
+  font-family: var(--serif);
+  font-size: clamp(26px, 3.2vw, 36px);
+  font-style: italic;
+  font-weight: 400;
+  color: var(--ouro);
+  margin: 0 0 18px;
+  line-height: 1.2;
+}
+
+.successBody {
+  font-size: 14px;
+  line-height: 1.7;
+  margin: 0;
+  opacity: 0.78;
+}

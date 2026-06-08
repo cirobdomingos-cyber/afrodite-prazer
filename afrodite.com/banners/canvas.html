@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Banners — exploração · Afrodite, prazer.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="banners.css" />
+<style>
+  html, body { margin: 0; height: 100%; background: #15101a; }
+  /* o conteúdo dos banners herda os tokens via .bn-scope no root */
+</style>
+</head>
+<body class="bn-scope">
+<div id="root"></div>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+<script type="text/babel" src="design-canvas.jsx"></script>
+<script type="text/babel" src="tweaks-panel.jsx"></script>
+<script type="text/babel" src="Banners.jsx"></script>
+
+<script type="text/babel">
+  const { DesignCanvas, DCSection, DCArtboard } = window;
+  const { useTweaks, TweaksPanel, TweakSection, TweakRadio, TweakToggle } = window;
+  const {
+    GuiaEditorial, GuiaOuro, GuiaVitrine,
+    CuradoriaEditorial, CuradoriaOuro, CuradoriaVitrine,
+    NamoradosEditorial, NamoradosOuro, NamoradosVitrine
+  } = window;
+
+  const W = 1180, H = 360;
+
+  // valor amigável -> classe de tema do editorial
+  const CLS = { "Berinjela": "", "Verde": "green", "Vinho": "wine" };
+  const COR_OPTS = ["Berinjela", "Verde", "Vinho"];
+
+  const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
+    "b1cor": "Berinjela",
+    "b2cor": "Verde",
+    "b3cor": "Vinho",
+    "moldura": true
+  }/*EDITMODE-END*/;
+
+  const AB = (id, label, node) =>
+    <DCArtboard id={id} label={label} width={W} height={H}>{node}</DCArtboard>;
+
+  function App() {
+    const [t, setTweak] = useTweaks(TWEAK_DEFAULTS);
+    const noFrame = !t.moldura;
+    return (
+      <React.Fragment>
+        <DesignCanvas>
+          <DCSection id="b1" title="Banner 1 — Guia: As 7 etapas" subtitle="Grátis · Baixar agora">
+            {AB("b1a", "A · Editorial Vênus", <GuiaEditorial theme={CLS[t.b1cor]} hideFrame={noFrame} />)}
+            {AB("b1b", "B · Cartão Ouro", <GuiaOuro />)}
+            {AB("b1c", "C · Vitrine", <GuiaVitrine />)}
+          </DCSection>
+          <DCSection id="b2" title="Banner 2 — Curadoria" subtitle="Escolhido a dedo, com critério">
+            {AB("b2a", "A · Editorial Vênus", <CuradoriaEditorial theme={CLS[t.b2cor]} hideFrame={noFrame} />)}
+            {AB("b2b", "B · Cartão Ouro", <CuradoriaOuro />)}
+            {AB("b2c", "C · Vitrine", <CuradoriaVitrine />)}
+          </DCSection>
+          <DCSection id="b3" title="Banner 3 — Dia dos Namorados" subtitle="Promoção em todo o site · 20% Pix / 15% cartão · até 12 jun">
+            {AB("b3a", "A · Editorial Vênus", <NamoradosEditorial theme={CLS[t.b3cor]} hideFrame={noFrame} />)}
+            {AB("b3b", "B · Cartão Ouro", <NamoradosOuro />)}
+            {AB("b3c", "C · Vitrine", <NamoradosVitrine />)}
+          </DCSection>
+        </DesignCanvas>
+
+        <TweaksPanel title="Tweaks">
+          <TweakSection label="Cor do banner (direção A · Editorial)" />
+          <TweakRadio label="Banner 1" value={t.b1cor} options={COR_OPTS} onChange={(v) => setTweak("b1cor", v)} />
+          <TweakRadio label="Banner 2" value={t.b2cor} options={COR_OPTS} onChange={(v) => setTweak("b2cor", v)} />
+          <TweakRadio label="Banner 3" value={t.b3cor} options={COR_OPTS} onChange={(v) => setTweak("b3cor", v)} />
+          <TweakSection label="Detalhe" />
+          <TweakToggle label="Moldura de ouro" value={t.moldura} onChange={(v) => setTweak("moldura", v)} />
+        </TweaksPanel>
+      </React.Fragment>
+    );
+  }
+
+  ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+</script>
+</body>
+</html>

@@ -1,0 +1,239 @@
+/* ============================================================
+   AFRODITE · PRAZER — E-book "As 7 etapas"
+   Sistema visual derivado do brand book
+   ============================================================ */
+:root{
+  /* Paleta brand book */
+  --aubergine:#3A1B40;   /* primária — a noite da marca */
+  --aubergine-deep:#2A1230;
+  --verde:#14271C;       /* secundária */
+  --botanico:#1F3A2A;
+  --sage:#7E8B6F;        /* neutra */
+  --ouro:#B8862E;        /* destaque */
+  --terracota:#B86A4E;   /* suave */
+  --vinho:#5C1E27;       /* acento */
+  --creme:#F1E7D2;       /* papel creme — leitura */
+  --creme-card:#F7F0DF;
+  --ink:#43342A;         /* corpo — sépia, sem preto puro */
+  --ink-soft:#7A6857;
+
+  --display:'DM Serif Display',Georgia,'Times New Roman',serif;
+  --voz:'Cormorant Garamond',Georgia,serif;
+  --corpo:'Inter',system-ui,-apple-system,sans-serif;
+
+  --pw:820px;   /* largura da página */
+  --ph:1190px;  /* altura da página (~1:1.45) */
+  --px:84px;    /* margem horizontal interna */
+  --py:78px;
+}
+
+*{box-sizing:border-box}
+html,body{margin:0}
+body{
+  background:#241a20;
+  font-family:var(--corpo);
+  color:var(--ink);
+  -webkit-font-smoothing:antialiased;
+  padding:54px 0 80px;
+}
+
+/* ---------- Folha / página ---------- */
+.sheet{
+  position:relative;
+  width:var(--pw);
+  min-height:var(--ph);
+  margin:0 auto 40px;
+  background:var(--creme);
+  padding:var(--py) var(--px);
+  overflow:hidden;
+  box-shadow:0 28px 70px -30px rgba(0,0,0,.7);
+  display:flex;
+  flex-direction:column;
+}
+
+/* cabeçalho / rodapé de marca */
+.brandline{
+  position:absolute;top:34px;left:0;right:0;
+  text-align:center;
+  font-size:10px;letter-spacing:.34em;text-transform:uppercase;
+  color:var(--ouro);font-weight:600;
+}
+.pageno{
+  position:absolute;bottom:30px;left:0;right:0;
+  text-align:center;font-size:10px;letter-spacing:.22em;
+  color:var(--ouro);opacity:.85;
+}
+.pageno::before,.pageno::after{content:"·";margin:0 .7em;opacity:.7}
+
+/* ---------- Tipografia base ---------- */
+.kicker{
+  font-size:11px;letter-spacing:.32em;text-transform:uppercase;
+  color:var(--terracota);font-weight:600;margin:0 0 18px;
+}
+h1.title{
+  font-family:var(--display);font-weight:400;
+  font-size:54px;line-height:1.04;color:var(--aubergine);
+  margin:0 0 18px;letter-spacing:-.01em;
+}
+h1.title .ac{color:var(--terracota);font-style:italic}
+.lede{
+  font-family:var(--voz);font-style:italic;font-weight:500;
+  font-size:23px;line-height:1.42;color:var(--aubergine);
+  opacity:.86;margin:0 0 6px;max-width:34em;
+}
+.section{
+  font-size:11px;letter-spacing:.24em;text-transform:uppercase;
+  color:var(--terracota);font-weight:600;
+  margin:30px 0 12px;display:flex;align-items:center;gap:12px;
+}
+.section::before{content:"";width:22px;height:1px;background:var(--terracota);opacity:.7}
+p.body{
+  font-size:15.5px;line-height:1.78;color:var(--ink);margin:0 0 13px;
+  max-width:40em;text-wrap:pretty;
+}
+.body b,.body strong{color:var(--aubergine);font-weight:600}
+em.soft{font-family:var(--voz);font-style:italic;font-size:1.12em;color:var(--terracota)}
+
+/* citação / pull */
+.pull{
+  font-family:var(--voz);font-style:italic;font-size:21px;line-height:1.5;
+  color:var(--vinho);border-left:2px solid var(--ouro);
+  padding:2px 0 2px 22px;margin:22px 0;max-width:36em;
+}
+
+/* listas de prática */
+ul.practice{list-style:none;margin:6px 0 4px;padding:0}
+ul.practice li{
+  position:relative;padding:7px 0 7px 26px;font-size:15px;line-height:1.5;
+  color:var(--ink);border-bottom:1px solid rgba(67,52,42,.10);max-width:40em;
+}
+ul.practice li:last-child{border-bottom:0}
+ul.practice li::before{
+  content:"—";position:absolute;left:0;top:7px;color:var(--ouro);font-weight:600;
+}
+.exer{margin:16px 0 4px}
+.exer h4{
+  font-family:var(--voz);font-style:italic;font-weight:600;font-size:18px;
+  color:var(--aubergine);margin:0 0 3px;
+}
+.exer p{font-size:15px;line-height:1.7;margin:0;color:var(--ink);max-width:40em}
+
+/* número grande de etapa (marca d'água) */
+.stepwm{
+  position:absolute;font-family:var(--display);font-size:330px;line-height:1;
+  color:var(--ouro);opacity:.10;top:24px;right:-10px;pointer-events:none;
+  user-select:none;
+}
+
+/* duas colunas (perguntas/comparativo) */
+.cols2{column-count:2;column-gap:46px}
+.cols2>*{break-inside:avoid}
+
+/* ---------- Tabela comparativa (manifesto) ---------- */
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:0 34px;margin:8px 0 6px;border-top:1px solid rgba(67,52,42,.18)}
+.compare .ch{padding:12px 0 6px;font-family:var(--voz);font-style:italic;font-size:19px}
+.compare .ch.a{color:var(--ouro)}
+.compare .ch.b{color:var(--ink-soft)}
+.compare .row{display:contents}
+.compare .cell{padding:9px 0;border-top:1px solid rgba(67,52,42,.12);font-size:15px;line-height:1.5}
+.compare .cell.b{color:var(--ink-soft)}
+
+/* ---------- Checklist ---------- */
+.clist{margin-top:18px}
+.clist .it{display:grid;grid-template-columns:30px 1fr auto;align-items:baseline;
+  gap:0 14px;padding:15px 0;border-bottom:1px solid rgba(67,52,42,.14)}
+.clist .n{font-family:var(--voz);font-style:italic;font-size:19px;color:var(--ouro)}
+.clist .t{font-size:15.5px;color:var(--ink)}
+.clist .t small{display:block;font-family:var(--voz);font-style:italic;color:var(--ink-soft);font-size:13px}
+.clist .data{font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-soft);
+  display:flex;align-items:center;gap:10px}
+.clist .data::after{content:"";width:120px;height:1px;background:var(--ouro);opacity:.5;display:block}
+
+/* grupos de perguntas */
+.qgroup{break-inside:avoid;margin-bottom:18px}
+.qgroup h5{font-family:var(--voz);font-style:italic;font-size:18px;color:var(--terracota);
+  margin:0 0 6px;display:flex;align-items:center;gap:10px}
+.qgroup h5::after{content:"";flex:1;height:1px;background:var(--terracota);opacity:.35}
+.qgroup ol{list-style:none;margin:0;padding:0;counter-reset:none}
+.qgroup li{position:relative;padding:5px 0 5px 26px;font-size:13.5px;line-height:1.45;color:var(--ink)}
+.qgroup li .qn{position:absolute;left:0;top:5px;font-family:var(--voz);font-style:italic;
+  font-size:14px;color:var(--ouro)}
+
+/* ---------- CAPA ---------- */
+.sheet.cover{
+  background:var(--aubergine);color:var(--creme);
+  padding:0;justify-content:flex-start;align-items:center;text-align:center;
+}
+.cover .inner{padding:70px 78px 60px;display:flex;flex-direction:column;align-items:center;
+  height:var(--ph);min-height:var(--ph);width:100%}
+.cover .top{font-size:11px;letter-spacing:.42em;text-transform:uppercase;color:var(--ouro);margin-bottom:38px}
+.cover .arch{
+  width:300px;height:380px;border-radius:150px 150px 8px 8px;overflow:hidden;
+  border:1px solid rgba(184,134,46,.55);box-shadow:0 30px 60px -30px #000;
+}
+.cover .arch img{width:100%;height:100%;object-fit:cover;object-position:50% 28%;filter:saturate(.96)}
+.cover h1{font-family:var(--display);font-weight:400;font-size:50px;line-height:1.06;
+  color:var(--creme);margin:42px 0 6px;max-width:13ch}
+.cover h1 .ac{color:var(--terracota);font-style:italic}
+.cover .vii{font-family:var(--voz);font-style:italic;font-size:64px;color:var(--ouro);
+  line-height:.9;margin:6px 0 22px;letter-spacing:.08em}
+.cover .sub{font-family:var(--voz);font-style:italic;font-size:21px;line-height:1.45;
+  color:var(--creme);opacity:.82;max-width:26ch}
+.cover .mark{margin-top:auto;display:flex;flex-direction:column;align-items:center;gap:12px}
+.cover .mark .name{font-size:11px;letter-spacing:.4em;text-transform:uppercase;color:var(--ouro)}
+.cover .mark .ig{font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:var(--creme);opacity:.6}
+
+/* shell mark */
+.shell{display:block}
+.shell path{stroke:var(--ouro)}
+
+/* ---------- DIVISÓRIA (foto + overlay) ---------- */
+.sheet.divider{padding:0;color:var(--creme);justify-content:flex-end}
+.divider .bg{position:absolute;inset:0;z-index:0}
+.divider .bg img{width:100%;height:100%;object-fit:cover}
+.divider .bg::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(42,18,48,.42) 0%,rgba(42,18,48,.30) 38%,rgba(42,18,48,.86) 100%)}
+.divider .cap{position:relative;z-index:1;padding:0 78px 86px}
+.divider .step{font-size:11px;letter-spacing:.34em;text-transform:uppercase;color:var(--ouro);margin-bottom:20px}
+.divider .q{font-family:var(--voz);font-style:italic;font-size:40px;line-height:1.18;color:var(--creme);margin:0;max-width:15ch}
+.divider .q .ac{color:#E7B563}
+
+/* ---------- ENCERRAMENTO centralizado ---------- */
+.sheet.letter{text-align:center;align-items:center;justify-content:center}
+.letter .kicker{color:var(--ouro)}
+.letter h1.title{margin-bottom:8px}
+.letter .rule{width:54px;height:1px;background:var(--ouro);margin:14px auto 40px}
+.letter p.body{max-width:30em;margin-left:auto;margin-right:auto}
+.letter .em{font-family:var(--voz);font-style:italic;font-size:22px;color:var(--terracota);margin:18px 0}
+.letter .sig{font-family:var(--voz);font-style:italic;font-size:54px;color:var(--terracota);margin-top:14px}
+
+/* ---------- CONTRACAPA ---------- */
+.sheet.back{background:var(--vinho);color:var(--creme);text-align:center;
+  align-items:center;justify-content:center}
+.back .top{position:absolute;top:64px;left:0;right:0;font-size:11px;letter-spacing:.4em;
+  text-transform:uppercase;color:var(--ouro)}
+.back .q{font-family:var(--voz);font-style:italic;font-size:32px;line-height:1.45;
+  color:var(--creme);max-width:18ch;margin:0 auto}
+.back .q .ac{color:#E7B563}
+.back .foot{position:absolute;bottom:62px;left:0;right:0}
+.back .foot .shell{margin:0 auto 14px}
+.back .foot .name{font-size:12px;letter-spacing:.4em;text-transform:uppercase;color:var(--ouro)}
+.back .foot .ig{font-size:10px;letter-spacing:.26em;text-transform:uppercase;color:var(--creme);opacity:.6;margin-top:7px}
+
+/* full-bleed image breathing page */
+.sheet.plate{padding:0;color:var(--creme);justify-content:flex-end}
+.plate .bg{position:absolute;inset:0}
+.plate .bg img{width:100%;height:100%;object-fit:cover;object-position:50% 32%}
+.plate .bg::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(42,18,48,.20),rgba(42,18,48,.66))}
+.plate .cap{position:relative;z-index:1;padding:0 78px 84px}
+.plate .cap p{font-family:var(--voz);font-style:italic;font-size:34px;line-height:1.25;
+  color:var(--creme);margin:0;max-width:16ch}
+.plate .cap p .ac{color:#E7B563}
+
+/* ---------- impressão ---------- */
+@media print{
+  body{background:#fff;padding:0}
+  .sheet{margin:0;box-shadow:none;break-after:page;page-break-after:always}
+  .sheet:last-child{break-after:auto}
+}

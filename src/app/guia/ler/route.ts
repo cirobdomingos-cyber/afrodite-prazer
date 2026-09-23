@@ -22,7 +22,8 @@ export async function GET(req: Request) {
   // No computador (npm run dev) o ebook abre direto, pra revisar sem se cadastrar.
   const isLocalDev = process.env.NODE_ENV === "development";
   if (!isLocalDev && !verifyAccessToken(token)) {
-    return NextResponse.redirect(new URL("/guia", url), 307);
+    // Redirecionamento relativo: atrás do proxy do Railway, req.url traz o host interno (localhost:8080).
+    return new NextResponse(null, { status: 307, headers: { Location: "/guia" } });
   }
 
   let html = await fs.readFile(EBOOK_FILE, "utf8");

@@ -140,6 +140,8 @@ export default function HomePage() {
                         target="_blank"
                         rel="noopener noreferrer sponsored"
                         data-handle={p.handle}
+                        data-name={p.name}
+                        data-section={section.id}
                       >
                         Quero este
                       </a>

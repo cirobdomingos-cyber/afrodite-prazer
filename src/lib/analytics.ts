@@ -1,4 +1,4 @@
-type GtagCommand = "event" | "config" | "js";
+type GtagCommand = "event" | "config" | "js" | "consent";
 type GtagFn = (command: GtagCommand, ...args: unknown[]) => void;
 
 declare global {

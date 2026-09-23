@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pompoar, prazer. — 7 etapas pra conhecer e fortalecer o seu assoalho pélvico · Afrodite</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Montserrat:wght@400;500;600&family=Parisienne&display=swap">
+<link rel="icon" href="/icon.svg">
+<meta name="theme-color" content="#FBF3E4">
+<style>/* ============================================================
+   AFRODITE · PRAZER — "As 7 etapas"
+   Experiência de leitura mobile-first (rolagem vertical)
+   Sistema derivado do brand book (Ed. VI · 2026)
+   ============================================================ */
+:root{
+  /* Paleta do brand book — Afrodite, prazer. */
+  --aubergine:#581931;       /* vinho (principal) */
+  --aubergine-deep:#3f0f22;  /* vinho profundo */
+  --vinho:#1A7562;           /* verde (principal) — pausas alternadas e contracapa */
+  --ouro:#DA7811;            /* laranja (secundária) — linhas e números no claro */
+  --ouro-luz:#F2A6CE;        /* rosa (secundária) — detalhes sobre fundo escuro */
+  --terracota:#1A7562;       /* verde — palavras em destaque e rótulos */
+  --creme:#F3E2C7;
+  --creme-2:#FBF3E4;
+  --ink:#3D2317;             /* marrom */
+  --ink-soft:#7A5A4A;
+  --sage:#8A9A5B;            /* oliva */
+  --rosa:#F2A6CE;
+
+  --display:'Cormorant Garamond',Georgia,serif;
+  --voz:'Cormorant Garamond',Georgia,serif;
+  --corpo:'Montserrat',system-ui,-apple-system,sans-serif;
+  --script:'Parisienne',cursive;
+
+  --col:560px;       /* largura da coluna de leitura */
+  --pad:clamp(26px,7vw,46px);
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--aubergine-deep);
+  font-family:var(--corpo);color:var(--ink);
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+}
+
+/* barra de progresso de leitura */
+.progress{position:fixed;top:0;left:0;height:2px;width:0;z-index:50;
+  background:linear-gradient(90deg,var(--ouro),var(--ouro-luz));transition:width .12s linear}
+
+/* coluna / "livro" */
+.book{max-width:var(--col);margin:0 auto;background:var(--creme);
+  overflow:hidden;box-shadow:0 0 80px -20px rgba(0,0,0,.8)}
+
+/* ---------- blocos de leitura ---------- */
+section{position:relative}
+.read{padding:clamp(46px,11vw,72px) var(--pad)}
+.read.tight{padding-top:0}
+
+.kicker{font-size:11px;letter-spacing:.34em;text-transform:uppercase;
+  color:var(--terracota);font-weight:600;margin:0 0 22px;display:flex;align-items:center;gap:12px}
+.kicker::before{content:"";width:24px;height:1px;background:var(--terracota);opacity:.65}
+
+h2.title{font-family:var(--display);font-weight:400;line-height:1.06;
+  font-size:clamp(30px,8.5vw,40px);color:var(--aubergine);margin:0 0 24px;letter-spacing:-.01em}
+h2.title .ac{color:var(--terracota);font-style:italic}
+
+.lede{font-family:var(--voz);font-style:italic;font-weight:500;
+  font-size:clamp(20px,5.6vw,24px);line-height:1.42;color:var(--aubergine);opacity:.9;margin:0 0 26px}
+
+p.body{font-size:clamp(16px,4.4vw,17.5px);line-height:1.78;color:var(--ink);
+  margin:0 0 18px;text-wrap:pretty}
+.body b,.body strong{color:var(--aubergine);font-weight:600}
+
+.sub{font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--terracota);
+  font-weight:600;margin:34px 0 14px;display:flex;align-items:center;gap:12px}
+.sub::before{content:"";width:18px;height:1px;background:var(--terracota);opacity:.6}
+
+/* exercícios */
+.exer{margin:20px 0}
+.exer h4{font-family:var(--voz);font-style:italic;font-weight:600;font-size:clamp(19px,5vw,21px);
+  color:var(--aubergine);margin:0 0 5px}
+.exer p{font-size:clamp(15.5px,4.3vw,17px);line-height:1.72;margin:0;color:var(--ink)}
+
+/* listas */
+ul.practice{list-style:none;margin:8px 0;padding:0}
+ul.practice li{position:relative;padding:11px 0 11px 28px;font-size:clamp(15.5px,4.3vw,17px);
+  line-height:1.55;color:var(--ink);border-bottom:1px solid rgba(67,52,42,.1)}
+ul.practice li:last-child{border-bottom:0}
+ul.practice li::before{content:"";position:absolute;left:0;top:19px;width:14px;height:1px;background:var(--ouro)}
+
+/* pull / citação dentro da leitura */
+.pull{font-family:var(--voz);font-style:italic;font-size:clamp(21px,5.6vw,25px);line-height:1.46;
+  color:var(--vinho);border-left:2px solid var(--ouro);padding:4px 0 4px 22px;margin:26px 0}
+
+/* ---------- OBSERVAÇÃO HUMANA (linha isolada) ---------- */
+.obs{padding:clamp(40px,10vw,60px) var(--pad);text-align:center}
+.obs p{font-family:var(--voz);font-style:italic;font-size:clamp(23px,6.4vw,30px);line-height:1.34;
+  color:var(--aubergine);margin:18px 0 0;max-width:18ch;margin-left:auto;margin-right:auto}
+
+/* onda dourada (traço da marca) */
+.wave{display:block;margin:0 auto;color:var(--ouro)}
+.wave path{fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round}
+
+/* ---------- PERGUNTA DE REFLEXÃO (imersiva) ---------- */
+.reflect{background:var(--aubergine);color:var(--creme);text-align:center;
+  padding:clamp(72px,18vw,110px) var(--pad);display:flex;flex-direction:column;align-items:center;gap:26px}
+.reflect .lab{font-size:10.5px;letter-spacing:.38em;text-transform:uppercase;color:var(--ouro);font-weight:600}
+.reflect p{font-family:var(--voz);font-style:italic;font-size:clamp(26px,7.4vw,36px);line-height:1.28;
+  color:var(--creme);margin:0;max-width:16ch}
+.reflect .wave{color:var(--ouro-luz)}
+
+/* ---------- PAUSA AFRODITE (imersiva) ---------- */
+.pausa{background:var(--aubergine);color:var(--creme);text-align:center;
+  padding:clamp(74px,18vw,118px) var(--pad);display:flex;flex-direction:column;align-items:center;gap:24px;
+  position:relative}
+.pausa.vinho{background:var(--vinho)}
+.pausa .lab{font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--ouro);font-weight:600;
+  display:flex;align-items:center;gap:10px}
+.pausa .num{font-family:var(--voz);font-style:italic;letter-spacing:0;text-transform:none;font-size:15px;color:var(--ouro-luz)}
+.pausa p{font-family:var(--voz);font-style:italic;font-size:clamp(22px,6vw,28px);line-height:1.5;
+  color:var(--creme);margin:0;max-width:22ch}
+.pausa .wave{color:var(--ouro-luz)}
+
+/* ---------- DIVISÓRIA full-bleed (foto) ---------- */
+.divider{position:relative;min-height:92vh;display:flex;align-items:flex-end;color:var(--creme);overflow:hidden}
+.divider img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.divider::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(63,15,34,.28) 0%,rgba(63,15,34,.2) 26%,rgba(63,15,34,.7) 60%,rgba(63,15,34,.96) 100%)}
+.divider .cap{position:relative;z-index:1;padding:84px var(--pad) clamp(48px,12vw,72px);
+  background:linear-gradient(180deg,transparent,rgba(50,12,27,.55) 70%)}
+.divider .step{font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--ouro-luz);
+  margin-bottom:18px;display:flex;align-items:center;gap:10px}
+.divider .q{font-family:var(--voz);font-style:italic;font-size:clamp(28px,7.8vw,40px);line-height:1.16;
+  margin:0;max-width:14ch;text-shadow:0 2px 30px rgba(0,0,0,.55)}
+.divider .step{text-shadow:0 1px 16px rgba(0,0,0,.6)}
+.divider .q .ac{color:var(--rosa)}
+
+/* ---------- PLACA / respiro com foto + citação ---------- */
+.plate{position:relative;min-height:90vh;display:flex;align-items:flex-end;color:var(--creme);overflow:hidden}
+.plate img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.plate::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(63,15,34,.22) 0%,rgba(63,15,34,.2) 28%,rgba(63,15,34,.72) 62%,rgba(63,15,34,.96) 100%)}
+.plate .cap{position:relative;z-index:1;padding:84px var(--pad) clamp(46px,12vw,70px);
+  background:linear-gradient(180deg,transparent,rgba(50,12,27,.55) 70%)}
+.plate .cap p{font-family:var(--voz);font-style:italic;font-size:clamp(26px,7vw,36px);line-height:1.24;
+  margin:0;max-width:15ch;text-shadow:0 2px 30px rgba(0,0,0,.55)}
+.plate .cap p .ac{color:var(--rosa)}
+
+/* ---------- FERRAMENTA AFRODITE (card na leitura) ---------- */
+.tool{margin:34px 0;padding:30px var(--pad);background:var(--creme-2);
+  border-top:1px solid rgba(218,120,17,.45);border-bottom:1px solid rgba(218,120,17,.45);
+  margin-left:calc(-1*var(--pad));margin-right:calc(-1*var(--pad))}
+.tool .lab{font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--ouro);font-weight:600;
+  display:flex;align-items:center;gap:10px;margin:14px 0 12px}
+.tool p{font-size:clamp(15px,4.2vw,16.5px);line-height:1.66;color:var(--ink);margin:0 0 16px}
+.tool .slot{display:inline-flex;align-items:center;gap:9px;font-family:var(--corpo);font-size:11px;
+  letter-spacing:.18em;text-transform:uppercase;color:var(--ink-soft);
+  border:1px dashed rgba(218,120,17,.6);border-radius:40px;padding:9px 18px}
+.tool .slot::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--ouro);opacity:.7}
+.tool .wave{margin:0}
+
+/* ---------- número de etapa (marca d'água) ---------- */
+.stepwm{position:absolute;font-family:var(--display);font-size:clamp(160px,42vw,230px);line-height:1;
+  color:var(--ouro);opacity:.09;top:-8px;right:-6px;pointer-events:none;user-select:none}
+
+/* ---------- CAPA ---------- */
+.cover{background:var(--aubergine);color:var(--creme);min-height:100vh;
+  display:flex;flex-direction:column;align-items:center;text-align:center;padding:clamp(40px,9vw,60px) var(--pad)}
+.cover .top{font-size:11px;letter-spacing:.42em;text-transform:uppercase;color:var(--ouro);margin-bottom:clamp(28px,7vw,44px)}
+.cover .arch{width:min(70%,260px);aspect-ratio:3/3.7;border-radius:130px 130px 8px 8px;overflow:hidden;
+  border:1px solid rgba(218,120,17,.5);box-shadow:0 30px 60px -30px #000}
+.cover .arch img{width:100%;height:100%;object-fit:cover;object-position:50% 30%}
+.cover h1{font-family:var(--display);font-weight:400;font-size:clamp(34px,9.6vw,46px);line-height:1.05;
+  color:var(--creme);margin:clamp(30px,7vw,42px) 0 4px;max-width:13ch}
+.cover h1 .ac{color:var(--terracota);font-style:italic}
+.cover .vii{font-family:var(--voz);font-style:italic;font-size:clamp(48px,13vw,64px);color:var(--ouro);line-height:.9;margin:6px 0 18px}
+.cover .sub{font-family:var(--voz);font-style:italic;font-size:clamp(19px,5.2vw,22px);line-height:1.44;
+  color:var(--creme);opacity:.84;max-width:24ch}
+.cover .mark{margin-top:auto;padding-top:36px;display:flex;flex-direction:column;align-items:center;gap:11px}
+.cover .mark .name{font-size:11px;letter-spacing:.4em;text-transform:uppercase;color:var(--ouro)}
+.cover .scrollcue{font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--creme);opacity:.5;
+  display:flex;flex-direction:column;align-items:center;gap:7px}
+.cover .scrollcue::after{content:"";width:1px;height:26px;background:linear-gradient(var(--ouro),transparent)}
+
+.shell path{stroke:var(--ouro)}
+
+/* ---------- CHECKLIST ---------- */
+.clist{margin-top:8px}
+.clist .it{display:grid;grid-template-columns:34px 1fr;gap:0 16px;align-items:baseline;
+  padding:18px 0;border-bottom:1px solid rgba(67,52,42,.16)}
+.clist .n{font-family:var(--voz);font-style:italic;font-size:22px;color:var(--ouro)}
+.clist .t{font-size:clamp(15.5px,4.3vw,17px);color:var(--ink)}
+.clist .t small{display:block;font-family:var(--voz);font-style:italic;color:var(--ink-soft);font-size:13.5px;margin-top:2px}
+.clist .t .line{display:block;margin-top:10px;height:1px;background:repeating-linear-gradient(90deg,rgba(218,120,17,.5) 0 8px,transparent 8px 14px)}
+
+/* ---------- 21 PERGUNTAS ---------- */
+.qgroup{margin-bottom:26px}
+.qgroup h5{font-family:var(--voz);font-style:italic;font-size:clamp(19px,5vw,21px);color:var(--terracota);
+  margin:0 0 8px;display:flex;align-items:center;gap:12px}
+.qgroup h5::after{content:"";flex:1;height:1px;background:var(--terracota);opacity:.32}
+.qgroup ol{list-style:none;margin:0;padding:0}
+.qgroup li{position:relative;padding:8px 0 8px 30px;font-size:clamp(15px,4.2vw,16.5px);line-height:1.5;color:var(--ink)}
+.qgroup li .qn{position:absolute;left:0;top:8px;font-family:var(--voz);font-style:italic;font-size:16px;color:var(--ouro)}
+
+/* ---------- ENCERRAMENTO ---------- */
+.closing{background:var(--aubergine);color:var(--creme);text-align:center;
+  padding:clamp(72px,16vw,104px) var(--pad);display:flex;flex-direction:column;align-items:center}
+.closing .kicker{color:var(--ouro);justify-content:center}
+.closing .kicker::before{background:var(--ouro);opacity:.7}
+.closing h2{font-family:var(--display);font-weight:400;font-size:clamp(32px,9vw,44px);line-height:1.06;
+  color:var(--creme);margin:0 0 6px}
+.closing h2 .ac{color:var(--terracota);font-style:italic}
+.closing .rule{width:50px;height:1px;background:var(--ouro);margin:18px 0 34px}
+.closing p{font-size:clamp(16px,4.4vw,17.5px);line-height:1.8;margin:0 0 16px;max-width:30ch;color:var(--creme);opacity:.9}
+.closing .em{font-family:var(--voz);font-style:italic;font-size:clamp(22px,6vw,27px);color:var(--ouro-luz);margin:14px 0;opacity:1}
+.closing .sig{font-family:var(--voz);font-style:italic;font-size:clamp(40px,11vw,54px);color:var(--terracota);margin-top:20px}
+
+/* ---------- PRÓXIMOS PASSOS ---------- */
+.next .step3{margin:24px 0}
+.next .step3 h4{font-family:var(--voz);font-style:italic;font-size:clamp(20px,5.4vw,23px);color:var(--aubergine);margin:0 0 4px}
+.next .step3 p{font-size:clamp(15.5px,4.3vw,16.5px);line-height:1.66;margin:0;color:var(--ink)}
+.next .step3 .ig{color:var(--ouro);font-weight:600}
+
+/* ---------- CONTRACAPA ---------- */
+.back{background:var(--vinho);color:var(--creme);text-align:center;min-height:88vh;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;padding:clamp(60px,14vw,90px) var(--pad);position:relative}
+.back .top{position:absolute;top:clamp(40px,9vw,60px);left:0;right:0;font-size:11px;letter-spacing:.4em;
+  text-transform:uppercase;color:var(--ouro)}
+.back .q{font-family:var(--voz);font-style:italic;font-size:clamp(24px,6.6vw,31px);line-height:1.42;color:var(--creme);max-width:19ch;margin:0 auto}
+.back .q .ac{color:var(--rosa)}
+.back .foot{position:absolute;bottom:clamp(44px,10vw,64px);left:0;right:0;display:flex;flex-direction:column;align-items:center;gap:9px}
+.back .foot .name{font-size:12px;letter-spacing:.4em;text-transform:uppercase;color:var(--ouro)}
+.back .foot .ig{font-size:10px;letter-spacing:.26em;text-transform:uppercase;color:var(--creme);opacity:.6}
+
+
+/* ---- ajustes do branding novo ---- */
+h2.title{font-weight:600;font-size:clamp(32px,9vw,44px);line-height:1.04}
+h2.title .ac{font-weight:500}
+.closing h2{font-weight:600;font-size:clamp(34px,9.5vw,48px)}
+.stepwm{font-weight:600;color:var(--ouro);opacity:.12;font-variant-numeric:lining-nums}
+.clist .n,.qgroup li .qn{font-variant-numeric:lining-nums}
+.kicker{color:#DA7811}
+.kicker::before{background:#DA7811}
+.sub{color:var(--terracota)}
+.pull{border-left-color:var(--rosa);color:var(--aubergine)}
+.qgroup h5{color:var(--aubergine)}
+.qgroup h5::after{background:var(--aubergine)}
+.tool{background:var(--creme-2);border-top-color:rgba(26,117,98,.35);border-bottom-color:rgba(26,117,98,.35)}
+.tool .lab{color:var(--terracota)}
+.tool .slot{border-color:rgba(26,117,98,.5)}
+.tool .slot::before{background:var(--terracota)}
+.tool .wave{color:var(--terracota)}
+.reflect .lab,.pausa .lab{color:var(--rosa)}
+.pausa .num{font-size:17px;color:var(--rosa)}
+.closing .kicker{color:var(--rosa)}
+.closing .kicker::before{background:var(--rosa)}
+.closing .rule{background:var(--rosa)}
+.closing h2 .ac{color:var(--rosa)}
+.closing .sig{font-family:var(--script);font-style:normal;color:var(--rosa)}
+.divider .step{color:var(--rosa)}
+.cover{background:var(--creme-2);color:var(--ink)}
+.cover .logo{width:min(64%,240px);height:auto;margin:0 0 clamp(26px,6vw,38px)}
+.cover .top{color:var(--terracota)}
+.cover .arch{border-color:rgba(88,25,49,.35);box-shadow:0 30px 60px -34px rgba(63,15,34,.55)}
+.cover h1{color:var(--aubergine);font-weight:600}
+.cover h1 .ac{color:var(--terracota);font-weight:500}
+.cover .vii{font-family:var(--script);font-style:normal;color:#DA7811;font-size:clamp(44px,12vw,58px)}
+.cover .sub{color:var(--ink);opacity:.82;text-transform:none;letter-spacing:0;display:block;margin:0}
+.cover .sub::before{display:none}
+.cover .mark .name{color:var(--aubergine)}
+.cover .scrollcue{color:var(--ink)}
+.cover .scrollcue::after{background:linear-gradient(var(--aubergine),transparent)}
+.back{background:var(--vinho)}
+.back .top,.back .foot .name{color:var(--rosa)}
+.back .logo{width:150px;height:auto;filter:brightness(0) invert(93%) sepia(14%) saturate(420%) hue-rotate(335deg)}
+.progress{background:linear-gradient(90deg,var(--terracota),#DA7811)}
+body{background:var(--aubergine-deep)}
+
+/* ---- movimentos (os 4 conceitos da marca) ---- */
+.movimento{background:var(--creme-2);text-align:center;padding:clamp(64px,16vw,96px) var(--pad);
+  border-top:1px solid rgba(88,25,49,.12);border-bottom:1px solid rgba(88,25,49,.12)}
+.movimento .lab{font-size:11px;letter-spacing:.34em;text-transform:uppercase;color:#DA7811;font-weight:600}
+.movimento .word{display:block;font-family:var(--script);font-size:clamp(52px,15vw,72px);line-height:1.1;
+  color:var(--aubergine);margin:14px 0 10px}
+.movimento .def{font-family:var(--voz);font-style:italic;font-size:clamp(19px,5.2vw,22px);line-height:1.45;
+  color:var(--ink);max-width:26ch;margin:0 auto 20px}
+.movimento .etapas{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--terracota);font-weight:600;margin:0}
+
+/* ---- produtos da curadoria nas Ferramentas ---- */
+.picks{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:4px 0 18px}
+.pick{display:flex;flex-direction:column;background:#fff;border-radius:14px;overflow:hidden;
+  border:1px solid rgba(26,117,98,.18);text-decoration:none;color:var(--ink);transition:transform .2s,box-shadow .2s}
+.pick:hover{transform:translateY(-2px);box-shadow:0 10px 22px -12px rgba(63,15,34,.35)}
+.pick img{width:100%;aspect-ratio:1/1;object-fit:contain;background:#fff}
+.pick .pb{font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--terracota);font-weight:600;padding:10px 12px 0}
+.pick .pn{font-family:var(--voz);font-size:16px;font-weight:600;line-height:1.2;padding:3px 12px 12px;color:var(--aubergine)}
+.tool a.slot{text-decoration:none}
+
+/* ---- checklist agrupado por movimento ---- */
+.clist .grp{font-family:var(--script);font-size:26px;color:var(--aubergine);padding:22px 0 0}
+.clist .grp:first-child{padding-top:0}
+
+/* ---- aviso de saúde ---- */
+.aviso{margin:28px 0;padding:22px 22px 20px;background:var(--creme-2);border-left:3px solid var(--terracota);border-radius:0 12px 12px 0}
+.aviso .lab{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--terracota);font-weight:600;margin:0 0 8px}
+.aviso p{font-size:clamp(14.5px,4vw,15.5px);line-height:1.65;margin:0;color:var(--ink)}
+.exer p b{color:var(--terracota)}
+
+@media (min-width:600px){
+  .book{margin-top:36px;margin-bottom:36px;border-radius:3px}
+}
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+<div class="book">
+
+  <!-- ============ CAPA ============ -->
+  <section class="cover" data-screen-label="Capa">
+    <img class="logo" src="/brand/logo.png" alt="Afrodite, prazer.">
+    <div class="arch"><img src="/ebook/img/venus-capa.jpg" alt="Vênus"></div>
+    <h1><span class="ac">Pompoar</span>, prazer.</h1>
+    <div class="vii">vii</div>
+    <p class="sub">7 etapas pra conhecer, sentir e fortalecer o seu assoalho pélvico — no seu ritmo, pra você.</p>
+    <div class="mark">
+      <div class="name">@afrodite.prazer</div>
+    </div>
+    <div class="scrollcue" style="margin-top:30px">role pra começar</div>
+  </section>
+
+  <!-- ============ ANTES DE COMEÇAR ============ -->
+  <section class="read" data-screen-label="Antes de começar">
+    <p class="kicker">Antes de começar</p>
+    <h2 class="title">Tem um músculo em você que <span class="ac">quase ninguém apresentou</span>.</h2>
+    <p class="body">Ele trabalha o dia inteiro: quando você ri, tosse, carrega a sacola do mercado, segura o xixi no trânsito. Participa até do orgasmo. E, mesmo assim, a maioria das mulheres passa anos sem saber que ele existe — ou só ouve falar dele numa versão: “pompoarismo pra enlouquecer o parceiro”.</p>
+    <p class="body">Este guia é outra conversa. Pompoar, aqui, é sobre você: conhecer o próprio corpo, perceber sensações que estavam no mudo e cuidar de uma musculatura que cuida de você.</p>
+    <p class="pull">Afrodite não ensina mulheres a agradar alguém. Ajuda mulheres a se reconectarem com elas mesmas.</p>
+    <p class="body">São 7 etapas, organizadas em quatro movimentos — <b>cuidado</b>, <b>desejo</b>, <b>sentir</b> e <b>independência</b>. Dá pra fazer em quatro semanas ou em quatro meses. Não tem prova. Só não vale pular.</p>
+    <div class="aviso">
+      <div class="lab">Um combinado antes de começar</div>
+      <p>Este guia é educativo e não substitui avaliação profissional. Se você está grávida, teve bebê há pouco tempo, sente dor, tem escape de urina ou sensação de peso na vagina, converse antes com uma fisioterapeuta pélvica.</p>    </div>
+    <p class="body"><em style="font-family:var(--voz);font-style:italic;font-size:1.15em;color:var(--terracota)">Prazer. Vamos às apresentações.</em></p>
+  </section>
+
+  <!-- ============ PLACA · premissa ============ -->
+  <section class="plate" data-screen-label="Respiro · premissa">
+    <img src="/ebook/img/venus-premissa.jpg" alt="Vênus">
+    <div class="cap"><p>Pompoar é sobre <span class="ac">você</span>. Não sobre agradar alguém.</p></div>
+  </section>
+
+  <!-- obs -->
+  <section class="obs" data-screen-label="Observação · apresentação">
+    <svg class="wave" width="64" height="12" viewBox="0 0 64 12" aria-hidden="true"><path d="M2 8 Q 10 1, 18 8 T 34 8 T 50 8 T 62 8"></path></svg>
+    <p>O corpo não está distante. Só nunca foi apresentado.</p>
+  </section>
+
+  <!-- ============ PAUSA 1 ============ -->
+  <section class="pausa" data-screen-label="Pausa Afrodite · 1">
+    <div class="lab">Pausa Afrodite <span class="num">· i</span></div>
+    <svg class="wave" width="74" height="13" viewBox="0 0 74 13" aria-hidden="true"><path d="M2 8 Q 11 1, 20 8 T 38 8 T 56 8 T 72 8"></path></svg>
+    <p>Se a palavra “pompoarismo” te deu um pouco de vergonha, tudo bem. Ninguém ensinou isso na escola — a aula de ciências parou no útero.<br><br>Vergonha é só falta de apresentação. A gente resolve.</p>
+  </section>
+
+  <!-- ============ REFLEXÃO 1 ============ -->
+  <section class="reflect" data-screen-label="Reflexão · onde fica">
+    <div class="lab">Uma pergunta</div>
+    <p>Você saberia apontar onde fica o seu assoalho pélvico?</p>
+    <svg class="wave" width="64" height="12" viewBox="0 0 64 12" aria-hidden="true"><path d="M2 8 Q 10 1, 18 8 T 34 8 T 50 8 T 62 8"></path></svg>
+  </section>
+
+  <!-- ============ MOVIMENTO I · CUIDADO ============ -->
+  <section class="movimento" data-screen-label="Movimento I · Cuidado">
+    <div class="lab">Movimento i</div>
+    <span class="word">Cuidado</span>
+    <p class="def">A atenção que você dedica a si mesma — sem pressa e sem julgamento.</p>
+    <p class="etapas">Etapas 01 e 02</p>
+  </section>
+
+  <!-- ============ ETAPA 01 ============ -->
+  <section class="read" data-screen-label="Etapa 01 · Conhecer">
+    <div class="stepwm">01</div>
+    <p class="kicker">Etapa um</p>
+    <h2 class="title">Conhecer o <span class="ac">assoalho pélvico</span>.</h2>
+    <p class="lede">Antes de fortalecer, conhecer. Não dá pra cuidar do que você não sabe onde está.</p>
+    <p class="body">O assoalho pélvico é um conjunto de músculos que fica na base da pelve, entre o osso do púbis, na frente, e o cóccix, atrás. Imagine uma rede — ou uma cama elástica — sustentando por baixo a bexiga, o útero e o intestino.</p>
+    <p class="sub">O que ele faz por você</p>
+    <ul class="practice">
+      <li>Sustenta os órgãos da pelve, o dia inteiro.</li>
+      <li>Ajuda a segurar o xixi e o pum — e a soltar na hora certa.</li>
+      <li>Participa da resposta sexual: as contrações do orgasmo acontecem ali.</li>
+      <li>Trabalha junto com a respiração e o abdômen pra dar estabilidade ao tronco.</li>
+    </ul>
+    <p class="body">Como todo músculo, ele pode ficar fraco, tenso demais ou simplesmente esquecido. Gestação, parto, menopausa, prisão de ventre, tosse frequente e até muitas horas sentada influenciam.</p>
+    <p class="pull">Músculo forte não é músculo sempre contraído. É músculo que sabe contrair — e sabe soltar.</p>
+    <p class="sub">Pratique essa semana</p>
+    <div class="exer"><h4>O mapa.</h4><p>Com um espelho pequeno, luz boa e nenhuma pressa, localize a vulva, a entrada da vagina, a uretra e o ânus. Não é exame: é apresentação. O assoalho pélvico fica logo ali, por dentro, envolvendo essas aberturas.</p></div>
+    <p class="sub">Sinal de que você completou</p>
+    <p class="body">Você consegue explicar, com as suas palavras, onde fica o assoalho pélvico e para que ele serve.</p>
+  </section>
+
+  <!-- obs -->
+  <section class="obs" data-screen-label="Observação · academia">
+    <svg class="wave" width="64" height="12" viewBox="0 0 64 12" aria-hidden="true"><path d="M2 8 Q 10 1, 18 8 T 34 8 T 50 8 T 62 8"></path></svg>
+    <p>Tem mulher que treina perna três vezes por semana e nunca treinou o músculo que segura tudo por baixo.</p>
+  </section>
+
+  <!-- ============ ETAPA 02 ============ -->
+  <section class="read" data-screen-label="Etapa 02 · Encontrar">
+    <div class="stepwm">02</div>
+    <p class="kicker">Etapa dois</p>
+    <h2 class="title">Encontrar o <span class="ac">músculo</span>.</h2>
+    <p class="lede">O movimento é pequeno. A diferença, não.</p>
+    <p class="body">O primeiro desafio do pompoar não é força: é percepção. Na primeira tentativa, muita gente contrai a barriga, os glúteos ou as coxas — e o assoalho pélvico fica de fora da festa.</p>
+    <p class="sub">Pratique essa semana</p>
+    <div class="exer"><h4>O elevador.</h4><p>Deite de barriga para cima, joelhos dobrados, pés apoiados. Imagine que a entrada da vagina e do ânus se fecham e sobem juntas para dentro, como um elevador subindo um andar. Depois, solte devagar e sinta o elevador descer.</p></div>
+    <div class="exer"><h4>A pista discreta.</h4><p>Se ajudar, pense em segurar um pum sem que ninguém perceba. Esse “fechar e puxar pra dentro” é o movimento.</p></div>
+    <div class="exer"><h4>O dedo como guia.</h4><p>Com a mão limpa e um pouco de lubrificante, coloque um dedo na entrada da vagina e contraia. Se sentir um leve abraço em volta do dedo, puxando pra dentro, você encontrou.</p></div>
+    <p class="sub">Três cuidados</p>
+    <ul class="practice">
+      <li>Não prenda a respiração: solte o ar enquanto contrai.</li>
+      <li>Barriga, glúteos e coxas ficam relaxados. Vale pôr a mão na barriga pra conferir.</li>
+      <li>Não use o xixi como treino. Interromper o jato de urina pra exercitar pode atrapalhar o esvaziamento da bexiga.</li>
+    </ul>
+    <p class="body">E se, em vez de subir, você sentir que está empurrando pra baixo: pare. É o movimento contrário.</p>
+    <p class="sub">Sinal de que você completou</p>
+    <p class="body">Você contrai e relaxa o assoalho pélvico sem mexer barriga, glúteos e coxas — e sem prender a respiração.</p>
+
+    <div class="tool" data-screen-label="Ferramenta · encontrar">
+      <svg class="wave" width="64" height="12" viewBox="0 0 64 12" aria-hidden="true"><path d="M2 8 Q 10 1, 18 8 T 34 8 T 50 8 T 62 8"></path></svg>
+      <div class="lab">Ferramenta Afrodite</div>
+      <p>Nesta fase, a principal ferramenta é atenção. Mas um lubrificante de qualidade deixa a exploração com o dedo bem mais confortável.</p>
+      <div class="picks">
+        <a class="pick" href="https://asosloja.com.br/products/gel-lubrificante-e-hidratante-pelvico-dermosex-220-ml?utm_source=Affiliates&amp;utm_campaign=AffWLD_6Y" target="_blank" rel="noopener sponsored"><img src="/products/gel-lubrificante-e-hidratante-pelvico-dermosex-220-ml.jpg" alt="" loading="lazy"><span class="pb">Dermosex</span><span class="pn">Gel Lubrificante e Hidratante Pélvico</span></a>
+        <a class="pick" href="https://asosloja.com.br/products/gel-lubrificante-hidra-confort-feminist-220g?utm_source=Affiliates&amp;utm_campaign=AffWLD_6Y" target="_blank" rel="noopener sponsored"><img src="/products/gel-lubrificante-hidra-confort-feminist-220g.jpg" alt="" loading="lazy"><span class="pb">Feminist</span><span class="pn">Gel Lubrificante Hidra Confort</span></a>
+      </div>
+      <a class="slot" href="/#cuidar" target="_blank" rel="noopener">ver a curadoria · cuidar de mim</a>
+    </div>
+  </section>
+
+  <!-- ============ REFLEXÃO 2 ============ -->
+  <section class="reflect" data-screen-label="Reflexão · atenção">
+    <div class="lab">Uma pergunta</div>
+    <p>Quando foi a última vez que você prestou atenção num músculo que ninguém vê?</p>
+    <svg class="wave" width="64" height="12" viewBox="0 0 64 12" aria-hidden="true"><path d="M2 8 Q 10 1, 18 8 T 34 8 T 50 8 T 62 8"></path></svg>
+  </section>
+
+  <!-- ============ MOVIMENTO II · DESEJO ============ -->
+  <section class="movimento" data-screen-label="Movimento II · Desejo">
+    <div class="lab">Movimento ii</div>
+    <span class="word">Desejo</span>
+    <p class="def">Reconhecer uma vontade como legítima — não como algo para esconder ou sentir culpa.</p>
+    <p class="etapas">Etapa 03</p>
+  </section>
+
+  <!-- ============ ETAPA 03 ============ -->
+  <section class="read" data-screen-label="Etapa 03 · Pra você">
+    <div class="stepwm">03</div>
+    <p class="kicker">Etapa três</p>
+    <h2 class="title">Pompoar <span class="ac">pra você</span>.</h2>
+    <p class="lede">Antes de treinar, vale decidir por quê. E a resposta não precisa incluir ninguém além de você.</p>
+    <p class="body">O pompoarismo é uma prática antiga de consciência e controle dos músculos do assoalho pélvico, com raízes atribuídas a tradições orientais. No Ocidente, ganhou um nome mais sóbrio no fim da década de 1940, quando o ginecologista Arnold Kegel passou a indicar exercícios pra essa musculatura — os famosos “exercícios de Kegel”.</p>
+    <p class="body">No meio do caminho, virou piada de novela e promessa de “enlouquecer o parceiro”. A gente prefere outra versão.</p>
+    <p class="sub">Mitos e verdades</p>
+    <div class="exer"><h4>“Pompoar é pra agradar o parceiro.”</h4><p><b>Mito.</b> O prazer de quem estiver com você pode até mudar — mas o centro é a sua percepção, o seu conforto, o seu corpo.</p></div>
+    <div class="exer"><h4>“Só serve pra quem já teve filho.”</h4><p><b>Mito.</b> Qualquer mulher pode conhecer e cuidar dessa musculatura, em qualquer fase.</p></div>
+    <div class="exer"><h4>“Quanto mais força, melhor.”</h4><p><b>Mito.</b> Músculo tenso demais também dá problema — inclusive dor na relação. Saber relaxar faz parte do treino.</p></div>
+    <div class="exer"><h4>“Precisa de acessório.”</h4><p><b>Mito.</b> Os primeiros exercícios são só você e a sua atenção. Acessório fica pra etapa 5 — e é opcional.</p></div>
+    <div class="exer"><h4>“Pode mudar o prazer.”</h4><p><b>Verdade, com calma.</b> Muitas mulheres relatam mais percepção e sensações mais intensas quando conhecem e controlam essa musculatura. Não é promessa: é possibilidade.</p></div>
+    <div class="exer"><h4>“Ajuda a segurar o xixi.”</h4><p><b>Verdade.</b> O treino do assoalho pélvico é uma das abordagens mais estudadas para o escape de urina. Mas escape merece avaliação de uma fisioterapeuta pélvica — não só um guia.</p></div>
+    <p class="sub">Pratique essa semana</p>
+    <p class="body">Escreva, no papel, <b>três motivos seus</b> pra começar. Só vale motivo em primeira pessoa: “eu quero sentir…”, “eu quero entender…”, “eu quero parar de…”.</p>
+    <p class="sub">Sinal de que você completou</p>
+    <p class="body">Você tem três motivos — e nenhum deles depende da opinião de alguém.</p>
+  </section>
+
+  <!-- obs -->
+  <section class="obs" data-screen-label="Observação · sem plateia">
+    <svg class="wave" width="64" height="12" viewBox="0 0 64 12" aria-hidden="true"><path d="M2 8 Q 10 1, 18 8 T 34 8 T 50 8 T 62 8"></path></svg>
+    <p>Desejo também é querer conhecer o próprio corpo. Sem plateia.</p>
+  </section>
+
+  <!-- ============ PAUSA 2 ============ -->
+  <section class="pausa" data-screen-label="Pausa Afrodite · 2">
+    <div class="lab">Pausa Afrodite <span class="num">· ii</span></div>
+    <svg class="wave" width="74" height="13" viewBox="0 0 74 13" aria-hidden="true"><path d="M2 8 Q 11 1, 20 8 T 38 8 T 56 8 T 72 8"></path></svg>
+    <p>Respira. Literalmente — é a próxima etapa.<br><br>Não tem pressa, não tem meta, não tem nota. O seu corpo está com você há anos. Ele espera mais umas semanas.</p>
+  </section>
+
+  <!-- ============ MOVIMENTO III · SENTIR ============ -->
+  <section class="movimento" data-screen-label="Movimento III · Sentir">
+    <div class="lab">Movimento iii</div>
+    <span class="word">Sentir</span>
+    <p class="def">Estar presente no próprio corpo, perceber as sensações sem pressa e sem se cobrar por elas.</p>
+    <p class="etapas">Etapas 04 e 05</p>
+  </section>
+
+  <!-- ============ DIVISÓRIA · RESPIRAR ============ -->
+  <section class="divider" data-screen-label="Divisória · Respirar">
+    <img src="/ebook/img/venus-escuta.jpg" alt="Vênus">
+    <div class="cap">
+      <div class="step">Etapa quatro · Respirar e contrair</div>
+      <p class="q">Contrair é metade. <span class="ac">Soltar</span> é a outra.</p>
+    </div>
+  </section>
+
+  <!-- ============ ETAPA 04 ============ -->
+  <section class="read" data-screen-label="Etapa 04 · Exercícios">
+    <p class="kicker">Etapa quatro</p>
+    <h2 class="title">Os primeiros <span class="ac">exercícios</span>.</h2>
+    <p class="lede">Sem acessório, sem academia, sem ninguém saber. Cinco minutos.</p>
+    <p class="body">Agora que você encontrou o músculo, é hora de conversar com ele. Comece deitada, que é a posição mais fácil. Quando ficar natural, passe pra sentada e, depois, em pé.</p>
+    <p class="sub">A respiração</p>
+    <p class="body">Inspire soltando a barriga e o assoalho pélvico. Expire contraindo: o ar sai, o elevador sobe. Nunca prenda a respiração.</p>
+    <p class="sub">Pratique essa semana</p>
+    <div class="exer"><h4>Contração lenta.</h4><p>Contraia e segure por 3 a 5 segundos. Solte e descanse pelo mesmo tempo — ou o dobro. Repita de 5 a 10 vezes.</p></div>
+    <div class="exer"><h4>Contração rápida.</h4><p>Contraia e solte rápido, como uma piscada. Repita de 5 a 10 vezes, sempre soltando por completo entre uma e outra.</p></div>
+    <div class="exer"><h4>O elevador em andares.</h4><p>Suba devagar em três andares — um pouco, mais um pouco, o máximo confortável — e desça andar por andar. É o exercício que mais treina controle.</p></div>
+    <p class="body" style="margin-top:14px">Repare:</p>
+    <ul class="practice">
+      <li>Você solta completamente depois de contrair?</li>
+      <li>Em que momento o músculo cansa?</li>
+      <li>Um lado parece diferente do outro?</li>
+    </ul>
+    <p class="pull">Se doer, pare. Dor não faz parte do treino — é sinal pra procurar uma fisioterapeuta pélvica.</p>
+    <p class="sub">Sinal de que você completou</p>
+    <p class="body">Você faz as três sequências com a respiração tranquila, sem dor, e consegue soltar o músculo por completo no fim de cada uma.</p>
+  </section>
+
+  <!-- obs -->
+  <section class="obs" data-screen-label="Observação · escutar">
+    <svg class="wave" width="64" height="12" viewBox="0 0 64 12" aria-hidden="true"><path d="M2 8 Q 10 1, 18 8 T 34 8 T 50 8 T 62 8"></path></svg>
+    <p>O corpo fala baixinho. Pompoar é aprender a escutar.</p>
+  </section>
+
+  <!-- ============ ETAPA 05 ============ -->
+  <section class="read" data-screen-label="Etapa 05 · Acessórios">
+    <div class="stepwm">05</div>
+    <p class="kicker">Etapa cinco</p>
+    <h2 class="title">Acessórios: <span class="ac">quando e como</span>.</h2>
+    <p class="lede">Eles não são obrigatórios. São companhia pra quando o básico já ficou fácil.</p>
+    <p class="body">Com o tempo, alguns acessórios ajudam a dar retorno — você sente o músculo trabalhando — e a progredir aos poucos. A regra de ouro: comece leve, vá devagar e só avance quando o passo anterior estiver confortável.</p>
+    <div class="exer"><h4>Cones.</h4><p>Pequenos pesos de formato anatômico, em gramaturas diferentes. Você insere o mais leve e tenta mantê-lo no lugar — primeiro deitada, depois em pé — por poucos minutos. Só troque por um mais pesado quando o atual estiver fácil.</p></div>
+    <div class="exer"><h4>Bolinhas (ben-wa).</h4><p>Esferas ligadas por um cordão, com um peso interno que se movimenta. Ajudam a trabalhar percepção e coordenação: segurar, soltar, sentir o movimento.</p></div>
+    <div class="exer"><h4>Kits.</h4><p>Pra quem prefere começar com um conjunto e um manual, os kits reúnem mais de um acessório pra ir progredindo.</p></div>
+    <p class="sub">Com qualquer acessório</p>
+    <ul class="practice">
+      <li>Lave antes e depois, com água e sabão neutro, e siga o manual do fabricante.</li>
+      <li>Use lubrificante à base de água pra inserir, se precisar.</li>
+      <li>Respeite o tempo indicado: acessório não é pra passar o dia nem pra dormir.</li>
+      <li>Não use com infecção, ferida ou dor, durante a gestação ou no pós-parto sem liberação profissional.</li>
+      <li>Retire com calma, sem puxar com força.</li>
+    </ul>
+    <p class="sub">Sinal de que você completou</p>
+    <p class="body">Você decidiu se quer — ou não — usar um acessório. E, se quiser, sabe começar pelo mais leve.</p>
+
+    <div class="tool" data-screen-label="Ferramenta · acessórios">
+      <svg class="wave" width="64" height="12" viewBox="0 0 64 12" aria-hidden="true"><path d="M2 8 Q 10 1, 18 8 T 34 8 T 50 8 T 62 8"></path></svg>
+      <div class="lab">Ferramenta Afrodite</div>
+      <p>Selecionamos acessórios de entrada, pra experimentar sem grande investimento — e com o manual por perto.</p>
+      <div class="picks">
+        <a class="pick" href="https://asosloja.com.br/products/cone-para-pompoarismo-feminist-rosa-20-g-outlet?utm_source=Affiliates&amp;utm_campaign=AffWLD_6Y" target="_blank" rel="noopener sponsored"><img src="/products/cone-para-pompoarismo-feminist-rosa-20-g-outlet.jpg" alt="" loading="lazy"><span class="pb">Feminist</span><span class="pn">Cone para Pompoarismo — 20 g</span></a>
+        <a class="pick" href="https://asosloja.com.br/products/kit-pompoar-para-exercicios-de-pompoarismo-feminist?utm_source=Affiliates&amp;utm_campaign=AffWLD_6Y" target="_blank" rel="noopener sponsored"><img src="/products/kit-pompoar-para-exercicios-de-pompoarismo-feminist.jpg" alt="" loading="lazy"><span class="pb">Feminist</span><span class="pn">Kit Pompoar</span></a>
+      </div>
+      <a class="slot" href="https://asosloja.com.br/search?q=pompoarismo&amp;utm_source=Affiliates&amp;utm_campaign=AffWLD_6Y" target="_blank" rel="noopener sponsored">ver todos os acessórios de pompoar</a>
+    </div>
+  </section>
+
+  <!-- ============ PAUSA 3 ============ -->
+  <section class="pausa vinho" data-screen-label="Pausa Afrodite · 3">
+    <div class="lab">Pausa Afrodite <span class="num">· iii</span></div>
+    <svg class="wave" width="74" height="13" viewBox="0 0 74 13" aria-hidden="true"><path d="M2 8 Q 11 1, 20 8 T 38 8 T 56 8 T 72 8"></path></svg>
+    <p>Repara: você passou da metade. A maioria para antes — não porque é difícil, mas porque é novo.<br><br>Você está aprendendo uma língua que o seu corpo sempre falou. Continua.</p>
+  </section>
+
+  <!-- ============ REFLEXÃO 3 ============ -->
+  <section class="reflect" data-screen-label="Reflexão · percebi">
+    <div class="lab">Uma pergunta</div>
+    <p>O que você sentiu essa semana que antes passava despercebido?</p>
+    <svg class="wave" width="64" height="12" viewBox="0 0 64 12" aria-hidden="true"><path d="M2 8 Q 10 1, 18 8 T 34 8 T 50 8 T 62 8"></path></svg>
+  </section>
+
+  <!-- ============ MOVIMENTO IV · INDEPENDÊNCIA ============ -->
+  <section class="movimento" data-screen-label="Movimento IV · Independência">
+    <div class="lab">Movimento iv</div>
+    <span class="word">Independência</span>
+    <p class="def">A autonomia de decidir por si mesma, sem depender da aprovação de ninguém.</p>
+    <p class="etapas">Etapas 06 e 07</p>
+  </section>
+
+  <!-- ============ ETAPA 06 ============ -->
+  <section class="read" data-screen-label="Etapa 06 · Rotina">
+    <div class="stepwm">06</div>
+    <p class="kicker">Etapa seis</p>
+    <h2 class="title">Uma rotina <span class="ac">sua</span>.</h2>
+    <p class="lede">Constância vence intensidade. Cinco minutos por dia valem mais que uma hora no domingo.</p>
+    <p class="body">O assoalho pélvico responde ao treino como qualquer músculo: com regularidade e paciência. As mudanças costumam levar semanas pra aparecer — e tudo bem.</p>
+    <p class="sub">Um plano de quatro semanas</p>
+    <div class="exer"><h4>Semana 1 · Deitada.</h4><p>Contrações lentas e rápidas, uma sequência de cada, uma ou duas vezes por dia.</p></div>
+    <div class="exer"><h4>Semana 2 · Sentada.</h4><p>As mesmas sequências, sentada, com a coluna apoiada. Acrescente o elevador em andares.</p></div>
+    <div class="exer"><h4>Semana 3 · Em pé.</h4><p>Treine em pé — escovando os dentes, esperando o café, na fila do mercado. Ninguém percebe.</p></div>
+    <div class="exer"><h4>Semana 4 · No movimento.</h4><p>Experimente contrair antes de tossir, espirrar ou levantar algo pesado. Se quiser, é aqui que os acessórios entram.</p></div>
+    <p class="sub">Pra não esquecer</p>
+    <ul class="practice">
+      <li>Amarre o treino a um hábito que você já tem: café, banho, escovar os dentes.</li>
+      <li>Marque no calendário os dias em que treinou — ver a sequência ajuda.</li>
+      <li>Pulou um dia? Recomeça no seguinte. Sem culpa e sem compensar em dobro.</li>
+    </ul>
+    <p class="sub">Sinal de que você completou</p>
+    <p class="body">Você treinou por quatro semanas, na maior parte dos dias — e encontra o músculo com mais facilidade do que no começo.</p>
+  </section>
+
+  <!-- ============ DIVISÓRIA · COMPANHIA ============ -->
+  <section class="divider" data-screen-label="Divisória · Companhia">
+    <img src="/ebook/img/venus-cotidiano.jpg" alt="Vênus">
+    <div class="cap">
+      <div class="step">Etapa sete · Cuidar com companhia</div>
+      <p class="q">Pedir ajuda também é <span class="ac">autonomia</span>.</p>
+    </div>
+  </section>
+
+  <!-- ============ ETAPA 07 ============ -->
+  <section class="read" data-screen-label="Etapa 07 · Fisioterapeuta">
+    <p class="kicker">Etapa sete</p>
+    <h2 class="title">Saber quando procurar uma <span class="ac">fisioterapeuta</span>.</h2>
+    <p class="lede">Independência não é fazer tudo sozinha. É saber o que é seu — e quando chamar quem entende.</p>
+    <p class="body">A fisioterapia pélvica é a especialidade que avalia e trata o assoalho pélvico. Uma consulta mostra se você está contraindo do jeito certo, se o músculo está fraco ou tenso demais, e monta um treino pra você.</p>
+    <p class="sub">Procure uma fisioterapeuta pélvica se</p>
+    <ul class="practice">
+      <li>Você tem escape de urina ao tossir, espirrar, rir ou se exercitar.</li>
+      <li>Sente dor na relação, ao usar absorvente interno ou ao fazer os exercícios.</li>
+      <li>Tem sensação de peso, de “bola” ou de algo descendo na vagina.</li>
+      <li>Está grávida ou teve bebê recentemente.</li>
+      <li>Está na menopausa e percebeu mudanças no xixi, na lubrificação ou no conforto.</li>
+      <li>Não consegue encontrar o músculo, mesmo depois das etapas 1 e 2.</li>
+    </ul>
+    <p class="body">Isso não é sinal de fracasso. É o mesmo raciocínio de procurar uma dermatologista pra pele ou uma dentista pros dentes: cuidar bem inclui cuidar com quem entende.</p>
+    <p class="pull">Pompoar é prática pra vida inteira. E, como tudo que dura, fica melhor com orientação.</p>
+    <p class="sub">Sinal de que você completou</p>
+    <p class="body">Você sabe reconhecer os sinais que pedem avaliação — e onde procurar ajuda, se precisar.</p>
+  </section>
+
+  <!-- ============ PAUSA 4 ============ -->
+  <section class="pausa" data-screen-label="Pausa Afrodite · 4">
+    <div class="lab">Pausa Afrodite <span class="num">· iv</span></div>
+    <svg class="wave" width="74" height="13" viewBox="0 0 74 13" aria-hidden="true"><path d="M2 8 Q 11 1, 20 8 T 38 8 T 56 8 T 72 8"></path></svg>
+    <p>Não existe versão final do seu corpo. Existe a de hoje, que você conhece um pouco melhor do que a de ontem.<br><br>E isso, por enquanto, basta.</p>
+  </section>
+
+  <!-- ============ OBSTÁCULOS ============ -->
+  <section class="read" data-screen-label="Obstáculos">
+    <p class="kicker">Entre as etapas</p>
+    <h2 class="title">Sobre os <span class="ac">obstáculos</span> que vão aparecer.</h2>
+    <p class="body">Algumas coisas vão tentar te tirar do caminho. Antecipo as principais:</p>
+    <div class="exer"><h4>“Não sinto nada.”</h4><p>Normal no começo, principalmente se o músculo nunca foi treinado. Volte à etapa 2, tente outra posição e dê tempo. Se continuar, é hora da fisioterapeuta.</p></div>
+    <div class="exer"><h4>“Esqueço de fazer.”</h4><p>Amarre o treino a um hábito. E lembre: dois minutos também contam.</p></div>
+    <div class="exer"><h4>“Fico com vergonha.”</h4><p>É um músculo como outro qualquer — só não teve a mesma apresentação. Com o tempo, a vergonha dá lugar à curiosidade.</p></div>
+    <div class="exer"><h4>“Não vejo resultado.”</h4><p>Músculo leva semanas pra responder. Compare com você mesma de um mês atrás, não com promessa de internet. <em style="font-family:var(--voz);font-style:italic;color:var(--terracota)">O seu ritmo é o ritmo certo.</em></p></div>
+  </section>
+
+  <!-- ============ CHECKLIST ============ -->
+  <section class="read" data-screen-label="Checklist">
+    <p class="kicker">Checklist</p>
+    <h2 class="title">Acompanhe o <span class="ac">seu caminho</span>.</h2>
+    <div class="clist">
+      <div class="grp">Cuidado</div>
+      <div class="it"><div class="n">01</div><div class="t">Conhecer o assoalho pélvico<span class="line"></span></div></div>
+      <div class="it"><div class="n">02</div><div class="t">Encontrar o músculo<span class="line"></span></div></div>
+      <div class="grp">Desejo</div>
+      <div class="it"><div class="n">03</div><div class="t">Pompoar pra você<span class="line"></span></div></div>
+      <div class="grp">Sentir</div>
+      <div class="it"><div class="n">04</div><div class="t">Os primeiros exercícios<span class="line"></span></div></div>
+      <div class="it"><div class="n">05</div><div class="t">Acessórios: quando e como<span class="line"></span></div></div>
+      <div class="grp">Independência</div>
+      <div class="it"><div class="n">06</div><div class="t">Uma rotina sua<span class="line"></span></div></div>
+      <div class="it"><div class="n">07</div><div class="t">Saber quando procurar ajuda<small>essa vale pra vida toda</small></div></div>
+    </div>
+  </section>
+
+  <!-- ============ PERGUNTAS ============ -->
+  <section class="read" data-screen-label="Perguntas">
+    <p class="kicker">Dez perguntas</p>
+    <h2 class="title">Pra revisitar <span class="ac">de tempos em tempos</span>.</h2>
+    <p class="lede">Releia uma vez por mês. Não pra responder tudo — pra perceber o que mudou.</p>
+    <div class="qgroup"><h5>Sobre o corpo</h5><ol>
+      <li><span class="qn">01</span>Eu consigo encontrar o meu assoalho pélvico sem pensar muito?</li>
+      <li><span class="qn">02</span>Consigo soltar o músculo por completo depois de contrair?</li>
+      <li><span class="qn">03</span>Alguma coisa mudou no meu corpo que eu ainda não nomeei?</li>
+    </ol></div>
+    <div class="qgroup"><h5>Sobre o treino</h5><ol>
+      <li><span class="qn">04</span>Em quantos dias do último mês eu treinei?</li>
+      <li><span class="qn">05</span>Que posição ainda é difícil pra mim?</li>
+      <li><span class="qn">06</span>Estou avançando no meu ritmo — ou no ritmo que acho que deveria?</li>
+    </ol></div>
+    <div class="qgroup"><h5>Sobre o prazer</h5><ol>
+      <li><span class="qn">07</span>Percebo sensações que antes não percebia?</li>
+      <li><span class="qn">08</span>Estou fazendo isso por mim?</li>
+    </ol></div>
+    <div class="qgroup"><h5>Sobre o cuidado</h5><ol>
+      <li><span class="qn">09</span>Tenho algum sinal que pede uma avaliação profissional?</li>
+      <li><span class="qn">10</span>Que conversa sobre o meu corpo eu venho adiando?</li>
+    </ol></div>
+  </section>
+
+  <!-- ============ BÔNUS · CORPO EM TRANSIÇÃO ============ -->
+  <section class="read" data-screen-label="Bônus · Corpo em transição">
+    <p class="kicker">Bônus · Corpo em transição</p>
+    <h2 class="title">Gestação, pós-parto e <span class="ac">menopausa</span>.</h2>
+    <p class="body">Hormônios, o peso do bebê, o parto, a queda do estrogênio na menopausa: tudo isso mexe com o assoalho pélvico. Não é o fim de nada — é uma fase que pede um cuidado específico.</p>
+    <ul class="practice">
+      <li><b>Na gestação:</b> converse com a sua obstetra e com uma fisioterapeuta pélvica antes de começar ou continuar o treino.</li>
+      <li><b>No pós-parto:</b> espere a liberação médica. Uma avaliação com fisioterapeuta pélvica ajuda a retomar do jeito certo — seja o parto normal ou cesárea.</li>
+      <li><b>Na menopausa:</b> a queda dos hormônios pode trazer ressecamento e mudanças no controle do xixi. Hidratação íntima, lubrificante de qualidade e acompanhamento ginecológico fazem diferença.</li>
+    </ul>
+    <p class="pull">Isso não é o fim do prazer. É uma fase nova dele.</p>
+    <p class="body" style="text-align:center;margin-top:18px"><em style="font-family:var(--voz);font-style:italic;font-size:1.2em;color:var(--terracota)">Você merece mais do que se acostumar com o desconforto.</em></p>
+
+    <div class="tool" data-screen-label="Ferramenta · transição">
+      <svg class="wave" width="64" height="12" viewBox="0 0 64 12" aria-hidden="true"><path d="M2 8 Q 10 1, 18 8 T 34 8 T 50 8 T 62 8"></path></svg>
+      <div class="lab">Ferramenta Afrodite</div>
+      <p>Pra essa fase, escolhemos opções pensadas para o cuidado pélvico — sempre com a orientação de quem acompanha você.</p>
+      <div class="picks">
+        <a class="pick" href="https://asosloja.com.br/products/massageador-fisioterapico-pelvico-feminist?utm_source=Affiliates&amp;utm_campaign=AffWLD_6Y" target="_blank" rel="noopener sponsored"><img src="/products/massageador-fisioterapico-pelvico-feminist.jpg" alt="" loading="lazy"><span class="pb">Feminist</span><span class="pn">Massageador Fisioterápico Pélvico</span></a>
+        <a class="pick" href="https://asosloja.com.br/products/serum-intimo-para-regiao-pelvica-dermosex-30-ml?utm_source=Affiliates&amp;utm_campaign=AffWLD_6Y" target="_blank" rel="noopener sponsored"><img src="/products/serum-intimo-para-regiao-pelvica-dermosex-30-ml.jpg" alt="" loading="lazy"><span class="pb">Dermosex</span><span class="pn">Sérum Íntimo para Região Pélvica</span></a>
+      </div>
+      <a class="slot" href="/#cuidar" target="_blank" rel="noopener">ver a curadoria · cuidar de mim</a>
+    </div>
+  </section>
+
+  <!-- ============ ENCERRAMENTO ============ -->
+  <section class="closing" data-screen-label="Encerramento">
+    <p class="kicker">Não é um fim</p>
+    <h2>De <span class="ac">mim</span>, pra você.</h2>
+    <div class="rule"></div>
+    <p>Se você chegou até aqui, já conhece uma parte de você que muita gente nunca apresentou.</p>
+    <p>E conhecer é o começo de cuidar.</p>
+    <p class="em">Confia no seu ritmo. O seu corpo está escutando.</p>
+    <p>O treino não acaba na última página. Ele só fica mais seu.</p>
+    <div class="sig">afrodite</div>
+  </section>
+
+  <!-- ============ PRÓXIMOS PASSOS ============ -->
+  <section class="read next" data-screen-label="Próximos passos">
+    <p class="kicker">Continue comigo</p>
+    <h2 class="title">A conversa continua <span class="ac">lá</span>.</h2>
+    <!-- SE_SEQUENCIA_EMAIL -->
+    <div class="step3"><h4>Fica de olho no seu e-mail.</h4><p>Nos próximos dias, uma etapa por vez na sua caixa — com o exercício da semana pra você não perder o ritmo.</p></div>
+    <!-- /SE_SEQUENCIA_EMAIL -->
+    <div class="step3"><h4>Conhece a curadoria.</h4><p>Produtos escolhidos com critério pra cada movimento — do cuidado diário ao que desperta vontade. <a class="ig" href="/" target="_blank" rel="noopener">Ver a curadoria</a></p></div>
+    <div class="step3"><h4>Vem pro Instagram.</h4><p>Conteúdo sobre saúde íntima, autoconhecimento e curadoria honesta de produtos que valem o investimento. <a class="ig" href="https://instagram.com/afrodite.prazer" target="_blank" rel="noopener">@afrodite.prazer</a></p></div>
+    <div class="step3"><h4>Me conta qual etapa te tocou.</h4><p>Manda uma DM contando. Eu leio todas — e <em style="font-family:var(--voz);font-style:italic">quero saber</em>.</p></div>
+    <div class="step3"><h4>Compartilha esse guia.</h4><p>Se ele te fez bem, manda <a class="ig" href="/guia" target="_blank" rel="noopener">o link do guia</a> pra uma amiga. Mulher que se conhece muda o mundo perto dela.</p></div>
+  </section>
+
+  <!-- ============ CONTRACAPA ============ -->
+  <section class="back" data-screen-label="Contracapa">
+    <div class="top">— Afrodite · Prazer —</div>
+    <p class="q">Quem se conhece <span class="ac">escolhe</span>. Quem se escuta, <span class="ac">sente</span>. E cuida do que é seu.</p>
+    <div class="foot">
+      <img class="logo" src="/brand/logo.png" alt="">
+      <div class="name">Afrodite · Prazer</div>
+      <div class="ig">@afrodite.prazer · Instagram</div>
+    </div>
+  </section>
+
+</div>
+
+<script>
+  // barra de progresso + posição de leitura persistente
+  (function(){
+    var bar=document.getElementById('progress');
+    function onScroll(){
+      var h=document.documentElement.scrollHeight-window.innerHeight;
+      var p=h>0?(window.scrollY/h):0;
+      bar.style.width=(p*100)+'%';
+      try{localStorage.setItem('afrodite_pompoar_pos',String(window.scrollY));}catch(e){}
+    }
+    window.addEventListener('scroll',onScroll,{passive:true});
+    window.addEventListener('load',function(){
+      try{
+        var y=parseFloat(localStorage.getItem('afrodite_pompoar_pos'));
+        if(y>0) window.scrollTo(0,y);
+      }catch(e){}
+      onScroll();
+    });
+  })();
+</script>
+</body></html>

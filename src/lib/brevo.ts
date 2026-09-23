@@ -73,8 +73,8 @@ export async function sendEbookEmail(input: LeadInput) {
         Bem-vinda, ${name}.
       </h1>
       <p style="font-family:Helvetica,Arial,sans-serif; font-size:15px; line-height:1.7; margin:0 0 12px;">
-        Seu guia <em>Pompoar, prazer.</em> está pronto pra você — 7 etapas pra conhecer,
-        sentir e fortalecer o seu assoalho pélvico, no seu tempo.
+        Seu guia <em>Pompoar, prazer.</em> está pronto pra você — do primeiro “onde fica?”
+        ao seu primeiro treino de 7 dias, no seu tempo.
       </p>
       <p style="font-family:Helvetica,Arial,sans-serif; font-size:15px; line-height:1.7; margin:0;">
         Guarde este e-mail: o link abaixo é só seu e funciona em qualquer aparelho.

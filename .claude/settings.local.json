@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(gh pr create *)",
+      "PowerShell(gh pr merge *)",
+      "PowerShell(gh pr view *)",
+      "PowerShell(git push *)"
+    ]
+  },
+  "autoMode": {
+    "allow": [
+      "$defaults",
+      "The project owner pre-authorized end-to-end publishing of the Afrodite site: opening AND merging pull requests into main of cirobdomingos-cyber/afrodite-prazer (gh pr merge), which triggers the Railway deploy. The operator is non-technical and relies on Claude to publish without reviewing PRs on GitHub.",
+      "Setting variables and triggering deploys on the Railway project afrodite-prazer through its GraphQL API with the project token in .env.local is authorized.",
+      "Read-only HTTP checks (HEAD/GET) of afrodite-prazer.up.railway.app and afroditeprazer.com.br, including waiting loops, are allowed."
+    ]
+  }
+}

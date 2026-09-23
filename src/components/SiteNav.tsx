@@ -120,7 +120,7 @@ export default function SiteNav() {
         <Link href="/guia" className={styles.drawerGuide} onClick={close}>
           <span className={styles.drawerGuideKicker}>Guia gratuito</span>
           <strong>Pompoar, prazer.</strong>
-          <span>7 etapas, no seu ritmo. Receba no e-mail →</span>
+          <span>Guia da iniciante + treino de 7 dias. Receba no e-mail →</span>
         </Link>
 
         <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" className={styles.drawerIg}>

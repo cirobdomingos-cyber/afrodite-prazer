@@ -1,6 +1,6 @@
 # Afrodite, prazer.
 
-Curadoria de prazer, intimidade e autocuidado para mulheres. Este repositório tem o site (página de vendas + curadoria), o guia gratuito com captura de e-mail e o ebook "As 7 etapas do autoconhecimento íntimo".
+Curadoria de prazer, intimidade e autocuidado para mulheres. Este repositório tem o site (página de vendas + curadoria), o guia gratuito com captura de e-mail e o ebook "Pompoar, prazer." (7 etapas de pompoarismo).
 
 Stack: Next.js 14 (App Router) · TypeScript · Brevo (e-mail) · Railway (hospedagem).
 
@@ -23,7 +23,7 @@ Stack: Next.js 14 (App Router) · TypeScript · Brevo (e-mail) · Railway (hospe
 | Link de afiliada (loja + código) | `src/lib/catalog.ts` |
 | Página inicial | `src/app/page.tsx` + `src/app/home.module.css` |
 | Guia gratuito | `src/app/guia/page.tsx` + `src/components/LeadForm.tsx` |
-| Ebook | `content/ebook/as-7-etapas.html` (fotos em `public/ebook/img/`) |
+| Ebook | `content/ebook/pompoar.html` (fotos em `public/ebook/img/`) |
 | E-mail de boas-vindas | `src/lib/brevo.ts` |
 | Sequência de e-mails + como ativar o Brevo | `docs/funil/sequencia-de-emails.md` |
 | Cores e fontes (brand book) | `src/app/globals.css` |

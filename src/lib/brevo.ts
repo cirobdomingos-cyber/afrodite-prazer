@@ -56,7 +56,8 @@ export async function sendEbookEmail(input: LeadInput) {
 
   const name = escapeHtml(input.name);
   const url = escapeHtml(input.readUrl);
-  const subject = "Seu guia chegou — As 7 etapas do autoconhecimento íntimo";
+  // Assunto discreto: aparece na caixa de entrada e na notificação do celular.
+  const subject = "Seu guia da Afrodite chegou";
   const html = `
   <div style="background:#F3E2C7; padding:32px 16px;">
     <div style="max-width:540px; margin:0 auto; background:#FBF3E4; border-top:4px solid #581931; padding:36px 32px; font-family:Georgia,'Cormorant Garamond',serif; color:#3D2317;">
@@ -67,8 +68,8 @@ export async function sendEbookEmail(input: LeadInput) {
         Bem-vinda, ${name}.
       </h1>
       <p style="font-family:Helvetica,Arial,sans-serif; font-size:15px; line-height:1.7; margin:0 0 12px;">
-        Seu guia <em>As 7 etapas do autoconhecimento íntimo</em> está pronto pra você —
-        no seu tempo, sem pressa, sem prova.
+        Seu guia <em>Pompoar, prazer.</em> está pronto pra você — 7 etapas pra conhecer,
+        sentir e fortalecer o seu assoalho pélvico, no seu tempo.
       </p>
       <p style="font-family:Helvetica,Arial,sans-serif; font-size:15px; line-height:1.7; margin:0;">
         Guarde este e-mail: o link abaixo é só seu e funciona em qualquer aparelho.

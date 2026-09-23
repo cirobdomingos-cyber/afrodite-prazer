@@ -7,7 +7,7 @@ export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
 // O ebook fica fora de /public: só é servido a quem tem o link pessoal.
-const EBOOK_FILE = path.join(process.cwd(), "content", "ebook", "as-7-etapas.html");
+const EBOOK_FILE = path.join(process.cwd(), "content", "ebook", "pompoar.html");
 
 export async function GET(req: Request) {
   const url = new URL(req.url);

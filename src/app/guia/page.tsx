@@ -9,16 +9,16 @@ import { ACCESS_COOKIE, verifyAccessToken } from "@/lib/ebookAccess";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
-  title: "Guia gratuito",
+  title: "Guia gratuito de pompoar",
   description:
-    "As 7 etapas do autoconhecimento íntimo. Um guia honesto pra mulher que quer se redescobrir — em qualquer idade, em qualquer fase.",
+    "Pompoar, prazer.: 7 etapas pra conhecer, sentir e fortalecer o seu assoalho pélvico — no seu ritmo, pra você.",
 };
 
 const MOVEMENTS = [
-  { word: "Cuidado", text: "Reconhecer o silêncio e reaprender o próprio corpo." },
-  { word: "Desejo", text: "Descobrir o que dá prazer de verdade." },
-  { word: "Sentir", text: "Conhecer a própria resposta, sem se cobrar." },
-  { word: "Independência", text: "Falar, mudar e viver como mulher que se conhece." },
+  { word: "Cuidado", text: "Conhecer o assoalho pélvico e encontrar o músculo." },
+  { word: "Desejo", text: "Decidir por que pompoar — pra você, não pra ninguém." },
+  { word: "Sentir", text: "Os primeiros exercícios e, se quiser, os acessórios." },
+  { word: "Independência", text: "Uma rotina sua e a hora certa de pedir ajuda." },
 ];
 
 export default function GuiaPage() {
@@ -49,18 +49,18 @@ export default function GuiaPage() {
         <div className={styles.formCol}>
           <div className={styles.kicker}>Guia gratuito</div>
           <h1>
-            As <span className={styles.ac}>7 etapas</span> do autoconhecimento{" "}
-            <span className={styles.ac}>íntimo</span>
+            <span className={styles.ac}>Pompoar</span>, prazer.
           </h1>
           <p className={styles.lede}>
-            Um guia honesto pra mulher que quer se redescobrir — em qualquer idade, em qualquer
-            fase.
+            7 etapas pra conhecer, sentir e fortalecer o seu assoalho pélvico — no seu ritmo,
+            pra você. Não pra agradar ninguém.
           </p>
 
           <ul className={styles.bullets}>
-            <li>Como criar tempo (de verdade) pra você no meio da rotina.</li>
-            <li>O que mudou no seu corpo — e como reconectar sem julgamento.</li>
-            <li>Pequenos rituais semanais que não dependem de ninguém.</li>
+            <li>Onde fica o assoalho pélvico e como encontrar o músculo, sem constrangimento.</li>
+            <li>Os primeiros exercícios, sem acessório — cinco minutos por dia.</li>
+            <li>Um plano de quatro semanas e o que fazer quando algo não vai bem.</li>
+            <li>Bônus: gestação, pós-parto e menopausa.</li>
           </ul>
 
           {returning ? (

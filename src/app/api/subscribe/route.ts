@@ -1,7 +1,6 @@
 import { NextResponse } from "next/server";
 import { addContact, sendEbookEmail } from "@/lib/brevo";
-import { promises as fs } from "node:fs";
-import path from "node:path";
+import { createAccessToken } from "@/lib/ebookAccess";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -22,40 +21,39 @@ export async function POST(req: Request) {
   const email = typeof body.email === "string" ? body.email.trim().toLowerCase() : "";
   const source = typeof body.source === "string" ? body.source.slice(0, 40) : "unknown";
 
-  if (name.length < 2) return NextResponse.json({ ok: false, error: "name_required" }, { status: 400 });
-  if (!EMAIL_RE.test(email)) return NextResponse.json({ ok: false, error: "email_invalid" }, { status: 400 });
+  if (name.length < 2) {
+    return NextResponse.json({ ok: false, error: "Conta pra gente como você gosta de ser chamada." }, { status: 400 });
+  }
+  if (!EMAIL_RE.test(email)) {
+    return NextResponse.json({ ok: false, error: "Confere o e-mail? Parece que faltou alguma coisa." }, { status: 400 });
+  }
 
-  const downloadUrl = absoluteUrl(req, process.env.EBOOK_DOWNLOAD_URL ?? "/ebook/afrodite-prazer-7-etapas.pdf");
+  const readPath = `/guia/ler?t=${createAccessToken(email)}`;
+  const readUrl = `${siteOrigin(req)}${readPath}`;
 
   const hasBrevo = Boolean(process.env.BREVO_API_KEY && process.env.BREVO_LIST_ID);
   if (!hasBrevo) {
-    await appendLocalLead({ name, email, source, downloadUrl });
-    return NextResponse.json({ ok: true, provider: "local" });
+    // Sem Brevo o contato fica registrado nos logs do Railway (busque por "[lead]").
+    console.log("[lead]", JSON.stringify({ name, email, source, at: new Date().toISOString() }));
+    return NextResponse.json({ ok: true, provider: "log", readPath });
   }
 
   try {
-    await addContact({ name, email, source });
-    await sendEbookEmail({ name, email, source, downloadUrl });
-    return NextResponse.json({ ok: true, provider: "brevo" });
+    await addContact({ name, email, source, readUrl });
+    await sendEbookEmail({ name, email, source, readUrl });
+    return NextResponse.json({ ok: true, provider: "brevo", readPath });
   } catch (err) {
-    const msg = err instanceof Error ? err.message : "unknown_error";
-    return NextResponse.json({ ok: false, error: msg }, { status: 502 });
+    // O e-mail falhou, mas a leitora não perde o acesso: o link aparece na tela.
+    console.error("[lead] brevo falhou", JSON.stringify({ email, source }), err);
+    console.log("[lead]", JSON.stringify({ name, email, source, at: new Date().toISOString() }));
+    return NextResponse.json({ ok: true, provider: "log", readPath });
   }
 }
 
-function absoluteUrl(req: Request, pathOrUrl: string): string {
-  if (/^https?:\/\//i.test(pathOrUrl)) return pathOrUrl;
-  const origin = new URL(req.url).origin;
-  return `${origin}${pathOrUrl.startsWith("/") ? "" : "/"}${pathOrUrl}`;
-}
-
-async function appendLocalLead(record: { name: string; email: string; source: string; downloadUrl: string }) {
-  try {
-    const dir = path.join(process.cwd(), "data");
-    await fs.mkdir(dir, { recursive: true });
-    const line = JSON.stringify({ ...record, at: new Date().toISOString() }) + "\n";
-    await fs.appendFile(path.join(dir, "leads.local.jsonl"), line, "utf8");
-  } catch {
-    // best-effort dev log
-  }
+function siteOrigin(req: Request): string {
+  if (process.env.SITE_URL) return process.env.SITE_URL.replace(/\/$/, "");
+  const url = new URL(req.url);
+  const host = req.headers.get("x-forwarded-host") ?? url.host;
+  const proto = req.headers.get("x-forwarded-proto") ?? url.protocol.replace(":", "");
+  return `${proto}://${host}`;
 }

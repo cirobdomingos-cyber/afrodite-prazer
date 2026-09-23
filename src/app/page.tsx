@@ -1,30 +1,9 @@
-import type { Viewport } from "next";
 import Image from "next/image";
-import Link from "next/link";
-import { Montserrat, Parisienne } from "next/font/google";
 import Carousel from "@/components/Carousel";
+import SiteFooter, { INSTAGRAM_URL } from "@/components/SiteFooter";
+import SiteNav from "@/components/SiteNav";
 import { affiliateUrl, formatBRL, productsForSection, sections } from "@/lib/catalog";
 import styles from "./home.module.css";
-
-const montserrat = Montserrat({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-montserrat",
-  display: "swap",
-});
-
-const parisienne = Parisienne({
-  subsets: ["latin"],
-  weight: "400",
-  variable: "--font-parisienne",
-  display: "swap",
-});
-
-export const viewport: Viewport = {
-  themeColor: "#FBF3E4",
-};
-
-const INSTAGRAM_URL = "https://instagram.com/afrodite.prazer";
 
 const CONCEPTS = [
   { word: "Cuidado", text: "Atenção dedicada a si mesma, sem pressa e sem julgamento." },
@@ -59,22 +38,8 @@ function Wave({ color, flip = false }: { color: string; flip?: boolean }) {
 
 export default function HomePage() {
   return (
-    <div className={`${styles.page} ${montserrat.variable} ${parisienne.variable}`}>
-      <nav className={styles.nav} aria-label="Principal">
-        <div className={styles.navInner}>
-          <Link href="/" className={styles.navLogo}>
-            Afrodite<span>,</span> prazer.
-          </Link>
-          <div className={styles.navLinks}>
-            {sections.map((s) => (
-              <a key={s.id} href={`#${s.id}`}>
-                {s.title}
-              </a>
-            ))}
-            <Link href="/guia">Guia gratuito</Link>
-          </div>
-        </div>
-      </nav>
+    <div className={styles.page}>
+      <SiteNav />
 
       <header className={styles.hero}>
         <Image
@@ -187,25 +152,7 @@ export default function HomePage() {
         );
       })}
 
-      <footer className={styles.footer}>
-        <span className={styles.script}>prazer.</span>
-        <p className={styles.footPhrase}>
-          &ldquo;Dizer sim para mim, independente da opinião alheia.&rdquo;
-        </p>
-        <a
-          className={styles.footIg}
-          href={INSTAGRAM_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          @afrodite.prazer no Instagram
-        </a>
-        <p className={styles.footNote}>
-          Os links de compra levam à loja parceira A Sós. A Afrodite, prazer. atua como curadoria
-          de conteúdo e produtos — a compra e a entrega são realizadas diretamente pela loja. Os
-          preços podem mudar na loja. Conteúdo adulto, destinado a maiores de 18 anos.
-        </p>
-      </footer>
+      <SiteFooter />
     </div>
   );
 }

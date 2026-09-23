@@ -278,6 +278,30 @@ h2.title .ac{font-weight:500}
 .progress{background:linear-gradient(90deg,var(--terracota),#DA7811)}
 body{background:var(--aubergine-deep)}
 
+/* ---- movimentos (os 4 conceitos da marca) ---- */
+.movimento{background:var(--creme-2);text-align:center;padding:clamp(64px,16vw,96px) var(--pad);
+  border-top:1px solid rgba(88,25,49,.12);border-bottom:1px solid rgba(88,25,49,.12)}
+.movimento .lab{font-size:11px;letter-spacing:.34em;text-transform:uppercase;color:#DA7811;font-weight:600}
+.movimento .word{display:block;font-family:var(--script);font-size:clamp(52px,15vw,72px);line-height:1.1;
+  color:var(--aubergine);margin:14px 0 10px}
+.movimento .def{font-family:var(--voz);font-style:italic;font-size:clamp(19px,5.2vw,22px);line-height:1.45;
+  color:var(--ink);max-width:26ch;margin:0 auto 20px}
+.movimento .etapas{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--terracota);font-weight:600;margin:0}
+
+/* ---- produtos da curadoria nas Ferramentas ---- */
+.picks{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:4px 0 18px}
+.pick{display:flex;flex-direction:column;background:#fff;border-radius:14px;overflow:hidden;
+  border:1px solid rgba(26,117,98,.18);text-decoration:none;color:var(--ink);transition:transform .2s,box-shadow .2s}
+.pick:hover{transform:translateY(-2px);box-shadow:0 10px 22px -12px rgba(63,15,34,.35)}
+.pick img{width:100%;aspect-ratio:1/1;object-fit:contain;background:#fff}
+.pick .pb{font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--terracota);font-weight:600;padding:10px 12px 0}
+.pick .pn{font-family:var(--voz);font-size:16px;font-weight:600;line-height:1.2;padding:3px 12px 12px;color:var(--aubergine)}
+.tool a.slot{text-decoration:none}
+
+/* ---- checklist agrupado por movimento ---- */
+.clist .grp{font-family:var(--script);font-size:26px;color:var(--aubergine);padding:22px 0 0}
+.clist .grp:first-child{padding-top:0}
+
 @media (min-width:600px){
   .book{margin-top:36px;margin-bottom:36px;border-radius:3px}
 }
@@ -311,6 +335,7 @@ body{background:var(--aubergine-deep)}
     <p class="body">Qualquer uma delas — você está no lugar certo.</p>
     <p class="pull">Esse guia parte de uma ideia simples: prazer que se conhece é melhor que prazer que se herda.</p>
     <p class="body">Não é teoria. São 7 etapas. Você pode levar 7 semanas ou 7 meses — não tem pressa, não tem prova. Só não dá pra pular.</p>
+    <p class="body">As etapas se organizam em quatro movimentos — <b>cuidado</b>, <b>desejo</b>, <b>sentir</b> e <b>independência</b>. No cuidado que desperta o desejo, no desejo que aprende a sentir, encontramos a independência de ser quem somos.</p>
     <p class="body"><em style="font-family:var(--voz);font-style:italic;font-size:1.15em;color:var(--terracota)">Bem-vinda. De volta a você.</em></p>
   </section>
 
@@ -357,6 +382,14 @@ body{background:var(--aubergine-deep)}
     <svg class="wave" width="64" height="12" viewBox="0 0 64 12" aria-hidden="true"><path d="M2 8 Q 10 1, 18 8 T 34 8 T 50 8 T 62 8"></path></svg>
   </section>
 
+  <!-- ============ MOVIMENTO I · CUIDADO ============ -->
+  <section class="movimento" data-screen-label="Movimento I · Cuidado">
+    <div class="lab">Movimento i</div>
+    <span class="word">Cuidado</span>
+    <p class="def">A atenção que você dedica a si mesma — sem pressa e sem julgamento.</p>
+    <p class="etapas">Etapas 01 e 02</p>
+  </section>
+
   <!-- ============ ETAPA 01 ============ -->
   <section class="read" data-screen-label="Etapa 01 · Silêncio">
     <div class="stepwm">01</div>
@@ -381,7 +414,7 @@ body{background:var(--aubergine-deep)}
   <!-- obs -->
   <section class="obs" data-screen-label="Observação · permissão">
     <svg class="wave" width="64" height="12" viewBox="0 0 64 12" aria-hidden="true"><path d="M2 8 Q 10 1, 18 8 T 34 8 T 50 8 T 62 8"></path></svg>
-    <p>Tem mulher que chega aos 40 sem nunca ter se observado de verdade. Não por descuido — por falta de permissão.</p>
+    <p>Tem mulher que passa anos sem nunca ter se observado de verdade. Não por descuido — por falta de permissão.</p>
   </section>
 
   <!-- ============ ETAPA 02 ============ -->
@@ -390,7 +423,7 @@ body{background:var(--aubergine-deep)}
     <p class="kicker">Etapa dois</p>
     <h2 class="title">Reaprender o <span class="ac">próprio corpo</span>.</h2>
     <p class="lede">Se você não conhece seu corpo em silêncio, sem julgamento — você não vai conhecê-lo no prazer.</p>
-    <p class="body">Tem mulher de 40 anos que nunca olhou a própria vulva no espelho. Não por preguiça — por um pudor que veio cedo, ficou inconsciente, e nunca foi examinado.</p>
+    <p class="body">Tem mulher adulta que nunca olhou a própria vulva no espelho. Não por preguiça — por um pudor que veio cedo, ficou inconsciente, e nunca foi examinado.</p>
     <p class="body">O corpo que você tem hoje é diferente do que você tinha aos 20. E será diferente do que terá aos 50. Cada versão merece ser conhecida.</p>
     <p class="sub">Pratique essa semana</p>
     <div class="exer"><h4>O espelho.</h4><p>Uma noite, sozinha, com luz boa. Tire a roupa. Olhe o corpo inteiro. Não o que devia mudar. O que é. Demore.</p></div>
@@ -405,7 +438,11 @@ body{background:var(--aubergine-deep)}
       <svg class="wave" width="64" height="12" viewBox="0 0 64 12" aria-hidden="true"><path d="M2 8 Q 10 1, 18 8 T 34 8 T 50 8 T 62 8"></path></svg>
       <div class="lab">Ferramenta Afrodite</div>
       <p>Algumas mulheres gostam de transformar esse reencontro com o corpo num pequeno ritual: luz baixa, um óleo, tempo sem pressa. Reunimos uma curadoria que pode acompanhar essa etapa — pra quando você quiser.</p>
-      <a class="slot" href="#">curadoria · em breve</a>
+      <div class="picks">
+        <a class="pick" href="https://asosloja.com.br/products/oleo-para-massagem-sensual-olove-massage-120ml?utm_source=Affiliates&amp;utm_campaign=AffWLD_6Y" target="_blank" rel="noopener sponsored"><img src="/products/oleo-para-massagem-sensual-olove-massage-120ml.jpg" alt="" loading="lazy"><span class="pb">Olove</span><span class="pn">Óleo para Massagem Sensual</span></a>
+        <a class="pick" href="https://asosloja.com.br/products/vela-hidratante-beijavel-olove-candle-morango-70-g?utm_source=Affiliates&amp;utm_campaign=AffWLD_6Y" target="_blank" rel="noopener sponsored"><img src="/products/vela-hidratante-beijavel-olove-candle-morango-70-g.jpg" alt="" loading="lazy"><span class="pb">Olove</span><span class="pn">Vela Hidratante Beijável Candle</span></a>
+      </div>
+      <a class="slot" href="/#sentidos" target="_blank" rel="noopener">ver a curadoria · conforto e sentidos</a>
     </div>
   </section>
 
@@ -420,6 +457,14 @@ body{background:var(--aubergine-deep)}
     <div class="lab">Uma pergunta</div>
     <p>O que mudou na sua relação com o seu corpo nos últimos cinco anos?</p>
     <svg class="wave" width="64" height="12" viewBox="0 0 64 12" aria-hidden="true"><path d="M2 8 Q 10 1, 18 8 T 34 8 T 50 8 T 62 8"></path></svg>
+  </section>
+
+  <!-- ============ MOVIMENTO II · DESEJO ============ -->
+  <section class="movimento" data-screen-label="Movimento II · Desejo">
+    <div class="lab">Movimento ii</div>
+    <span class="word">Desejo</span>
+    <p class="def">Reconhecer uma vontade como legítima — não como algo para esconder ou sentir culpa.</p>
+    <p class="etapas">Etapa 03</p>
   </section>
 
   <!-- ============ ETAPA 03 ============ -->
@@ -458,6 +503,14 @@ body{background:var(--aubergine-deep)}
     <p>Respira. Você não precisa terminar isso hoje. Prazer não tem prazo, não tem meta, não tem nota.<br><br>Algumas mulheres levam uma semana. Outras, uma vida. As duas estão no tempo certo — o delas.</p>
   </section>
 
+  <!-- ============ MOVIMENTO III · SENTIR ============ -->
+  <section class="movimento" data-screen-label="Movimento III · Sentir">
+    <div class="lab">Movimento iii</div>
+    <span class="word">Sentir</span>
+    <p class="def">Estar presente no próprio corpo, perceber as sensações sem pressa e sem se cobrar por elas.</p>
+    <p class="etapas">Etapa 04</p>
+  </section>
+
   <!-- ============ DIVISÓRIA · ESCUTA ============ -->
   <section class="divider" data-screen-label="Divisória · Escuta">
     <img src="/ebook/img/venus-escuta.jpg" alt="Vênus">
@@ -490,8 +543,20 @@ body{background:var(--aubergine-deep)}
       <svg class="wave" width="64" height="12" viewBox="0 0 64 12" aria-hidden="true"><path d="M2 8 Q 10 1, 18 8 T 34 8 T 50 8 T 62 8"></path></svg>
       <div class="lab">Ferramenta Afrodite</div>
       <p>Aqui, alguns instrumentos ajudam o corpo a sentir o que ainda não aprendeu a sentir sozinho. Não como atalho — como companhia. Selecionamos alguns com cuidado.</p>
-      <a class="slot" href="#">curadoria · em breve</a>
+      <div class="picks">
+        <a class="pick" href="https://asosloja.com.br/products/capsula-vibratoria-recarregavel-olove-vibrito-rosa?utm_source=Affiliates&amp;utm_campaign=AffWLD_6Y" target="_blank" rel="noopener sponsored"><img src="/products/capsula-vibratoria-recarregavel-olove-vibrito-rosa.jpg" alt="" loading="lazy"><span class="pb">Olove</span><span class="pn">Cápsula Vibratória Vibrito</span></a>
+        <a class="pick" href="https://asosloja.com.br/products/gel-lubrificante-e-hidratante-pelvico-dermosex-220-ml?utm_source=Affiliates&amp;utm_campaign=AffWLD_6Y" target="_blank" rel="noopener sponsored"><img src="/products/gel-lubrificante-e-hidratante-pelvico-dermosex-220-ml.jpg" alt="" loading="lazy"><span class="pb">Dermosex</span><span class="pn">Gel Lubrificante e Hidratante Pélvico</span></a>
+      </div>
+      <a class="slot" href="/#explorar" target="_blank" rel="noopener">ver a curadoria · explorar</a>
     </div>
+  </section>
+
+  <!-- ============ MOVIMENTO IV · INDEPENDÊNCIA ============ -->
+  <section class="movimento" data-screen-label="Movimento IV · Independência">
+    <div class="lab">Movimento iv</div>
+    <span class="word">Independência</span>
+    <p class="def">A autonomia de decidir por si mesma, sem depender da aprovação de ninguém.</p>
+    <p class="etapas">Etapas 05, 06 e 07</p>
   </section>
 
   <!-- ============ ETAPA 05 ============ -->
@@ -596,7 +661,7 @@ body{background:var(--aubergine-deep)}
     <div class="exer"><h4>A culpa.</h4><p>“Estou sendo egoísta?” Não. Mulher cuidar de si não é egoísmo — é base. Sem ela, você não cuida bem de mais ninguém.</p></div>
     <div class="exer"><h4>As outras pessoas.</h4><p>Algumas podem estranhar suas mudanças. Às vezes porque a sua transformação ilumina o que elas escolheram não fazer. Não é sobre você.</p></div>
     <div class="exer"><h4>O cansaço.</h4><p>Vão existir semanas em que você não consegue. Tudo bem. Isso não é projeto com prazo. É estilo de vida.</p></div>
-    <div class="exer"><h4>A vergonha de demorar.</h4><p>“Descobrindo isso aos 38, devia ter aprendido aos 18.” Não devia. Ninguém te ensinou. <em style="font-family:var(--voz);font-style:italic;color:var(--terracota)">É a hora certa porque é a sua hora.</em></p></div>
+    <div class="exer"><h4>A vergonha de demorar.</h4><p>“Descobrindo isso só agora, devia ter aprendido aos 18.” Não devia. Ninguém te ensinou. <em style="font-family:var(--voz);font-style:italic;color:var(--terracota)">É a hora certa porque é a sua hora.</em></p></div>
   </section>
 
   <!-- ============ CHECKLIST ============ -->
@@ -604,10 +669,14 @@ body{background:var(--aubergine-deep)}
     <p class="kicker">Checklist</p>
     <h2 class="title">Acompanhe o <span class="ac">seu caminho</span>.</h2>
     <div class="clist">
+      <div class="grp">Cuidado</div>
       <div class="it"><div class="n">01</div><div class="t">Reconhecer o silêncio<span class="line"></span></div></div>
       <div class="it"><div class="n">02</div><div class="t">Reaprender o próprio corpo<span class="line"></span></div></div>
+      <div class="grp">Desejo</div>
       <div class="it"><div class="n">03</div><div class="t">Descobrir o que dá prazer<span class="line"></span></div></div>
+      <div class="grp">Sentir</div>
       <div class="it"><div class="n">04</div><div class="t">Conhecer a própria resposta<span class="line"></span></div></div>
+      <div class="grp">Independência</div>
       <div class="it"><div class="n">05</div><div class="t">Falar sobre o próprio prazer<span class="line"></span></div></div>
       <div class="it"><div class="n">06</div><div class="t">Reconhecer o que não funciona<span class="line"></span></div></div>
       <div class="it"><div class="n">07</div><div class="t">Viver como mulher que se conhece<small>essa não termina nunca</small></div></div>
@@ -674,7 +743,11 @@ body{background:var(--aubergine-deep)}
       <svg class="wave" width="64" height="12" viewBox="0 0 64 12" aria-hidden="true"><path d="M2 8 Q 10 1, 18 8 T 34 8 T 50 8 T 62 8"></path></svg>
       <div class="lab">Ferramenta Afrodite</div>
       <p>Nessa fase, lubrificação e hidratação íntima deixam de ser detalhe. Escolhemos opções que tratam isso com o respeito que merece.</p>
-      <a class="slot" href="#">curadoria · em breve</a>
+      <div class="picks">
+        <a class="pick" href="https://asosloja.com.br/products/gel-lubrificante-hidra-confort-feminist-220g?utm_source=Affiliates&amp;utm_campaign=AffWLD_6Y" target="_blank" rel="noopener sponsored"><img src="/products/gel-lubrificante-hidra-confort-feminist-220g.jpg" alt="" loading="lazy"><span class="pb">Feminist</span><span class="pn">Gel Lubrificante Hidra Confort</span></a>
+        <a class="pick" href="https://asosloja.com.br/products/serum-intimo-para-regiao-pelvica-dermosex-30-ml?utm_source=Affiliates&amp;utm_campaign=AffWLD_6Y" target="_blank" rel="noopener sponsored"><img src="/products/serum-intimo-para-regiao-pelvica-dermosex-30-ml.jpg" alt="" loading="lazy"><span class="pb">Dermosex</span><span class="pn">Sérum Íntimo para Região Pélvica</span></a>
+      </div>
+      <a class="slot" href="/#cuidar" target="_blank" rel="noopener">ver a curadoria · cuidar de mim</a>
     </div>
   </section>
 
@@ -695,9 +768,13 @@ body{background:var(--aubergine-deep)}
   <section class="read next" data-screen-label="Próximos passos">
     <p class="kicker">Continue comigo</p>
     <h2 class="title">A conversa continua <span class="ac">lá</span>.</h2>
-    <div class="step3"><h4>Vem pro Instagram.</h4><p>Conteúdo sobre saúde íntima, autoconhecimento e curadoria honesta de produtos que valem o investimento. <span class="ig">@afrodite.prazer</span></p></div>
+    <!-- SE_SEQUENCIA_EMAIL -->
+    <div class="step3"><h4>Fica de olho no seu e-mail.</h4><p>Nos próximos dias, uma etapa por vez na sua caixa — com o exercício da semana e uma sugestão da curadoria pra acompanhar.</p></div>
+    <!-- /SE_SEQUENCIA_EMAIL -->
+    <div class="step3"><h4>Conhece a curadoria.</h4><p>Produtos escolhidos com critério pra cada movimento do guia — do cuidado diário ao que desperta vontade. <a class="ig" href="/" target="_blank" rel="noopener">Ver a curadoria</a></p></div>
+    <div class="step3"><h4>Vem pro Instagram.</h4><p>Conteúdo sobre saúde íntima, autoconhecimento e curadoria honesta de produtos que valem o investimento. <a class="ig" href="https://instagram.com/afrodite.prazer" target="_blank" rel="noopener">@afrodite.prazer</a></p></div>
     <div class="step3"><h4>Me conta qual etapa te tocou.</h4><p>Manda uma DM contando. Eu leio todas — e <em style="font-family:var(--voz);font-style:italic">quero saber</em>.</p></div>
-    <div class="step3"><h4>Compartilha esse guia.</h4><p>Se ele te fez bem, manda pra uma amiga. Mulher que se conhece muda o mundo perto dela.</p></div>
+    <div class="step3"><h4>Compartilha esse guia.</h4><p>Se ele te fez bem, manda <a class="ig" href="/guia" target="_blank" rel="noopener">o link do guia</a> pra uma amiga. Mulher que se conhece muda o mundo perto dela.</p></div>
   </section>
 
   <!-- ============ CONTRACAPA ============ -->

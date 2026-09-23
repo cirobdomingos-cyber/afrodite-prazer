@@ -7,8 +7,9 @@ const nextConfig = {
   },
   redirects: async () => [
     { source: "/produtos", destination: "/#cuidar", permanent: true },
-    // O ebook é um HTML estático em /public; o endereço curto abre direto em tela cheia.
-    { source: "/as-7-etapas", destination: "/as-7-etapas.html", permanent: false },
+    // O ebook só abre pelo link pessoal (/guia/ler); endereços antigos levam ao cadastro.
+    { source: "/as-7-etapas", destination: "/guia", permanent: false },
+    { source: "/as-7-etapas.html", destination: "/guia", permanent: false },
   ],
 };
 

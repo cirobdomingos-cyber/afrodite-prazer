@@ -1,28 +1,8 @@
 /*
  * Página de vendas — Afrodite, prazer.
- * Paleta do brand book (Afrodite, prazer. — protótipo inicial).
+ * Cores e fontes vêm de src/app/globals.css (brand book).
  */
 .page {
-  --wine: #581931;
-  --wine-deep: #3f0f22;
-  --teal: #1a7562;
-  --teal-deep: #0f5245;
-  --cream: #f3e2c7;
-  --cream-light: #fbf3e4;
-  --blush: #f2a6ce;
-  --terracotta: #da7811;
-  --olive: #8a9a5b;
-  --brown: #3d2317;
-  --card-bg: #fffbf3;
-  --display: var(--font-cormorant), "Cormorant Garamond", Garamond, serif;
-  --body: var(--font-montserrat), "Montserrat", -apple-system, BlinkMacSystemFont, sans-serif;
-  --hand: var(--font-parisienne), "Parisienne", cursive;
-
-  background: var(--cream);
-  color: var(--brown);
-  font-family: var(--body);
-  font-weight: 400;
-  line-height: 1.6;
   overflow-x: hidden;
 }
 
@@ -46,54 +26,6 @@
 .script {
   font-family: var(--hand);
   font-weight: 400;
-}
-
-/* ---------- NAV ---------- */
-.nav {
-  position: sticky;
-  top: 0;
-  z-index: 50;
-  background: rgba(251, 243, 228, 0.92);
-  backdrop-filter: blur(8px);
-  border-bottom: 1px solid rgba(88, 25, 49, 0.12);
-}
-.navInner {
-  max-width: 1160px;
-  margin: 0 auto;
-  padding: 14px 28px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-}
-.navLogo {
-  font-family: var(--display);
-  font-weight: 600;
-  font-size: 1.3rem;
-  color: var(--wine);
-  white-space: nowrap;
-}
-.navLogo span {
-  color: var(--teal);
-}
-.navLinks {
-  display: flex;
-  gap: 22px;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-}
-.navLinks a {
-  font-size: 0.72rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--brown);
-  opacity: 0.75;
-  transition: opacity 0.2s, color 0.2s;
-  white-space: nowrap;
-}
-.navLinks a:hover {
-  opacity: 1;
-  color: var(--teal);
 }
 
 /* ---------- HERO ---------- */
@@ -446,58 +378,8 @@
   transform: translateY(-1px);
 }
 
-/* ---------- FOOTER ---------- */
-.footer {
-  background: var(--wine-deep);
-  color: rgba(251, 243, 228, 0.85);
-  padding: 64px 28px 36px;
-  text-align: center;
-  margin-top: 64px;
-}
-.footer .script {
-  font-size: 2.2rem;
-  color: var(--blush);
-  display: block;
-  margin-bottom: 10px;
-}
-.footPhrase {
-  font-family: var(--display);
-  font-style: italic;
-  font-size: 1.15rem;
-  max-width: 460px;
-  margin: 0 auto 28px;
-  opacity: 0.9;
-}
-.footIg {
-  display: inline-block;
-  font-size: 0.78rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--cream-light);
-  opacity: 0.8;
-  margin-bottom: 18px;
-}
-.footIg:hover {
-  opacity: 1;
-}
-.footNote {
-  font-size: 0.68rem;
-  opacity: 0.55;
-  max-width: 460px;
-  margin: 0 auto;
-}
-
 /* ---------- RESPONSIVO ---------- */
 @media (max-width: 640px) {
-  .navInner {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-  }
-  .navLinks {
-    gap: 14px;
-    justify-content: flex-start;
-  }
   .categoryHead {
     flex-direction: column;
     align-items: flex-start;

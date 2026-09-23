@@ -1,20 +1,27 @@
 import type { Metadata, Viewport } from "next";
-import { Cormorant_Garamond, Poppins } from "next/font/google";
+import { Cormorant_Garamond, Montserrat, Parisienne } from "next/font/google";
 import Analytics from "@/components/Analytics";
 import "./globals.css";
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600"],
+  weight: ["400", "500", "600"],
   style: ["normal", "italic"],
   variable: "--font-cormorant",
   display: "swap",
 });
 
-const poppins = Poppins({
+const montserrat = Montserrat({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600"],
-  variable: "--font-poppins",
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-montserrat",
+  display: "swap",
+});
+
+const parisienne = Parisienne({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-parisienne",
   display: "swap",
 });
 
@@ -25,10 +32,10 @@ export const metadata: Metadata = {
     template: "%s · Afrodite, prazer.",
   },
   description:
-    "Onde o prazer é liberdade. Curadoria editorial em saúde íntima, prazer feminino e autoconhecimento — no seu ritmo, no seu silêncio.",
+    "Curadoria de prazer, intimidade e autocuidado para mulheres — sem pressa, sem julgamento, sem vulgaridade.",
   openGraph: {
     title: "Afrodite, prazer.",
-    description: "Onde o prazer é liberdade.",
+    description: "Curadoria de prazer, intimidade e autocuidado para mulheres.",
     locale: "pt_BR",
     type: "website",
   },
@@ -38,12 +45,15 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#0A0F0B",
+  themeColor: "#FBF3E4",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="pt-BR" className={`${cormorant.variable} ${poppins.variable}`}>
+    <html
+      lang="pt-BR"
+      className={`${cormorant.variable} ${montserrat.variable} ${parisienne.variable}`}
+    >
       <body>
         <Analytics />
         {children}

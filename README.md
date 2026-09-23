@@ -1,96 +1,70 @@
 # Afrodite, prazer.
 
-Site institucional + catálogo curado — MVP (primeiro mês).
-**Onde o prazer é liberdade.**
+Curadoria de prazer, intimidade e autocuidado para mulheres. Este repositório tem o site (página de vendas + curadoria), o guia gratuito com captura de e-mail e o ebook "As 7 etapas do autoconhecimento íntimo".
 
-Stack: Next.js 14 (App Router) · TypeScript · Brevo · Google Analytics 4 · Vercel.
-
----
+Stack: Next.js 14 (App Router) · TypeScript · Brevo (e-mail) · Railway (hospedagem).
 
 ## Páginas
 
-| Rota | Função |
+| Endereço | O que é |
 |---|---|
-| `/` | Home — manifesto + 2 CTAs ("Guia gratuito" / "Curadoria") |
-| `/guia` | Landing do ebook *As 7 Etapas do Autoconhecimento Íntimo* + formulário de captura |
-| `/produtos` | Catálogo curado — 15-20 SKUs A Sós organizados por necessidade |
-| `POST /api/subscribe` | Adiciona contato à lista Brevo e dispara e-mail com link do ebook |
+| `/` | Página de vendas: hero, manifesto e curadoria em 4 seções (30 produtos) |
+| `/guia` | Guia gratuito: formulário de nome + e-mail |
+| `/guia/ler` | O ebook. Só abre com o link pessoal (`?t=`) ou com o cookie de quem já se cadastrou |
+| `POST /api/subscribe` | Cadastra a leitora (Brevo), manda o e-mail de boas-vindas e devolve o link pessoal |
 
-## Rodar localmente
+`/as-7-etapas`, `/as-7-etapas.html` e `/produtos` são endereços antigos que redirecionam.
+
+## Onde editar
+
+| O quê | Arquivo |
+|---|---|
+| Catálogo (produtos, preços, fotos, seções) | `data/catalog.json` |
+| Link de afiliada (loja + código) | `src/lib/catalog.ts` |
+| Página inicial | `src/app/page.tsx` + `src/app/home.module.css` |
+| Guia gratuito | `src/app/guia/page.tsx` + `src/components/LeadForm.tsx` |
+| Ebook | `content/ebook/as-7-etapas.html` (fotos em `public/ebook/img/`) |
+| E-mail de boas-vindas | `src/lib/brevo.ts` |
+| Sequência de e-mails + como ativar o Brevo | `docs/funil/sequencia-de-emails.md` |
+| Cores e fontes (brand book) | `src/app/globals.css` |
+| Menu e rodapé | `src/components/SiteNav.tsx`, `src/components/SiteFooter.tsx` |
+
+## Rodar no computador
+
+Duplo clique em `TESTAR-SITE.cmd`, na pasta de cima. Ou, pelo terminal:
 
 ```powershell
 npm install
-npm run dev
-# abre em http://localhost:3000
+npm run dev   # http://localhost:3000
 ```
 
-Sem `BREVO_API_KEY`, o formulário registra leads em `data/leads.local.jsonl` (git-ignored) e retorna sucesso, para destravar o dev.
+No modo de desenvolvimento, `/guia/ler` abre o ebook sem cadastro. Os cadastros de teste aparecem no terminal como `[lead]`.
 
-## Variáveis de ambiente
+Antes de publicar, rode `npm run build`. Ele precisa terminar sem erros.
 
-Copie `.env.local.example` para `.env.local` e preencha:
+## Variáveis de ambiente (Railway)
 
-| Variável | Onde obter | Quando precisa |
-|---|---|---|
-| `NEXT_PUBLIC_GA_ID` | Google Analytics 4 → Admin → Data streams | Produção |
-| `BREVO_API_KEY` | brevo.com → SMTP & API → API keys | Produção |
-| `BREVO_LIST_ID` | brevo.com → Contacts → Lists (numeric ID) | Produção |
-| `EBOOK_DOWNLOAD_URL` | Caminho relativo (`/ebook/…pdf`) ou URL absoluta | Sempre |
+| Variável | Para quê |
+|---|---|
+| `EBOOK_TOKEN_SECRET` | Assina os links pessoais do ebook. Já configurada; **não trocar**, senão os links antigos param de abrir |
+| `BREVO_API_KEY`, `BREVO_LIST_ID` | Cadastro na lista e envio do e-mail de boas-vindas |
+| `BREVO_SENDER_EMAIL` | Remetente validado no Brevo (padrão: `contato@afroditeprazer.com.br`) |
+| `SITE_URL` | Endereço público usado nos links dos e-mails |
+| `EMAIL_SEQUENCE_ACTIVE` | `1` quando a automação do Brevo estiver ativa; o final do ebook passa a anunciar os e-mails |
+| `NEXT_PUBLIC_GA_ID` | Google Analytics 4 (opcional) |
 
-## Deploy no Vercel
+Sem o Brevo, o site continua funcionando: a leitora recebe o link na tela e o cadastro fica nos logs do Railway (busque `[lead]`).
 
-1. Push da branch para o GitHub.
-2. Vercel → New Project → importar o repositório.
-3. Em **Environment Variables**, adicionar as 4 acima.
-4. **Deploy**. Vercel detecta Next.js automaticamente.
-5. Em **Settings → Domains**, apontar `afroditeprazer.com.br` (Cecília configura DNS no Registro.br).
+## Publicar
 
-## Editar a curadoria sem mexer no código
+O Railway publica automaticamente cada mudança na branch `main`. O fluxo é:
 
-Tudo vive em [`data/curated.json`](data/curated.json):
+1. criar uma branch;
+2. rodar `npm run build`;
+3. abrir um pull request;
+4. fazer o merge.
 
-- **`sections`** — ordem e títulos das 5 categorias ("Pra começar do zero", etc.).
-- **`products`** — cada SKU com `editorial` (Cecília's 2-3 linhas), `affiliate_url` (link de afiliada A Sós com UTMs), `image` (`/products/{SKU}_hero.png`).
+## Outras pastas
 
-Para trocar uma imagem, salve em `public/products/{SKU}_hero.png` e atualize o campo `image`.
-
-Para adicionar um produto: novo objeto em `products[]` + adicione o SKU em `sections[i].skus`.
-
-## Estrutura
-
-```
-src/
-  app/
-    layout.tsx           # fontes, header, footer, GA4
-    page.tsx             # /
-    guia/page.tsx        # /guia
-    produtos/page.tsx    # /produtos
-    api/subscribe/route.ts
-    globals.css          # design tokens (paleta verde/ouro/creme)
-  components/
-    BrandHeader.tsx · Footer.tsx · ShellIcon.tsx
-    LeadForm.tsx · ProductCard.tsx · CuratedSection.tsx
-    Analytics.tsx
-  lib/
-    analytics.ts · brevo.ts · products.ts
-
-data/
-  curated.json           # ÚNICO arquivo que Cecília edita
-
-public/
-  products/{SKU}_hero.png   # 15 fotos da curadoria
-  ebook/                    # PDF final do guia vai aqui
-
-catalog-source/          # fonte upstream: PDF A Sós + 190 SKUs + scripts de extração
-```
-
-## Próximos passos antes do lançamento
-
-- [ ] Cecília entrega o PDF do ebook → drop em `public/ebook/`
-- [ ] Cecília substitui o campo `editorial` de cada produto em `data/curated.json`
-- [ ] Cecília confirma a URL real de afiliada A Sós (formato e parâmetros) e substitui `affiliate_url`
-- [ ] Comprar `afroditeprazer.com.br` no Registro.br
-- [ ] Criar projeto Brevo, conta GA4, projeto Vercel
-- [ ] Configurar env vars no Vercel
-- [ ] Deploy → testar formulário ponta a ponta → testar todos os links de afiliada
-- [ ] Verificar duração do cookie A Sós (7/15/30 dias) — anotar para planejamento de campanha
+- `docs/`: configuração de DNS e o funil de e-mails.
+- `_arquivo/`: material do protótipo anterior (site antigo, scripts de extração do catálogo, marca antiga). Não é usado pelo site; fica guardado para consulta.

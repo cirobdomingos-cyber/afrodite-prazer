@@ -1,0 +1,191 @@
+.page {
+  overflow-x: hidden;
+}
+/* o rodapé encosta direto na faixa vinho dos movimentos */
+.page footer {
+  margin-top: 0;
+}
+
+/* ---------- HERO: capa + formulário ---------- */
+.hero {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 72px 28px 88px;
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  gap: 64px;
+  align-items: center;
+}
+.cover {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+.arch {
+  width: min(100%, 300px);
+  aspect-ratio: 3 / 3.7;
+  border-radius: 150px 150px 10px 10px;
+  overflow: hidden;
+  border: 1px solid rgba(88, 25, 49, 0.3);
+  box-shadow: 0 30px 60px -34px rgba(63, 15, 34, 0.55);
+}
+.arch img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 30%;
+}
+.coverCaption {
+  margin: 0;
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--brown);
+  opacity: 0.6;
+  text-align: center;
+}
+
+.formCol h1 {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: clamp(2.2rem, 4.6vw, 3.2rem);
+  line-height: 1.05;
+  color: var(--wine);
+  margin: 0 0 18px;
+  text-wrap: balance;
+}
+.ac {
+  color: var(--teal);
+  font-style: italic;
+  font-weight: 500;
+}
+.kicker {
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--terracotta);
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+.lede {
+  font-family: var(--display);
+  font-style: italic;
+  font-size: 1.35rem;
+  line-height: 1.45;
+  color: var(--wine);
+  margin: 0 0 22px;
+  max-width: 34ch;
+}
+.bullets {
+  list-style: none;
+  margin: 0 0 32px;
+  padding: 0;
+}
+.bullets li {
+  position: relative;
+  padding: 9px 0 9px 26px;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  border-bottom: 1px solid rgba(61, 35, 23, 0.1);
+}
+.bullets li:last-child {
+  border-bottom: 0;
+}
+.bullets li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 20px;
+  width: 14px;
+  height: 1px;
+  background: var(--terracotta);
+}
+
+.returning p {
+  margin: 0 0 16px;
+  font-family: var(--display);
+  font-style: italic;
+  font-size: 1.2rem;
+  color: var(--teal);
+}
+.readBtn {
+  display: inline-block;
+  padding: 15px 34px;
+  border-radius: 100px;
+  background: var(--wine);
+  color: var(--cream-light);
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+.readBtn:hover {
+  background: var(--wine-deep);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(88, 25, 49, 0.28);
+}
+
+/* ---------- OS 4 MOVIMENTOS ---------- */
+.movements {
+  background: var(--wine);
+  color: var(--cream-light);
+  text-align: center;
+  padding: 72px 28px 80px;
+}
+.kickerLight {
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--blush);
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+.movements h2 {
+  font-family: var(--display);
+  font-style: italic;
+  font-weight: 500;
+  font-size: clamp(1.7rem, 3.6vw, 2.3rem);
+  margin: 0 0 44px;
+  color: var(--cream-light);
+}
+.flow {
+  max-width: 960px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 28px;
+}
+.move p {
+  margin: 0;
+  font-size: 0.82rem;
+  line-height: 1.55;
+  color: rgba(251, 243, 228, 0.8);
+}
+.script {
+  font-family: var(--hand);
+  font-size: 2rem;
+  color: var(--blush);
+  display: block;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 860px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding-top: 48px;
+  }
+  .arch {
+    width: min(70%, 260px);
+  }
+  .flow {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 480px) {
+  .flow {
+    grid-template-columns: 1fr;
+  }
+}

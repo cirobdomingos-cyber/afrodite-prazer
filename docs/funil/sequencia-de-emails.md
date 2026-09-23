@@ -3,8 +3,10 @@
 Este é o funil completo. A leitora deixa o e-mail em `/guia` e, a partir daí:
 
 1. recebe na hora o e-mail de **boas-vindas** com o link pessoal do guia (o próprio site envia);
-2. recebe **7 e-mails**, um por etapa, que devolvem a leitora ao guia e mantêm o ritmo do treino;
+2. recebe **7 e-mails** que acompanham o guia da iniciante e o treino de 7 dias (encontrar o músculo, respirar, dia 1, o que é normal sentir, dia 5 sentada, autoavaliação do dia 7, e depois da primeira semana);
 3. recebe um **e-mail final** com a curadoria.
+
+Os textos abaixo são os mesmos dos modelos 1 a 8 no Brevo (atualizados em 23/09/2026).
 
 Os e-mails 1 a 8 são enviados por uma **automação do Brevo** (veja "Como ativar" no fim).
 
@@ -31,137 +33,144 @@ Os e-mails 1 a 8 são enviados por uma **automação do Brevo** (veja "Como ativ
 
 ---
 
-## 1. Etapa 01 · Conhecer (1 dia depois)
+## 1. Encontrar o músculo (1 dia depois)
 
-- **Assunto:** Prazer, seu assoalho pélvico
-- **Pré-cabeçalho:** Tem um músculo em você que quase ninguém apresentou.
+- **Assunto:** Onde fica, afinal?
+- **Pré-cabeçalho:** Quatro jeitos de encontrar o músculo, sem constrangimento.
 
 > Oi, {{ contact.FIRSTNAME }}.
 >
-> Ele trabalha o dia inteiro — quando você ri, tosse, carrega peso — e quase ninguém foi apresentada a ele.
+> Antes de qualquer exercício, o primeiro desafio do pompoar é bem simples: **saber onde está o músculo**. Não é força, é percepção.
 >
-> A primeira etapa é só isso: saber onde fica o assoalho pélvico e o que ele faz por você. Um espelho pequeno, luz boa, nenhuma pressa.
+> No guia, as páginas 3 a 5 mostram o assoalho pélvico e quatro jeitos de encontrá-lo: a pista do xixi (uma vez só, como teste), o espelho, o dedo como guia e uma técnica sem penetração, sentada sobre a mão.
 >
-> **[Ler a Etapa 01 →]({{ contact.EBOOK_URL }})**
+> Uma dica: barriga, bumbum e coxas ficam soltos. Se sentir que está empurrando pra baixo, é o movimento contrário.
 >
-> Com cuidado,
-> Afrodite
-
-*Sem produto. A primeira conversa é só sobre ela.*
+> **[Encontrar o músculo →]({{ contact.EBOOK_URL }})**
 
 ---
 
-## 2. Etapa 02 · Encontrar (3 dias depois)
+## 2. Respirar (2 dias depois)
 
-- **Assunto:** O elevador que ninguém vê
-- **Pré-cabeçalho:** Fechar, subir, soltar. O movimento é pequeno; a diferença, não.
+- **Assunto:** Primeiro, respire
+- **Pré-cabeçalho:** O erro mais comum de quem começa, e como evitar.
 
-> {{ contact.FIRSTNAME }}, a etapa 2 é encontrar o músculo — e o desafio não é força, é percepção.
+> {{ contact.FIRSTNAME }}, quase todo mundo que começa comete o mesmo erro: **prender o ar** na hora de contrair.
 >
-> Deitada, joelhos dobrados: imagine a entrada da vagina e do ânus subindo juntas, como um elevador. Barriga, glúteos e coxas relaxados. E nada de prender a respiração.
+> O jeito mais fácil de acertar: inspire soltando a barriga e a pelve; expire fechando e puxando o músculo pra dentro. Um minuto disso, deitada, já é o aquecimento de todos os treinos.
 >
-> Pra explorar com mais conforto, um lubrificante de qualidade ajuda:
-> **Gel Lubrificante e Hidratante Pélvico, da Dermosex**: [ver na loja](https://asosloja.com.br/products/gel-lubrificante-e-hidratante-pelvico-dermosex-220-ml?utm_source=Affiliates&utm_campaign=AffWLD_6Y)
+> Aproveite pra dar uma olhada na página 9, “Eu posso treinar?”. Grávida, pós-parto, infecção ou dor pedem uma conversa antes.
 >
-> **[Ler a Etapa 02 →]({{ contact.EBOOK_URL }})**
+> Amanhã começa o seu treino de 7 dias.
+>
+> **[Ler sobre a respiração →]({{ contact.EBOOK_URL }})**
 
 ---
 
-## 3. Etapa 03 · Pra você (5 dias depois)
+## 3. Treino dia 1 (3 dias depois)
 
-- **Assunto:** Três motivos. Todos seus.
-- **Pré-cabeçalho:** Pompoar não é pra agradar ninguém.
+- **Assunto:** Hoje é o dia 1
+- **Pré-cabeçalho:** Quatro minutos, deitada. Ninguém percebe.
 
-> {{ contact.FIRSTNAME }}, antes de treinar, vale decidir por quê.
+> {{ contact.FIRSTNAME }}, hoje começa o seu primeiro treino. Deitada, joelhos dobrados, bexiga vazia:
 >
-> O pompoarismo passou anos como piada de novela e promessa de "enlouquecer o parceiro". Aqui, o centro é você: a sua percepção, o seu conforto, o seu corpo.
+> **Força · 3 × 5**
+> Contraia com firmeza por 2 segundos e solte por completo por 4. Faça 5, descanse 45 segundos, repita mais duas vezes.
 >
-> O exercício da semana é escrever três motivos em primeira pessoa. "Eu quero sentir…", "eu quero entender…", "eu quero parar de…".
+> **Pulsação · 3 × 5**
+> Cinco contrações rápidas, como uma piscada. Descanse 10 segundos e repita mais duas vezes.
 >
-> **[Ler a Etapa 03 →]({{ contact.EBOOK_URL }})**
-
-*Sem produto. Etapa de intenção.*
+> Termine com três respirações longas, soltando tudo. Depois, marque o dia 1 no diário da página 14.
+>
+> **[Ver o treino completo →]({{ contact.EBOOK_URL }})**
 
 ---
 
-## 4. Etapa 04 · Exercícios (7 dias depois)
+## 4. O que é normal (5 dias depois)
 
-- **Assunto:** Cinco minutos. Ninguém percebe.
-- **Pré-cabeçalho:** Contrair é metade. Soltar é a outra.
+- **Assunto:** Cansou? Faz parte.
+- **Pré-cabeçalho:** O que é normal sentir na primeira semana.
 
-> {{ contact.FIRSTNAME }}, chegou a hora dos primeiros exercícios — sem acessório, sem academia.
+> {{ contact.FIRSTNAME }}, você deve estar no dia 3 do treino. Então vale combinar o que é normal sentir:
 >
-> Contração lenta, contração rápida e o elevador em andares. Sempre soltando o ar ao contrair e relaxando por completo no fim.
+> Um **leve desconforto muscular**, como perna na primeira semana de academia. O bumbum contraindo junto. Cansar antes do fim. Às vezes, até um pouco de excitação. Tudo isso faz parte.
 >
-> E uma regra que vale pra sempre: se doer, pare. Dor é sinal pra procurar uma fisioterapeuta pélvica.
+> O que não faz parte: **dor**. Se doer, pare e procure uma fisioterapeuta pélvica. E corrimento com cheiro, coceira ou ardência não vêm do treino: vale uma visita à ginecologista.
 >
-> **[Ler a Etapa 04 →]({{ contact.EBOOK_URL }})**
+> Pulou um dia? Retome no seguinte, sem compensar.
+>
+> **[Ler a página 10 →]({{ contact.EBOOK_URL }})**
 
 ---
 
-## 5. Etapa 05 · Acessórios (9 dias depois)
+## 5. Sentada (7 dias depois)
 
-- **Assunto:** Quando o básico ficar fácil
-- **Pré-cabeçalho:** Acessório é companhia, não obrigação.
+- **Assunto:** Hoje você senta
+- **Pré-cabeçalho:** Dia 5: o mesmo treino, agora contra a gravidade.
 
-> {{ contact.FIRSTNAME }}, os acessórios são opcionais. Mas, quando os exercícios ficam fáceis, eles ajudam a sentir o músculo trabalhando e a progredir aos poucos.
+> {{ contact.FIRSTNAME }}, chegou o dia 5, e com ele uma novidade: o treino passa a ser **sentada**, com a coluna apoiada e os pés no chão.
 >
-> A regra de ouro: comece pelo mais leve, siga o manual e só avance quando estiver confortável.
+> Deitada, a gravidade não pesa sobre o assoalho pélvico. Sentada, ele trabalha contra ela. Por isso o treino de hoje é o mesmo do dia 4 (força 4 × 10 e pulsação 4 × 10), só que em outra posição.
 >
-> Duas opções de entrada:
-> - **Cone para Pompoarismo 20 g, da Feminist**: [ver na loja](https://asosloja.com.br/products/cone-para-pompoarismo-feminist-rosa-20-g-outlet?utm_source=Affiliates&utm_campaign=AffWLD_6Y)
-> - **Kit Pompoar, da Feminist**: [ver na loja](https://asosloja.com.br/products/kit-pompoar-para-exercicios-de-pompoarismo-feminist?utm_source=Affiliates&utm_campaign=AffWLD_6Y)
+> Ficou difícil? Termine deitada. Não é atraso, é base.
 >
-> **[Ler a Etapa 05 →]({{ contact.EBOOK_URL }})**
+> **[Ver os dias 5 a 7 →]({{ contact.EBOOK_URL }})**
 
 ---
 
-## 6. Etapa 06 · Rotina (11 dias depois)
+## 6. Autoavaliação (9 dias depois)
 
-- **Assunto:** Constância vence intensidade
-- **Pré-cabeçalho:** Um plano de quatro semanas, escovando os dentes.
+- **Assunto:** Sete dias. Como foi?
+- **Pré-cabeçalho:** Quatro perguntas pra fechar a sua primeira semana.
 
-> {{ contact.FIRSTNAME }}, músculo responde a regularidade. Cinco minutos por dia valem mais que uma hora no domingo.
+> {{ contact.FIRSTNAME }}, se tudo correu bem, hoje é o dia 7. Antes de seguir, responda com sinceridade:
 >
-> O guia traz um plano de quatro semanas: deitada, sentada, em pé e no movimento. O truque é amarrar o treino a um hábito que você já tem — o café, o banho, a escova de dentes.
+> 1. Encontro o músculo sem precisar pensar muito?
+> 2. Consigo soltar por completo depois de contrair?
+> 3. Treino respirando, sem prender o ar?
+> 4. Barriga, bumbum e coxas ficam soltos?
 >
-> Pulou um dia? Recomeça no seguinte. Sem culpa.
+> Algum “ainda não”? Repita a semana antes de avançar. Quatro “sim”? Você fez uma coisa que muita gente nunca faz: apresentou-se a uma parte do próprio corpo.
 >
-> **[Ler a Etapa 06 →]({{ contact.EBOOK_URL }})**
+> A autoavaliação e o diário estão nas páginas 13 e 14.
+>
+> **[Abrir a autoavaliação →]({{ contact.EBOOK_URL }})**
 
 ---
 
-## 7. Etapa 07 · Companhia (13 dias depois)
+## 7. Depois da primeira semana (11 dias depois)
 
-- **Assunto:** Pedir ajuda também é autonomia
-- **Pré-cabeçalho:** Os sinais que pedem uma fisioterapeuta pélvica.
+- **Assunto:** E depois dos 7 dias?
+- **Pré-cabeçalho:** Manter o hábito, ganhar resistência e, se quiser, acessórios.
 
-> {{ contact.FIRSTNAME }}, a última etapa é saber quando chamar quem entende.
+> {{ contact.FIRSTNAME }}, a primeira semana é a base. Daqui pra frente, três caminhos:
 >
-> Escape de urina ao tossir ou rir, dor na relação, sensação de peso na vagina, gestação, pós-parto, mudanças na menopausa: tudo isso merece a avaliação de uma fisioterapeuta pélvica.
+> **Manter o hábito.** Siga com o treino do dia 7, alternando sentada e, quando ficar natural, em pé. Amarre a um hábito que você já tem: o café, o banho, a escova de dentes.
 >
-> Não é fracasso. É o mesmo raciocínio de ir à dentista: cuidar bem inclui cuidar com quem entende.
+> **Ganhar resistência.** O próximo movimento é o “segura”: contrair e sustentar por alguns segundos.
 >
-> **[Ler a Etapa 07 →]({{ contact.EBOOK_URL }})**
+> **Acessórios, se quiser.** Eles dão retorno ao músculo e ajudam a progredir. Comece pelo mais leve e siga o manual:
+> · **Cone para Pompoarismo 20 g, da Feminist**: [ver na loja](https://asosloja.com.br/products/cone-para-pompoarismo-feminist-rosa-20-g-outlet?utm_source=Affiliates&utm_campaign=AffWLD_6Y)
+> · **Kit Pompoar, da Feminist**: [ver na loja](https://asosloja.com.br/products/kit-pompoar-para-exercicios-de-pompoarismo-feminist?utm_source=Affiliates&utm_campaign=AffWLD_6Y)
+>
+> **[Rever o guia →]({{ contact.EBOOK_URL }})**
 
 ---
 
 ## 8. Curadoria (15 dias depois)
 
-- **Assunto:** Pra cada movimento, um cuidado
-- **Pré-cabeçalho:** A curadoria da Afrodite, organizada do jeito que você chegou até aqui.
+- **Assunto:** Pra cada momento, um cuidado
+- **Pré-cabeçalho:** A curadoria da Afrodite, e uma última dica.
 
-> {{ contact.FIRSTNAME }}, você passou pelas 7 etapas — no seu ritmo, do seu jeito.
+> {{ contact.FIRSTNAME }}, faz duas semanas que você começou. Seja qual for o seu ritmo, já conhece o seu corpo um pouco melhor do que antes, e isso é o começo de cuidar.
 >
-> A curadoria da Afrodite segue os mesmos quatro movimentos:
-> - **Cuidar de mim**: a rotina de cuidado diário.
-> - **Conforto e sentidos**: texturas, aromas e sensações.
-> - **Explorar**: pra experimentar o que desperta vontade.
-> - **Premium**: pra quem já sabe o que quer.
+> Uma última dica: uma consulta com uma **fisioterapeuta pélvica** avalia a sua força e monta um treino só seu. Vale especialmente se houver escape de urina, dor ou sensação de peso.
+>
+> E, pra cada momento, a curadoria da Afrodite: do cuidado diário ao que desperta vontade, com produtos escolhidos com critério.
+>
+> Se quiser contar como foi a sua primeira semana, responda este e-mail. A gente lê todos.
 >
 > **[Ver a curadoria →](https://afroditeprazer.com.br/)**
->
-> Se quiser contar como estão sendo os treinos, responde este e-mail — a gente lê todos.
 
 ---
 
@@ -175,7 +184,7 @@ Os e-mails 1 a 8 são enviados por uma **automação do Brevo** (veja "Como ativ
    - `BREVO_API_KEY`: a chave do passo 4
    - `BREVO_LIST_ID`: o número da lista do passo 2
    - `SITE_URL`: `https://afroditeprazer.com.br`, depois que o domínio estiver no ar
-6. **Automação:** em Automações → "Contato adicionado à lista" (Guia pompoar), monte os e-mails 1 a 8 acima com os intervalos indicados.
+6. **Automação:** em Automações → "Contato adicionado à lista" (Guia pompoar), monte os e-mails 1 a 8 acima (modelos "Pompoar 1" a "Pompoar 8" no Brevo) com os intervalos indicados: 1, 2, 3, 5, 7, 9, 11 e 15 dias depois do cadastro.
 7. **Aviso no ebook:** só depois que a automação estiver ativa, crie no Railway a variável `EMAIL_SEQUENCE_ACTIVE=1`. Ela faz o final do ebook anunciar os e-mails ("Fica de olho no seu e-mail").
 
 **Enquanto o Brevo não estiver configurado:** o site continua funcionando. A leitora recebe o link na tela, e cada cadastro fica registrado nos logs do Railway. Para achar, busque por `[lead]` em Deployments → View logs.

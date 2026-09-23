@@ -126,8 +126,8 @@ ul.li li b{color:var(--wine);font-weight:600}
 .diagram svg{width:100%;height:auto;display:block}
 .diagram .cap{font-size:9px;text-align:center;opacity:.65;margin-top:2px;font-style:italic}
 
-.anat{margin:0 0 6px;padding:0;background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 6px 18px -10px rgba(88,25,49,.2)}
-.anat svg{display:block;height:326px;width:auto;max-width:100%;margin:0 auto}
+.anat{margin:2px 0 8px;padding:14px 8px 0;background:var(--card);border-radius:18px;overflow:hidden;box-shadow:0 6px 18px -10px rgba(88,25,49,.2)}
+.anat svg{display:block;width:100%;height:auto}
 .duo{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:6px 14px}
 .duo li{position:relative;padding:0 0 0 18px;font-size:11.2px;line-height:1.45}
 .duo li svg{position:absolute;left:0;top:3px;width:10px;height:10px;color:var(--teal)}
@@ -401,20 +401,84 @@ ul.li li b{color:var(--wine);font-weight:600}
   <h2>Muito prazer: o seu <span class="ac">assoalho pélvico</span>.</h2>
   <p class="tx">Um conjunto de músculos na base da pelve, entre o púbis (na frente) e o cóccix (atrás). Funciona como uma <b>rede</b> que sustenta a bexiga, o útero e o intestino. Por ela passam a uretra, a vagina e o ânus.</p>
   <figure class="anat">
-    <svg viewBox="0 30 1500 1320" role="img" aria-label="Ilustração da pelve feminina vista de lado: os músculos do assoalho pélvico sustentam bexiga, útero e reto; por eles passam uretra, vagina e ânus.">
-      <image href="/ebook/img/assoalho-pelvico.jpg" x="0" y="0" width="1500" height="1355"/>
-      <g font-family="Montserrat,sans-serif" font-weight="600" font-size="54" fill="#3d2317" stroke="#fffbf3" stroke-width="16" stroke-linejoin="round" paint-order="stroke">
-        <text x="462" y="118" text-anchor="end">Útero</text>
-        <text x="1135" y="198" text-anchor="middle">Reto</text>
-        <text x="268" y="478" text-anchor="end">Bexiga</text>
-        <text x="22" y="636">Osso do púbis</text>
-        <text x="233" y="1104" text-anchor="end">Uretra</text>
-        <text x="368" y="1224" text-anchor="end">Vagina</text>
-        <text x="1172" y="1222">Ânus</text>
-        <text x="650" y="1316" text-anchor="middle" font-weight="700" font-size="58" fill="#1a7562">Músculos do assoalho pélvico</text>
-      </g>
-    </svg>
-    <figcaption>Ilustração: Blausen Medical (BruceBlaus), <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.pt-br" target="_blank" rel="noopener">CC BY-SA 4.0</a>, com rótulos traduzidos.</figcaption>
+    <svg viewBox="14 90 664 424" role="img" aria-label="Ilustração da pelve feminina vista de lado: os músculos do assoalho pélvico, em verde, sustentam bexiga, útero e reto; por eles passam uretra, vagina e ânus.">
+  <!-- corpo, em corte -->
+  <defs><clipPath id="corpo"><path d="M156 112 Q345 94 540 112 C550 150 560 190 566 238 C578 322 560 404 505 440 C452 472 382 470 350 446 C334 448 316 448 300 444 C282 440 268 432 256 418 C236 392 214 362 192 332 C130 268 118 180 156 112 Z"/></clipPath></defs>
+  <path d="M156 112 Q345 94 540 112 C550 150 560 190 566 238 C578 322 560 404 505 440 C452 472 382 470 350 446 C334 448 316 448 300 444 C282 440 268 432 256 418 C236 392 214 362 192 332 C130 268 118 180 156 112 Z" fill="#f7dcc6" stroke="#c9637e" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M156 112 Q345 94 540 112" fill="none" stroke="#e9b99f" stroke-width="6" stroke-linecap="round"/>
+  <g clip-path="url(#corpo)">
+  <!-- alças do intestino -->
+  <g fill="#f3cbb2" stroke="#e3a78e" stroke-width="2">
+    <path d="M168 150 C168 126 206 120 222 138 C238 118 276 120 282 142 C300 124 340 126 344 150 C362 134 398 140 400 164 C404 186 380 198 364 190 C356 210 322 214 308 198 C296 216 258 216 250 196 C236 214 196 214 188 192 C168 196 160 170 168 150 Z"/>
+  </g>
+  <g fill="none" stroke="#e3a78e" stroke-width="2" stroke-linecap="round" opacity=".8">
+    <path d="M200 150 C212 162 226 162 236 152"/><path d="M262 158 C274 170 290 170 300 160"/><path d="M322 164 C334 176 350 176 360 166"/><path d="M216 184 C228 176 240 178 248 186"/><path d="M286 186 C298 178 312 180 318 188"/>
+  </g>
+  <!-- sacro e cóccix -->
+  <g fill="#f8ecd6" stroke="#d6bf98" stroke-width="2">
+    <ellipse cx="515" cy="134" rx="17" ry="24" transform="rotate(-8 515 134)"/>
+    <ellipse cx="525" cy="178" rx="16" ry="22"/>
+    <ellipse cx="525" cy="221" rx="15" ry="21" transform="rotate(10 525 221)"/>
+    <ellipse cx="516" cy="261" rx="13" ry="19" transform="rotate(25 516 261)"/>
+    <ellipse cx="500" cy="295" rx="11" ry="16" transform="rotate(40 500 295)"/>
+    <ellipse cx="481" cy="321" rx="9" ry="13" transform="rotate(50 481 321)"/>
+    <ellipse cx="464" cy="340" rx="7" ry="10" transform="rotate(58 464 340)"/>
+    <ellipse cx="451" cy="354" rx="5" ry="7" transform="rotate(62 451 354)"/>
+  </g>
+  <!-- músculos do assoalho pélvico (a rede) -->
+  <path d="M212 360 C238 420 305 452 362 440 C410 428 436 392 450 354" fill="none" stroke="#1a7562" stroke-width="19" stroke-linecap="round"/>
+  <path d="M212 360 C238 420 305 452 362 440 C410 428 436 392 450 354" fill="none" stroke="#6fbba5" stroke-width="2" stroke-dasharray="2 8" stroke-linecap="round"/>
+  <!-- reto e canal anal -->
+  <path d="M452 104 C470 168 472 240 454 290 C438 334 402 366 382 394" fill="none" stroke="#c7766a" stroke-width="44" stroke-linecap="round"/>
+  <path d="M452 104 C470 168 472 240 454 290 C438 334 402 366 382 394" fill="none" stroke="#eea897" stroke-width="38" stroke-linecap="round"/>
+  <path d="M454 120 C468 176 468 236 452 282" fill="none" stroke="#f6c4b6" stroke-width="8" stroke-linecap="round"/>
+  <path d="M386 388 C370 410 358 428 350 446" fill="none" stroke="#c7766a" stroke-width="15" stroke-linecap="round"/>
+  <path d="M386 388 C370 410 358 428 350 446" fill="none" stroke="#eea897" stroke-width="9" stroke-linecap="round"/>
+  <!-- osso do púbis -->
+  <ellipse cx="213" cy="326" rx="16" ry="35" transform="rotate(-25 213 326)" fill="#f8ecd6" stroke="#d6bf98" stroke-width="2"/>
+  <!-- bexiga + uretra -->
+  <path d="M228 290 C226 255 290 245 306 272 C318 295 310 330 285 345 C270 352 254 352 245 348 C230 338 226 312 228 290 Z" fill="#f7c893" stroke="#da7811" stroke-width="2.5"/>
+  <path d="M238 290 C240 268 282 262 294 280" fill="none" stroke="#fce2c0" stroke-width="6" stroke-linecap="round"/>
+  <path d="M252 346 C254 378 256 402 262 426" fill="none" stroke="#da7811" stroke-width="7" stroke-linecap="round"/>
+  <!-- tuba e ovário -->
+  <path d="M300 222 C316 190 358 184 378 200" fill="none" stroke="#e58bb5" stroke-width="5" stroke-linecap="round"/>
+  <ellipse cx="386" cy="210" rx="14" ry="9" transform="rotate(20 386 210)" fill="#fbd3e6" stroke="#c2518a" stroke-width="2"/>
+  <!-- útero -->
+  <path d="M345 332 C330 320 300 302 280 282 C256 258 262 222 292 216 C328 210 366 240 374 276 C380 300 370 322 358 334 Z" fill="#f2a6ce" stroke="#c2518a" stroke-width="2.5"/>
+  <path d="M354 324 C340 294 316 262 292 240" fill="none" stroke="#c2518a" stroke-width="5" stroke-linecap="round"/>
+  <!-- vagina -->
+  <path d="M352 326 C334 370 302 404 286 438" fill="none" stroke="#7a2a48" stroke-width="18" stroke-linecap="round"/>
+  <path d="M350 332 C333 372 303 406 289 434" fill="none" stroke="#b4577c" stroke-width="3" stroke-linecap="round"/>
+
+  </g>
+  <!-- rótulos -->
+  <g font-family="Montserrat,sans-serif" font-size="17" font-weight="600" fill="#3d2317">
+    <g stroke="#3d2317" stroke-width="1.2" fill="none" opacity=".85">
+      <path d="M116 210 H200 L300 248"/>
+      <path d="M126 280 H190 L262 296"/>
+      <path d="M164 336 H180 L208 328"/>
+      <path d="M204 400 H256"/>
+      <path d="M232 452 H262 L304 414"/>
+      <path d="M584 196 H440 L392 210"/>
+      <path d="M584 240 H466"/>
+      <path d="M584 336 H500 L454 352"/>
+      <path d="M514 473 H400 L352 452"/>
+    </g>
+    <g fill="#3d2317"><circle cx="300" cy="248" r="4.2"/><circle cx="262" cy="296" r="4.2"/><circle cx="208" cy="328" r="4.2"/><circle cx="256" cy="400" r="4.2"/><circle cx="304" cy="414" r="4.2"/><circle cx="392" cy="210" r="4.2"/><circle cx="466" cy="240" r="4.2"/><circle cx="454" cy="352" r="4.2"/><circle cx="352" cy="452" r="4.2"/></g>
+    <text x="110" y="216" text-anchor="end">Útero</text>
+    <text x="120" y="286" text-anchor="end">Bexiga</text>
+    <text x="158" y="342" text-anchor="end">Osso do púbis</text>
+    <text x="198" y="406" text-anchor="end">Uretra</text>
+    <text x="226" y="458" text-anchor="end">Vagina</text>
+    <text x="590" y="202">Ovário</text>
+    <text x="590" y="246">Reto</text>
+    <text x="590" y="342">Cóccix</text>
+    <text x="520" y="479">Ânus</text>
+    <path d="M310 450 V484" stroke="#1a7562" stroke-width="1.8"/><circle cx="310" cy="450" r="5.5" fill="#fbf3e4" stroke="#1a7562" stroke-width="2.8"/>
+    <text x="300" y="504" text-anchor="middle" fill="#1a7562" font-weight="700" font-size="19">Músculos do assoalho pélvico</text>
+  </g>
+</svg>
+    <figcaption>Esquema simplificado, sem escala.</figcaption>
   </figure>
   <h3>O que ele faz por você</h3>
   <ul class="duo">

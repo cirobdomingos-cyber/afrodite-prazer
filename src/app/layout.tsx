@@ -1,7 +1,5 @@
 import type { Metadata, Viewport } from "next";
 import { Cormorant_Garamond, Poppins } from "next/font/google";
-import BrandHeader from "@/components/BrandHeader";
-import Footer from "@/components/Footer";
 import Analytics from "@/components/Analytics";
 import "./globals.css";
 
@@ -48,9 +46,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="pt-BR" className={`${cormorant.variable} ${poppins.variable}`}>
       <body>
         <Analytics />
-        <BrandHeader />
-        <main>{children}</main>
-        <Footer />
+        {children}
       </body>
     </html>
   );

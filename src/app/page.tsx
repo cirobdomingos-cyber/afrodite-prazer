@@ -1,67 +1,211 @@
+import type { Viewport } from "next";
+import Image from "next/image";
 import Link from "next/link";
-import Banner from "@/components/Banner";
-import CuratedSection from "@/components/CuratedSection";
-import ShellIcon from "@/components/ShellIcon";
-import { sections } from "@/lib/products";
-import styles from "./page.module.css";
+import { Montserrat, Parisienne } from "next/font/google";
+import Carousel from "@/components/Carousel";
+import { affiliateUrl, formatBRL, productsForSection, sections } from "@/lib/catalog";
+import styles from "./home.module.css";
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-montserrat",
+  display: "swap",
+});
+
+const parisienne = Parisienne({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-parisienne",
+  display: "swap",
+});
+
+export const viewport: Viewport = {
+  themeColor: "#FBF3E4",
+};
+
+const INSTAGRAM_URL = "https://instagram.com/afrodite.prazer";
+
+const CONCEPTS = [
+  { word: "Cuidado", text: "Atenção dedicada a si mesma, sem pressa e sem julgamento." },
+  { word: "Desejo", text: "Reconhecer uma vontade como legítima — sem culpa, sem esconder." },
+  { word: "Sentir", text: "Estar presente no próprio corpo, sem se cobrar por isso." },
+  { word: "Independência", text: "A autonomia que devolvemos a você para decidir por si mesma." },
+];
+
+function Wave({ color, flip = false }: { color: string; flip?: boolean }) {
+  return (
+    <svg
+      className={styles.wave}
+      viewBox="0 0 1440 80"
+      preserveAspectRatio="none"
+      aria-hidden="true"
+      style={flip ? { transform: "rotate(180deg)" } : undefined}
+    >
+      <path
+        d="M0,40 C 240,90 360,-10 600,35 C 840,80 1000,0 1200,30 C 1320,48 1380,45 1440,38 L1440,80 L0,80 Z"
+        fill={color}
+      />
+      <path
+        d="M0,45 C 220,10 420,75 660,40 C 900,5 1080,65 1440,32"
+        stroke={color}
+        strokeWidth="2.5"
+        fill="none"
+        opacity="0.55"
+      />
+    </svg>
+  );
+}
 
 export default function HomePage() {
   return (
-    <>
-      <Banner />
-
-      <section className={`${styles.hero} sec-roxo`}>
-        <ShellIcon size={56} className={styles.shell} />
-        <h1 className={styles.headline}>
-          Afrodite,
-          <em>prazer.</em>
-        </h1>
-        <p className={styles.tagline}>Onde o desejo encontra o cuidado.</p>
-
-        <div className={styles.ctas}>
-          <Link href="/guia" className="btn btn-primary">
-            Baixar guia gratuito
+    <div className={`${styles.page} ${montserrat.variable} ${parisienne.variable}`}>
+      <nav className={styles.nav} aria-label="Principal">
+        <div className={styles.navInner}>
+          <Link href="/" className={styles.navLogo}>
+            Afrodite<span>,</span> prazer.
           </Link>
-          <Link href="#por-onde-comecar" className="btn">
+          <div className={styles.navLinks}>
+            {sections.map((s) => (
+              <a key={s.id} href={`#${s.id}`}>
+                {s.title}
+              </a>
+            ))}
+            <Link href="/guia">Guia gratuito</Link>
+          </div>
+        </div>
+      </nav>
+
+      <header className={styles.hero}>
+        <Image
+          className={styles.heroLogo}
+          src="/brand/logo.png"
+          alt="Afrodite, prazer."
+          width={900}
+          height={489}
+          priority
+        />
+        <div className={styles.kicker}>Curadoria de bem-estar íntimo</div>
+        <h1>Prazer é como a maré: silenciosa em sua origem, certeira em sua chegada.</h1>
+        <p className={styles.sub}>
+          Uma seleção pensada para mulheres que já sabem o que querem — sem pressa, sem
+          julgamento, sem vulgaridade. Cada produto aqui foi escolhido para devolver a você a
+          autonomia sobre o próprio corpo.
+        </p>
+        <div className={styles.heroActions}>
+          <a href={`#${sections[0].id}`} className={`${styles.btn} ${styles.btnPrimary}`}>
             Ver a curadoria
-          </Link>
+          </a>
+          <a
+            href={INSTAGRAM_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`${styles.btn} ${styles.btnGhost}`}
+          >
+            Seguir no Instagram
+          </a>
+        </div>
+      </header>
+
+      <Wave color="#581931" />
+
+      <section className={styles.manifesto} id="manifesto">
+        <blockquote>
+          &ldquo;No cuidado que desperta o desejo, no desejo que aprende a sentir, encontramos a
+          independência de ser quem somos.&rdquo;
+        </blockquote>
+        <div className={styles.conceptFlow}>
+          {CONCEPTS.map((c, i) => (
+            <div key={c.word} className={styles.conceptItem}>
+              {i > 0 && (
+                <div className={styles.conceptArrow} aria-hidden="true">
+                  &#8594;
+                </div>
+              )}
+              <div className={styles.conceptWord}>
+                <span className={styles.script}>{c.word}</span>
+                <p>{c.text}</p>
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 
-      <section id="sobre" className={`${styles.about} sec-creme`}>
-        <div className="wrap">
-          <span className="eyebrow gold">Sobre</span>
-          <p className={styles.aboutLead}>
-            Afrodite nasceu do mar, da espuma, do silêncio — daquilo que floresce sem
-            pedir permissão. <em>Aqui também:</em> prazer feminino é coisa que floresce
-            no seu tempo, não na pressa de ninguém.
-          </p>
-          <p className={styles.aboutBody}>
-            Esta é uma curadoria editorial honesta sobre saúde íntima, autoconhecimento
-            e prazer. Cada produto foi escolhido com critério — pelo que entrega, pelo
-            que evita prometer, pelo respeito ao seu ritmo.
-          </p>
-        </div>
+      <Wave color="#F3E2C7" flip />
+
+      <section className={styles.catalogIntro}>
+        <div className={styles.kicker}>A curadoria</div>
+        <h2>Dizer sim para mim, independente da opinião alheia.</h2>
+        <p>
+          Produtos organizados do jeito que você chega até eles: começando pelo cuidado diário e
+          avançando no seu próprio ritmo.
+        </p>
       </section>
 
-      {sections.map((section, i) => (
-        <CuratedSection key={section.id} section={section} index={i} />
-      ))}
+      {sections.map((section) => {
+        const items = productsForSection(section.id);
+        return (
+          <section
+            key={section.id}
+            id={section.id}
+            className={styles.category}
+            style={{ "--cat-color": section.color } as React.CSSProperties}
+          >
+            <div className={styles.categoryHead}>
+              <h2>
+                {section.title} <span className={styles.script}>{section.script}</span>
+              </h2>
+              <p>{section.subtitle}</p>
+              <div className={styles.categoryCount}>{items.length} produtos</div>
+            </div>
+            <Carousel>
+              {items.map((p) => (
+                <article key={p.handle} className={styles.card}>
+                  <div className={styles.cardImg}>
+                    <Image src={p.image} alt={p.name} width={440} height={440} sizes="220px" />
+                  </div>
+                  <div className={styles.cardBody}>
+                    <div className={styles.cardBrand}>{p.brand}</div>
+                    <h3 className={styles.cardName}>{p.name}</h3>
+                    <div className={styles.cardFooter}>
+                      <div className={styles.cardPrice}>{formatBRL(p.price_brl)}</div>
+                      <a
+                        className={styles.cardCta}
+                        href={affiliateUrl(p)}
+                        target="_blank"
+                        rel="noopener noreferrer sponsored"
+                        data-handle={p.handle}
+                      >
+                        Quero este
+                      </a>
+                    </div>
+                  </div>
+                </article>
+              ))}
+            </Carousel>
+          </section>
+        );
+      })}
 
-      <section className={`${styles.cookie} sec-roxo`}>
-        <div className="wrap">
-          <span className="eyebrow gold">Como funciona</span>
-          <p className={styles.cookieLead}>
-            Cada link aqui leva ao site da <em>A Sós Sensual</em>. Se você gostar de
-            qualquer outra coisa por lá e comprar nos próximos <strong>30 dias</strong>,
-            parte sustenta esta curadoria — sem custo extra pra você.
-          </p>
-          <p className={styles.cookieFine}>
-            Clique, navegue, conheça. O preço para você é o mesmo. A comissão é o que
-            permite que este espaço continue existindo.
-          </p>
-        </div>
-      </section>
-    </>
+      <footer className={styles.footer}>
+        <span className={styles.script}>prazer.</span>
+        <p className={styles.footPhrase}>
+          &ldquo;Dizer sim para mim, independente da opinião alheia.&rdquo;
+        </p>
+        <a
+          className={styles.footIg}
+          href={INSTAGRAM_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          @afrodite.prazer no Instagram
+        </a>
+        <p className={styles.footNote}>
+          Os links de compra levam à loja parceira A Sós. A Afrodite, prazer. atua como curadoria
+          de conteúdo e produtos — a compra e a entrega são realizadas diretamente pela loja. Os
+          preços podem mudar na loja. Conteúdo adulto, destinado a maiores de 18 anos.
+        </p>
+      </footer>
+    </div>
   );
 }

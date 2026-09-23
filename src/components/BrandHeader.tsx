@@ -3,10 +3,10 @@ import ShellIcon from "./ShellIcon";
 import styles from "./BrandHeader.module.css";
 
 const NAV = [
-  { href: "/#por-onde-comecar", label: "Cuidado" },
-  { href: "/#para-os-sentidos", label: "Sentidos" },
-  { href: "/#conhecer-pelo-toque", label: "Toque" },
-  { href: "/#novas-descobertas", label: "Descobertas" },
+  { href: "/#cuidar", label: "Cuidar" },
+  { href: "/#sentidos", label: "Sentidos" },
+  { href: "/#explorar", label: "Explorar" },
+  { href: "/#premium", label: "Premium" },
   { href: "/guia", label: "Guia" },
 ] as const;
 

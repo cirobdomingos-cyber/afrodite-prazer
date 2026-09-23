@@ -223,8 +223,8 @@ export default function HomePage() {
             <p className={styles.kicker}>Guia gratuito</p>
             <h2 id="guia-title">Pompoar, prazer.</h2>
             <p>
-              7 etapas pra conhecer, sentir e fortalecer o seu assoalho pélvico — no seu ritmo, pra
-              você. Não pra agradar ninguém.
+              O guia da iniciante: do primeiro “onde fica?” ao seu primeiro treino de 7 dias — no
+              seu ritmo, pra você. Não pra agradar ninguém.
             </p>
           </div>
           <Link href="/guia" className={styles.guideBtn}>

@@ -11,14 +11,14 @@ import styles from "./page.module.css";
 export const metadata: Metadata = {
   title: "Guia gratuito de pompoar",
   description:
-    "Pompoar, prazer.: 7 etapas pra conhecer, sentir e fortalecer o seu assoalho pélvico — no seu ritmo, pra você.",
+    "Pompoar, prazer.: o guia da iniciante. Do primeiro “onde fica?” ao seu primeiro treino de 7 dias — no seu ritmo, pra você.",
 };
 
 const MOVEMENTS = [
-  { word: "Cuidado", text: "Conhecer o assoalho pélvico e encontrar o músculo." },
-  { word: "Desejo", text: "Decidir por que pompoar — pra você, não pra ninguém." },
-  { word: "Sentir", text: "Os primeiros exercícios e, se quiser, os acessórios." },
-  { word: "Independência", text: "Uma rotina sua e a hora certa de pedir ajuda." },
+  { word: "Cuidado", text: "O que é pompoar, onde fica o músculo e como encontrá-lo." },
+  { word: "Desejo", text: "Por que treinar — pra você, não pra ninguém." },
+  { word: "Sentir", text: "Respiração, posições, movimentos e o que é normal sentir." },
+  { word: "Independência", text: "O seu primeiro treino de 7 dias, com diário pra marcar." },
 ];
 
 export default function GuiaPage() {
@@ -42,7 +42,7 @@ export default function GuiaPage() {
             />
           </div>
           <p className={styles.coverCaption}>
-            Leitura online · no celular ou no computador · no seu tempo
+            15 páginas · leia no celular ou salve em PDF
           </p>
         </div>
 
@@ -52,15 +52,15 @@ export default function GuiaPage() {
             <span className={styles.ac}>Pompoar</span>, prazer.
           </h1>
           <p className={styles.lede}>
-            7 etapas pra conhecer, sentir e fortalecer o seu assoalho pélvico — no seu ritmo,
-            pra você. Não pra agradar ninguém.
+            O guia da iniciante: do primeiro “onde fica?” ao seu primeiro treino de 7 dias — no
+            seu ritmo, pra você. Não pra agradar ninguém.
           </p>
 
           <ul className={styles.bullets}>
-            <li>Onde fica o assoalho pélvico e como encontrar o músculo, sem constrangimento.</li>
-            <li>Os primeiros exercícios, sem acessório — cinco minutos por dia.</li>
-            <li>Um plano de quatro semanas e o que fazer quando algo não vai bem.</li>
-            <li>Bônus: gestação, pós-parto e menopausa.</li>
+            <li>Onde fica o assoalho pélvico e quatro jeitos de encontrar o músculo, sem constrangimento.</li>
+            <li>Respiração, posições e os movimentos básicos, sem acessório.</li>
+            <li>Um treino de 7 dias, de 4 a 10 minutos por dia, com diário pra marcar.</li>
+            <li>O que é normal sentir e quando vale procurar uma fisioterapeuta.</li>
           </ul>
 
           {returning ? (
@@ -78,7 +78,7 @@ export default function GuiaPage() {
 
       <section className={styles.movements}>
         <div className={styles.kickerLight}>O caminho</div>
-        <h2>Sete etapas, quatro movimentos.</h2>
+        <h2>Quatro movimentos, sete dias.</h2>
         <div className={styles.flow}>
           {MOVEMENTS.map((m) => (
             <div key={m.word} className={styles.move}>

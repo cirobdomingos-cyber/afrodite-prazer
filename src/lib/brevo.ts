@@ -3,8 +3,8 @@
  *
  *   1. addContact — coloca a leitora na lista BREVO_LIST_ID, com os atributos
  *      FIRSTNAME, SOURCE e EBOOK_URL (o link pessoal de leitura, usado pela
- *      sequência de e-mails). SOURCE e EBOOK_URL precisam existir no Brevo:
- *      Contatos → Configurações → Atributos → criar como "Texto".
+ *      sequência de e-mails). FIRSTNAME, SOURCE e EBOOK_URL precisam existir no
+ *      Brevo: Contatos → Configurações → Atributos → criar como "Texto".
  *   2. sendEbookEmail — e-mail de boas-vindas com o link de leitura.
  *
  * Os dois lançam erro em falha; reinscrever o mesmo e-mail conta como sucesso.
@@ -16,6 +16,11 @@ const SENDER = {
   name: "Afrodite, prazer.",
   email: process.env.BREVO_SENDER_EMAIL ?? "contato@afroditeprazer.com.br",
 };
+
+// O remetente não tem caixa de entrada: respostas vão para BREVO_REPLY_TO (se definido).
+const REPLY_TO = process.env.BREVO_REPLY_TO
+  ? { email: process.env.BREVO_REPLY_TO, name: SENDER.name }
+  : undefined;
 
 function authHeaders(apiKey: string) {
   return {
@@ -96,6 +101,7 @@ export async function sendEbookEmail(input: LeadInput) {
     headers: authHeaders(apiKey),
     body: JSON.stringify({
       sender: SENDER,
+      ...(REPLY_TO && { replyTo: REPLY_TO }),
       to: [{ email: input.email, name: input.name }],
       subject,
       htmlContent: html,

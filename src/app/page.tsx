@@ -1,158 +1,237 @@
 import Image from "next/image";
-import Carousel from "@/components/Carousel";
-import SiteFooter, { INSTAGRAM_URL } from "@/components/SiteFooter";
+import Link from "next/link";
+import { Crescent, Star4, Star8, StarCircle, StarOutline } from "@/components/BrandIcons";
+import HeroBanner from "@/components/HeroBanner";
+import ProductCard from "@/components/ProductCard";
+import SiteFooter from "@/components/SiteFooter";
 import SiteNav from "@/components/SiteNav";
-import { affiliateUrl, formatBRL, productsForSection, sections } from "@/lib/catalog";
+import {
+  activeBanners,
+  affiliateUrl,
+  formatBRL,
+  getSection,
+  productsForSection,
+  ritualSteps,
+  sectionHref,
+  type Section,
+} from "@/lib/catalog";
 import styles from "./home.module.css";
 
+// Refaz a página a cada hora, para banners com data de validade ("ate") saírem sozinhos.
+export const revalidate = 3600;
+
 const CONCEPTS = [
-  { word: "Cuidado", text: "Atenção dedicada a si mesma, sem pressa e sem julgamento." },
-  { word: "Desejo", text: "Reconhecer uma vontade como legítima — sem culpa, sem esconder." },
-  { word: "Sentir", text: "Estar presente no próprio corpo, sem se cobrar por isso." },
-  { word: "Independência", text: "A autonomia que devolvemos a você para decidir por si mesma." },
+  {
+    word: "Cuidado",
+    text: "A atenção que você dedica a si mesma, sem pressa e sem julgamento.",
+    href: "#cuidar",
+    icon: <Crescent size={64} color="#1A7562" />,
+  },
+  {
+    word: "Desejo",
+    text: "Reconhecer uma vontade como legítima — e explorar com informação, sem culpa.",
+    href: "#explorar",
+    icon: <Star8 size={64} color="#DA7811" />,
+  },
+  {
+    word: "Sentir",
+    text: "Estar presente no próprio corpo e perceber as sensações, sem se cobrar por elas.",
+    href: "#sentidos",
+    icon: <StarOutline size={64} color="#B8407F" accent="#F2A6CE" />,
+  },
+  {
+    word: "Independência",
+    text: "A autonomia de decidir por si mesma, sem depender da aprovação de ninguém.",
+    href: "#premium",
+    icon: <StarCircle size={64} color="#581931" accent="#F3E2C7" />,
+  },
 ];
 
-function Wave({ color, flip = false }: { color: string; flip?: boolean }) {
+type FeatureProps = {
+  section: Section;
+  number: string;
+  heading: string;
+  theme: "blush" | "peach" | "wine";
+  reverse?: boolean;
+};
+
+function FeatureSection({ section, number, heading, theme, reverse = false }: FeatureProps) {
+  const all = productsForSection(section.id);
+  const highlights = all.slice(0, 4);
+  const dark = theme === "wine";
   return (
-    <svg
-      className={styles.wave}
-      viewBox="0 0 1440 80"
-      preserveAspectRatio="none"
-      aria-hidden="true"
-      style={flip ? { transform: "rotate(180deg)" } : undefined}
+    <section
+      id={section.id}
+      className={`${styles.feature} ${styles[theme]} ${reverse ? styles.reverse : ""}`}
+      aria-labelledby={`${section.id}-title`}
     >
-      <path
-        d="M0,40 C 240,90 360,-10 600,35 C 840,80 1000,0 1200,30 C 1320,48 1380,45 1440,38 L1440,80 L0,80 Z"
-        fill={color}
-      />
-      <path
-        d="M0,45 C 220,10 420,75 660,40 C 900,5 1080,65 1440,32"
-        stroke={color}
-        strokeWidth="2.5"
-        fill="none"
-        opacity="0.55"
-      />
-    </svg>
+      <div className={styles.featureInner}>
+        <div className={styles.featureMedia}>
+          <div className={styles.featurePhoto}>
+            <Image src={section.photo} alt={section.photoAlt} fill sizes="(max-width: 900px) 90vw, 460px" />
+          </div>
+          <span className={styles.featureScript}>{section.script}</span>
+        </div>
+
+        <div className={styles.featureContent}>
+          <p className={styles.kicker}>
+            Curadoria {number} · {all.length} produtos
+          </p>
+          <h2 id={`${section.id}-title`}>{heading}</h2>
+          <p className={styles.featureLede}>{section.subtitle}</p>
+
+          <div className={styles.featureGrid}>
+            {highlights.map((p) => (
+              <ProductCard key={p.handle} product={p} tone={dark ? "dark" : "light"} showNote={false} variant="compact" />
+            ))}
+          </div>
+
+          <Link href={sectionHref(section.id)} className={styles.seeAll}>
+            Ver todos os produtos <span aria-hidden="true">→</span>
+          </Link>
+        </div>
+      </div>
+    </section>
   );
 }
 
 export default function HomePage() {
+  const cuidar = getSection("cuidar")!;
+  const sentidos = getSection("sentidos")!;
+  const explorar = getSection("explorar")!;
+  const premium = getSection("premium")!;
+  const steps = ritualSteps();
+
   return (
     <div className={styles.page}>
       <SiteNav />
+      <HeroBanner banners={activeBanners()} />
 
-      <header className={styles.hero}>
-        <Image
-          className={styles.heroLogo}
-          src="/brand/logo.png"
-          alt="Afrodite, prazer."
-          width={900}
-          height={489}
-          priority
-        />
-        <div className={styles.kicker}>Curadoria de bem-estar íntimo</div>
-        <h1>Prazer é como a maré: silenciosa em sua origem, certeira em sua chegada.</h1>
-        <p className={styles.sub}>
-          Uma seleção pensada para mulheres que já sabem o que querem — sem pressa, sem
-          julgamento, sem vulgaridade. Cada produto aqui foi escolhido para devolver a você a
-          autonomia sobre o próprio corpo.
-        </p>
-        <div className={styles.heroActions}>
-          <a href={`#${sections[0].id}`} className={`${styles.btn} ${styles.btnPrimary}`}>
-            Ver a curadoria
-          </a>
-          <a
-            href={INSTAGRAM_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={`${styles.btn} ${styles.btnGhost}`}
-          >
-            Seguir no Instagram
-          </a>
-        </div>
-      </header>
-
-      <Wave color="#581931" />
-
-      <section className={styles.manifesto} id="manifesto">
-        <blockquote>
-          &ldquo;No cuidado que desperta o desejo, no desejo que aprende a sentir, encontramos a
-          independência de ser quem somos.&rdquo;
-        </blockquote>
-        <div className={styles.conceptFlow}>
+      {/* ---------- Os quatro conceitos ---------- */}
+      <section id="no-cuidado" className={styles.concepts} aria-labelledby="conceito-title">
+        <p className={styles.kicker}>O conceito</p>
+        <h2 id="conceito-title" className={styles.quote}>
+          No <em>cuidado</em> que desperta o <em>desejo</em>, no desejo que aprende a{" "}
+          <em>sentir</em>, encontramos a <em>independência</em> de ser quem somos.
+        </h2>
+        <ol className={styles.conceptList}>
           {CONCEPTS.map((c, i) => (
-            <div key={c.word} className={styles.conceptItem}>
-              {i > 0 && (
-                <div className={styles.conceptArrow} aria-hidden="true">
-                  &#8594;
-                </div>
-              )}
-              <div className={styles.conceptWord}>
-                <span className={styles.script}>{c.word}</span>
-                <p>{c.text}</p>
-              </div>
-            </div>
+            <li key={c.word}>
+              <a href={c.href} className={styles.concept}>
+                <span className={styles.conceptIcon}>{c.icon}</span>
+                <span className={styles.conceptNum}>0{i + 1}</span>
+                <span className={styles.conceptWord}>{c.word}</span>
+                <span className={styles.conceptText}>{c.text}</span>
+              </a>
+            </li>
           ))}
+        </ol>
+      </section>
+
+      <div className={styles.archBand} aria-hidden="true" />
+
+      {/* ---------- Cuidar de mim: ritual passo a passo ---------- */}
+      <section id="cuidar" className={styles.ritual} aria-labelledby="cuidar-title">
+        <div className={styles.ritualHead}>
+          <div>
+            <p className={styles.kicker}>Curadoria 01 · {cuidar.title}</p>
+            <h2 id="cuidar-title">
+              Skincare também é pra lá<span className={styles.accentDot}>.</span>
+            </h2>
+          </div>
+          <p>
+            Seu ritual íntimo em quatro passos. A pele da vulva e da virilha é mais fina e sensível
+            que a do resto do corpo — merece produto pensado pra ela, não o sabonete do chuveiro.
+          </p>
+        </div>
+
+        <ol className={styles.steps}>
+          {steps.map((s) => {
+            const [main, ...alts] = s.products;
+            return (
+              <li key={s.step} className={styles.step}>
+                <div className={styles.stepTop}>
+                  <span className={styles.stepNum}>{s.step}</span>
+                  <h3>{s.title}</h3>
+                </div>
+                <p className={styles.stepText}>{s.text}</p>
+                {main && (
+                  <a
+                    href={affiliateUrl(main)}
+                    target="_blank"
+                    rel="noopener noreferrer sponsored"
+                    className={styles.stepProduct}
+                    data-handle={main.handle}
+                    data-name={main.name}
+                    data-section={main.section}
+                  >
+                    <Image src={main.image} alt="" width={600} height={600} sizes="(max-width: 600px) 90vw, (max-width: 1000px) 45vw, 260px" />
+                    <span>
+                      <strong>{main.name}</strong>
+                      <em>{formatBRL(main.price_brl)} · ver na loja →</em>
+                    </span>
+                  </a>
+                )}
+                {alts.length > 0 && (
+                  <ul className={styles.stepAlts}>
+                    <li className={styles.stepAltsLabel}>Ou então:</li>
+                    {alts.map((p) => (
+                      <li key={p.handle}>
+                        <a
+                          href={affiliateUrl(p)}
+                          target="_blank"
+                          rel="noopener noreferrer sponsored"
+                          data-handle={p.handle}
+                          data-name={p.name}
+                          data-section={p.section}
+                        >
+                          <Image src={p.image} alt="" width={80} height={80} sizes="40px" />
+                          <span>{p.name}</span>
+                          <b>{formatBRL(p.price_brl)}</b>
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </li>
+            );
+          })}
+        </ol>
+
+        <div className={styles.ritualFoot}>
+          <Link href={sectionHref("cuidar")} className={`${styles.seeAll} ${styles.seeAllLight}`}>
+            Ver todos os produtos de cuidado <span aria-hidden="true">→</span>
+          </Link>
+          <p className={styles.ritualNote}>
+            <Star4 size={12} /> Coceira, ardor ou mudança brusca de cheiro? Aí é hora de consulta,
+            não de cosmético.
+          </p>
         </div>
       </section>
 
-      <Wave color="#F3E2C7" flip />
+      <FeatureSection section={sentidos} number="02" heading="Conforto e sentir." theme="blush" />
+      <FeatureSection section={explorar} number="03" heading="Desejo, sem culpa." theme="peach" reverse />
+      <FeatureSection section={premium} number="04" heading="Premium: você já sabe o que quer." theme="wine" />
 
-      <section className={styles.catalogIntro}>
-        <div className={styles.kicker}>A curadoria</div>
-        <h2>Dizer sim para mim, independente da opinião alheia.</h2>
-        <p>
-          Produtos organizados do jeito que você chega até eles: começando pelo cuidado diário e
-          avançando no seu próprio ritmo.
-        </p>
+      {/* ---------- Guia gratuito ---------- */}
+      <section className={styles.guide} aria-labelledby="guia-title">
+        <div className={styles.guideInner}>
+          <div className={styles.guideImg}>
+            <Image src="/ebook/img/venus-capa.jpg" alt="" fill sizes="220px" />
+          </div>
+          <div>
+            <p className={styles.kicker}>Guia gratuito</p>
+            <h2 id="guia-title">Pompoar, prazer.</h2>
+            <p>
+              7 etapas pra conhecer, sentir e fortalecer o seu assoalho pélvico — no seu ritmo, pra
+              você. Não pra agradar ninguém.
+            </p>
+          </div>
+          <Link href="/guia" className={styles.guideBtn}>
+            Quero o guia grátis <span aria-hidden="true">→</span>
+          </Link>
+        </div>
       </section>
-
-      {sections.map((section) => {
-        const items = productsForSection(section.id);
-        return (
-          <section
-            key={section.id}
-            id={section.id}
-            className={styles.category}
-            style={{ "--cat-color": section.color } as React.CSSProperties}
-          >
-            <div className={styles.categoryHead}>
-              <h2>
-                {section.title} <span className={styles.script}>{section.script}</span>
-              </h2>
-              <p>{section.subtitle}</p>
-              <div className={styles.categoryCount}>{items.length} produtos</div>
-            </div>
-            <Carousel>
-              {items.map((p) => (
-                <article key={p.handle} className={styles.card}>
-                  <div className={styles.cardImg}>
-                    <Image src={p.image} alt={p.name} width={440} height={440} sizes="220px" />
-                  </div>
-                  <div className={styles.cardBody}>
-                    <div className={styles.cardBrand}>{p.brand}</div>
-                    <h3 className={styles.cardName}>{p.name}</h3>
-                    <div className={styles.cardFooter}>
-                      <div className={styles.cardPrice}>{formatBRL(p.price_brl)}</div>
-                      <a
-                        className={styles.cardCta}
-                        href={affiliateUrl(p)}
-                        target="_blank"
-                        rel="noopener noreferrer sponsored"
-                        data-handle={p.handle}
-                        data-name={p.name}
-                        data-section={section.id}
-                      >
-                        Quero este
-                      </a>
-                    </div>
-                  </div>
-                </article>
-              ))}
-            </Carousel>
-          </section>
-        );
-      })}
 
       <SiteFooter />
     </div>

@@ -1,0 +1,41 @@
+{
+  "_README": "Banners do topo da página inicial, na ordem em que aparecem. Para uma promoção: copie um bloco, troque os textos e a imagem (coloque a foto em /public/banners/). 'tema' = wine | teal | blush | terracota. 'ativo': false esconde o banner. 'ate' (opcional, AAAA-MM-DD) tira o banner do ar depois dessa data (a página se atualiza sozinha a cada hora).",
+  "banners": [
+    {
+      "id": "marca",
+      "ativo": true,
+      "tema": "wine",
+      "kicker": "Curadoria de bem-estar íntimo",
+      "titulo": "Afrodite, prazer.",
+      "texto": "Prazer é como a maré: silenciosa em sua origem, certeira em sua chegada. Produtos escolhidos a dedo para mulheres que já sabem o que querem.",
+      "botao": "Conhecer a curadoria",
+      "link": "#no-cuidado",
+      "imagem": "/ebook/img/venus-escuta.jpg",
+      "imagemAlt": "Vênus de Botticelli ouvindo música com fones de ouvido"
+    },
+    {
+      "id": "guia-pompoar",
+      "ativo": true,
+      "tema": "teal",
+      "kicker": "Guia gratuito",
+      "titulo": "Pompoar, prazer.",
+      "texto": "7 etapas pra conhecer, sentir e fortalecer o seu assoalho pélvico — no seu ritmo, pra você. Chega direto no seu e-mail.",
+      "botao": "Baixar o guia grátis",
+      "link": "/guia",
+      "imagem": "/ebook/img/venus-capa.jpg",
+      "imagemAlt": "Vênus de Botticelli cobrindo os olhos com a mão"
+    },
+    {
+      "id": "ritual",
+      "ativo": true,
+      "tema": "blush",
+      "kicker": "Cuidar de mim",
+      "titulo": "Skincare também é pra lá.",
+      "texto": "Limpar, renovar, hidratar, proteger: o ritual íntimo em quatro passos, com os produtos que escolhemos para cada um.",
+      "botao": "Ver o passo a passo",
+      "link": "#cuidar",
+      "imagem": "/editorial/cuidar.jpg",
+      "imagemAlt": "Mão segurando um frasco de talco íntimo sobre lençóis brancos"
+    }
+  ]
+}

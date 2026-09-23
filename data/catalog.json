@@ -1,68 +1,102 @@
 {
-  "_README": "Prateleira inicial do Plano de Negócio (30 produtos, 4 seções). Preços conferidos em asosloja.com.br em 22/09/2026. O link de afiliada é montado a partir do 'handle' da loja + o código da afiliada em src/lib/catalog.ts. Imagens em /public/products/{handle}.{ext}.",
+  "_README": "Prateleira inicial do Plano de Negócio (30 produtos, 4 seções). Preços conferidos em asosloja.com.br em 23/09/2026. O link de afiliada é montado a partir do 'handle' da loja + o código da afiliada em src/lib/catalog.ts. Imagens em /public/products/{handle}.{ext}; fotos das seções em /public/editorial/. 'note' = frase curta da curadoria (sem promessas médicas). 'badge' é opcional. 'ritual' = passo a passo da seção Cuidar de mim.",
   "sections": [
     {
       "id": "cuidar",
       "title": "Cuidar de mim",
       "script": "cuidado",
       "color": "#1A7562",
-      "subtitle": "O primeiro gesto é o mais simples: conhecer e cuidar do próprio corpo, no seu ritmo."
+      "subtitle": "O primeiro gesto é o mais simples: conhecer e cuidar do próprio corpo, no seu ritmo.",
+      "photo": "/editorial/cuidar.jpg",
+      "photoAlt": "Mão segurando um frasco de talco íntimo sobre lençóis brancos"
     },
     {
       "id": "sentidos",
       "title": "Conforto e sentidos",
       "script": "sentir",
-      "color": "#c94f97",
-      "subtitle": "Texturas, aromas e sensações para redescobrir o corpo aos poucos — sozinha ou a dois."
+      "color": "#B8407F",
+      "subtitle": "Texturas, aromas e sensações para redescobrir o corpo aos poucos — sozinha ou a dois.",
+      "photo": "/editorial/sentir.jpg",
+      "photoAlt": "Loção cremosa rosada sendo aplicada na palma da mão"
     },
     {
       "id": "explorar",
-      "title": "Explorar",
-      "script": "desejo",
-      "color": "#DA7811",
-      "subtitle": "Espaço para experimentar o que desperta vontade, com informação e sem vergonha."
+      "title": "Desejo",
+      "script": "explorar",
+      "color": "#C4650A",
+      "subtitle": "Espaço para experimentar o que desperta vontade, com informação e sem vergonha.",
+      "photo": "/editorial/desejo.jpg",
+      "photoAlt": "Dedeira vibratória rosa apoiada na palma da mão"
     },
     {
       "id": "premium",
       "title": "Premium",
       "script": "independência",
       "color": "#581931",
-      "subtitle": "Para quem já sabe o que quer: tecnologia, acabamento e autonomia para escolher como sentir."
+      "subtitle": "Para quem já sabe o que quer: tecnologia, acabamento e autonomia para escolher como sentir.",
+      "photo": "/editorial/premium.jpg",
+      "photoAlt": "Estimulador em tons de rosé e branco segurado com as duas mãos"
+    }
+  ],
+  "ritual": [
+    {
+      "step": 1,
+      "title": "Limpar",
+      "text": "Todo dia, só na parte externa, com um sabonete íntimo de pH adequado. Fora de casa, a espuma resolve sem água.",
+      "handles": ["sabonete-intimo-hidratante-feminino-dermosex-220g", "sabonete-intimo-em-barra-hidratante-dermosex-90g", "espuma-higienizadora-intima-dermosex-50-ml"]
+    },
+    {
+      "step": 2,
+      "title": "Renovar",
+      "text": "De vez em quando, esfolie a pele da virilha e da região pélvica com movimentos leves. Sem esfregar, sem pressa.",
+      "handles": ["esfoliante-hidratante-para-regiao-pelvica-dermosex-120-ml"]
+    },
+    {
+      "step": 3,
+      "title": "Hidratar",
+      "text": "A pele de lá também pede hidratação. Creme ou sérum, com a pele limpa e seca — igualzinho ao rosto.",
+      "handles": ["creme-hidratante-para-regiao-pelvica-dermosex-60-g", "serum-intimo-para-regiao-pelvica-dermosex-30-ml"]
+    },
+    {
+      "step": 4,
+      "title": "Proteger",
+      "text": "Calor, academia, vestido num dia de vento: um toque seco ou uma camada de conforto antes de sair.",
+      "handles": ["talco-intimo-dermosex-100g", "creme-hidratante-antiatrito-dermosex-75-g"]
     }
   ],
   "products": [
-    { "section": "cuidar", "handle": "sabonete-intimo-em-barra-hidratante-dermosex-90g", "name": "Sabonete Íntimo em Barra Hidratante — 90 g", "brand": "Dermosex", "price_brl": 32.78, "image": "/products/sabonete-intimo-em-barra-hidratante-dermosex-90g.jpg" },
-    { "section": "cuidar", "handle": "creme-hidratante-antiatrito-dermosex-75-g", "name": "Creme Antiatrito Hidratante — 75 g", "brand": "Dermosex", "price_brl": 65.78, "image": "/products/creme-hidratante-antiatrito-dermosex-75-g.jpg" },
-    { "section": "cuidar", "handle": "talco-intimo-dermosex-100g", "name": "Talco Íntimo — 120 g", "brand": "Dermosex", "price_brl": 62.48, "image": "/products/talco-intimo-dermosex-100g.jpg" },
-    { "section": "cuidar", "handle": "sabonete-intimo-hidratante-feminino-dermosex-220g", "name": "Sabonete Íntimo Hidratante Feminino — 220 g", "brand": "Dermosex", "price_brl": 76.78, "image": "/products/sabonete-intimo-hidratante-feminino-dermosex-220g.jpg" },
-    { "section": "cuidar", "handle": "creme-hidratante-para-regiao-pelvica-dermosex-60-g", "name": "Creme Hidratante para Região Pélvica — 60 g", "brand": "Dermosex", "price_brl": 76.78, "image": "/products/creme-hidratante-para-regiao-pelvica-dermosex-60-g.jpg" },
-    { "section": "cuidar", "handle": "creme-clareador-para-virilha-dermosex-60-g", "name": "Creme Clareador para Virilha — 60 g", "brand": "Dermosex", "price_brl": 72.38, "image": "/products/creme-clareador-para-virilha-dermosex-60-g.jpg" },
-    { "section": "cuidar", "handle": "espuma-higienizadora-intima-dermosex-50-ml", "name": "Espuma Higienizadora Íntima — 50 ml", "brand": "Dermosex", "price_brl": 83.38, "image": "/products/espuma-higienizadora-intima-dermosex-50-ml.jpg" },
-    { "section": "cuidar", "handle": "gel-lubrificante-e-hidratante-pelvico-dermosex-220-ml", "name": "Gel Lubrificante e Hidratante Pélvico — 220 ml", "brand": "Dermosex", "price_brl": 82.28, "image": "/products/gel-lubrificante-e-hidratante-pelvico-dermosex-220-ml.jpg" },
-    { "section": "cuidar", "handle": "esfoliante-hidratante-para-regiao-pelvica-dermosex-120-ml", "name": "Esfoliante Hidratante para Região Pélvica — 120 ml", "brand": "Dermosex", "price_brl": 87.78, "image": "/products/esfoliante-hidratante-para-regiao-pelvica-dermosex-120-ml.jpg" },
-    { "section": "cuidar", "handle": "serum-intimo-para-regiao-pelvica-dermosex-30-ml", "name": "Sérum Íntimo para Região Pélvica — 30 ml", "brand": "Dermosex", "price_brl": 149.90, "image": "/products/serum-intimo-para-regiao-pelvica-dermosex-30-ml.jpg" },
+    { "section": "cuidar", "handle": "sabonete-intimo-em-barra-hidratante-dermosex-90g", "name": "Sabonete Íntimo em Barra Hidratante — 90 g", "brand": "Dermosex", "price_brl": 32.78, "image": "/products/sabonete-intimo-em-barra-hidratante-dermosex-90g.jpg", "note": "Limpeza suave e fragrância leve, em barra. O básico bem feito, pra rotina de todo dia." },
+    { "section": "cuidar", "handle": "creme-hidratante-antiatrito-dermosex-75-g", "name": "Creme Antiatrito Hidratante — 75 g", "brand": "Dermosex", "price_brl": 65.78, "image": "/products/creme-hidratante-antiatrito-dermosex-75-g.jpg", "note": "Conforto onde a pele roça, em dias de calor ou de treino. Espalha fácil e não fica pegajoso." },
+    { "section": "cuidar", "handle": "talco-intimo-dermosex-100g", "name": "Talco Íntimo — 120 g", "brand": "Dermosex", "price_brl": 62.48, "image": "/products/talco-intimo-dermosex-100g.jpg", "note": "Toque seco na região íntima, pra quem gosta da sensação de frescor ao longo do dia." },
+    { "section": "cuidar", "handle": "sabonete-intimo-hidratante-feminino-dermosex-220g", "name": "Sabonete Íntimo Hidratante Feminino — 220 g", "brand": "Dermosex", "price_brl": 76.78, "image": "/products/sabonete-intimo-hidratante-feminino-dermosex-220g.jpg", "note": "Limpa com delicadeza e hidrata. O sabonete que transforma obrigação em ritual." },
+    { "section": "cuidar", "handle": "creme-hidratante-para-regiao-pelvica-dermosex-60-g", "name": "Creme Hidratante para Região Pélvica — 60 g", "brand": "Dermosex", "price_brl": 76.78, "image": "/products/creme-hidratante-para-regiao-pelvica-dermosex-60-g.jpg", "note": "Hidratação de textura leve, com 96% de ingredientes de origem natural e sem parabenos." },
+    { "section": "cuidar", "handle": "creme-clareador-para-virilha-dermosex-60-g", "name": "Creme Clareador para Virilha — 60 g", "brand": "Dermosex", "price_brl": 72.38, "image": "/products/creme-clareador-para-virilha-dermosex-60-g.jpg", "note": "Uniformiza o tom da pele da virilha, sem ácidos que mancham com o sol. Se você quiser — não é regra." },
+    { "section": "cuidar", "handle": "espuma-higienizadora-intima-dermosex-50-ml", "name": "Espuma Higienizadora Íntima — 50 ml", "brand": "Dermosex", "price_brl": 83.38, "image": "/products/espuma-higienizadora-intima-dermosex-50-ml.jpg", "note": "Limpa sem água e sem enxágue. Cabe na bolsa e resolve fora de casa.", "badge": "Cabe na bolsa" },
+    { "section": "cuidar", "handle": "gel-lubrificante-e-hidratante-pelvico-dermosex-220-ml", "name": "Gel Lubrificante e Hidratante Pélvico — 220 ml", "brand": "Dermosex", "price_brl": 82.28, "image": "/products/gel-lubrificante-e-hidratante-pelvico-dermosex-220-ml.jpg", "note": "Esqualeno e óleo de coco: hidrata e lubrifica com um conforto que dura." },
+    { "section": "cuidar", "handle": "esfoliante-hidratante-para-regiao-pelvica-dermosex-120-ml", "name": "Esfoliante Hidratante para Região Pélvica — 120 ml", "brand": "Dermosex", "price_brl": 87.78, "image": "/products/esfoliante-hidratante-para-regiao-pelvica-dermosex-120-ml.jpg", "note": "Renova a pele da região pélvica e deixa a textura mais macia. De vez em quando, sem esfregar." },
+    { "section": "cuidar", "handle": "serum-intimo-para-regiao-pelvica-dermosex-30-ml", "name": "Sérum Íntimo para Região Pélvica — 30 ml", "brand": "Dermosex", "price_brl": 149.90, "image": "/products/serum-intimo-para-regiao-pelvica-dermosex-30-ml.jpg", "note": "O passo extra do ritual: textura fluida, toque seco e ácido hialurônico." },
 
-    { "section": "sentidos", "handle": "gel-excitante-feminino-em-gotas-my-secret-15-ml", "name": "Gel Excitante Feminino em Gotas — 15 ml", "brand": "My Secret", "price_brl": 54.78, "image": "/products/gel-excitante-feminino-em-gotas-my-secret-15-ml.png" },
-    { "section": "sentidos", "handle": "gel-excitante-olove-beijavel-amoracita-10-g", "name": "Gel Excitante Beijável Amoracita — 10 g", "brand": "Olove", "price_brl": 54.78, "image": "/products/gel-excitante-olove-beijavel-amoracita-10-g.jpg" },
-    { "section": "sentidos", "handle": "gel-lubrificante-beijavel-olove-gelatto-morango-30-g", "name": "Gel Lubrificante Beijável Gelatto Morango — 30 g", "brand": "Olove", "price_brl": 54.78, "image": "/products/gel-lubrificante-beijavel-olove-gelatto-morango-30-g.jpg" },
-    { "section": "sentidos", "handle": "oleo-para-massagem-sensual-olove-massage-120ml", "name": "Óleo para Massagem Sensual Massage — 120 ml", "brand": "Olove", "price_brl": 54.78, "image": "/products/oleo-para-massagem-sensual-olove-massage-120ml.jpg" },
-    { "section": "sentidos", "handle": "gel-lubrificante-hidra-confort-feminist-220g", "name": "Gel Lubrificante Hidra Confort — 220 g", "brand": "Feminist", "price_brl": 76.78, "image": "/products/gel-lubrificante-hidra-confort-feminist-220g.jpg" },
-    { "section": "sentidos", "handle": "hidratante-sensual-beijavel-olove-pink-jelly-chiclete-250g", "name": "Hidratante Sensual Beijável Pink Jelly Chiclete — 250 g", "brand": "Olove", "price_brl": 49.90, "image": "/products/hidratante-sensual-beijavel-olove-pink-jelly-chiclete-250g.jpg" },
-    { "section": "sentidos", "handle": "vela-hidratante-beijavel-olove-candle-morango-70-g", "name": "Vela Hidratante Beijável Candle Morango — 70 g", "brand": "Olove", "price_brl": 76.78, "image": "/products/vela-hidratante-beijavel-olove-candle-morango-70-g.jpg" },
+    { "section": "sentidos", "handle": "gel-excitante-feminino-em-gotas-my-secret-15-ml", "name": "Gel Excitante Feminino em Gotas — 15 ml", "brand": "My Secret", "price_brl": 54.78, "image": "/products/gel-excitante-feminino-em-gotas-my-secret-15-ml.png", "note": "Gotinhas com conta-gotas: a dose certa, sem bagunça. Testado dermatológica e ginecologicamente." },
+    { "section": "sentidos", "handle": "gel-excitante-olove-beijavel-amoracita-10-g", "name": "Gel Excitante Beijável Amoracita — 10 g", "brand": "Olove", "price_brl": 54.78, "image": "/products/gel-excitante-olove-beijavel-amoracita-10-g.jpg", "note": "Jambu e sabor de amora: uma sensação vibrante que acorda o toque.", "badge": "Beijável" },
+    { "section": "sentidos", "handle": "gel-lubrificante-beijavel-olove-gelatto-morango-30-g", "name": "Gel Lubrificante Beijável Gelatto Morango — 30 g", "brand": "Olove", "price_brl": 54.78, "image": "/products/gel-lubrificante-beijavel-olove-gelatto-morango-30-g.jpg", "note": "Efeito refrescante e sabor morango. Não é gorduroso e sai fácil.", "badge": "Beijável" },
+    { "section": "sentidos", "handle": "oleo-para-massagem-sensual-olove-massage-120ml", "name": "Óleo para Massagem Sensual Massage — 120 ml", "brand": "Olove", "price_brl": 54.78, "image": "/products/oleo-para-massagem-sensual-olove-massage-120ml.jpg", "note": "Textura que desliza e faz o carinho durar. Massagem também é cuidado." },
+    { "section": "sentidos", "handle": "gel-lubrificante-hidra-confort-feminist-220g", "name": "Gel Lubrificante Hidra Confort — 220 g", "brand": "Feminist", "price_brl": 76.78, "image": "/products/gel-lubrificante-hidra-confort-feminist-220g.jpg", "note": "Lubrifica e hidrata com ácido hialurônico e centella. Serve pro dia a dia e pros momentos a dois." },
+    { "section": "sentidos", "handle": "hidratante-sensual-beijavel-olove-pink-jelly-chiclete-250g", "name": "Hidratante Sensual Beijável Pink Jelly Chiclete — 250 g", "brand": "Olove", "price_brl": 49.90, "image": "/products/hidratante-sensual-beijavel-olove-pink-jelly-chiclete-250g.jpg", "note": "Meio gel, meio creme, sabor chiclete. Desliza, absorve rápido e deixa a pele macia.", "badge": "Beijável" },
+    { "section": "sentidos", "handle": "vela-hidratante-beijavel-olove-candle-morango-70-g", "name": "Vela Hidratante Beijável Candle Morango — 70 g", "brand": "Olove", "price_brl": 76.78, "image": "/products/vela-hidratante-beijavel-olove-candle-morango-70-g.jpg", "note": "Acende, derrete e vira óleo de massagem morno com aroma de morango. Sem parafina.", "badge": "A dois" },
 
-    { "section": "explorar", "handle": "capsula-vibratoria-recarregavel-olove-vibrito-rosa", "name": "Cápsula Vibratória Recarregável Vibrito", "brand": "Olove", "price_brl": 126.50, "image": "/products/capsula-vibratoria-recarregavel-olove-vibrito-rosa.jpg" },
-    { "section": "explorar", "handle": "dedeira-vibratoria-recarregavel-sweet-vibe-cafune-rosa", "name": "Dedeira Vibratória Recarregável Cafuné", "brand": "Sweet Vibe", "price_brl": 141.90, "image": "/products/dedeira-vibratoria-recarregavel-sweet-vibe-cafune-rosa.jpg" },
-    { "section": "explorar", "handle": "estimulador-de-clitoris-recarregavel-olove-suga", "name": "Estimulador de Clitóris Recarregável Suga", "brand": "Olove", "price_brl": 196.90, "image": "/products/estimulador-de-clitoris-recarregavel-olove-suga.jpg" },
-    { "section": "explorar", "handle": "dedeira-vibratoria-recarregavel-sweet-vibe-afago", "name": "Dedeira Vibratória Recarregável Soft Afago", "brand": "Sweet Vibe", "price_brl": 209.90, "image": "/products/dedeira-vibratoria-recarregavel-sweet-vibe-afago.jpg" },
-    { "section": "explorar", "handle": "vibrador-e-estimulador-recarregavel-sweet-vibe-soft-mimoso", "name": "Vibrador e Estimulador Recarregável Soft Mimoso", "brand": "Sweet Vibe", "price_brl": 219.90, "image": "/products/vibrador-e-estimulador-recarregavel-sweet-vibe-soft-mimoso.jpg" },
-    { "section": "explorar", "handle": "anel-vibratorio-com-controle-recarregavel-sweet-vibe-soft-fofinho", "name": "Anel Vibratório com Controle Soft Fofinho", "brand": "Sweet Vibe", "price_brl": 279.90, "image": "/products/anel-vibratorio-com-controle-recarregavel-sweet-vibe-soft-fofinho.jpg" },
-    { "section": "explorar", "handle": "vibrador-varinha-magica-recarregavel-sweet-vibe-soft-pomposo", "name": "Vibrador Varinha Mágica Recarregável Soft Pomposo", "brand": "Sweet Vibe", "price_brl": 279.90, "image": "/products/vibrador-varinha-magica-recarregavel-sweet-vibe-soft-pomposo.jpg" },
-    { "section": "explorar", "handle": "vibrador-e-estimulador-de-clitoris-recarregavel-sweet-vibe-soft-afeto", "name": "Vibrador e Estimulador de Clitóris Soft Afeto", "brand": "Sweet Vibe", "price_brl": 289.90, "image": "/products/vibrador-e-estimulador-de-clitoris-recarregavel-sweet-vibe-soft-afeto.jpg" },
+    { "section": "explorar", "handle": "capsula-vibratoria-recarregavel-olove-vibrito-rosa", "name": "Cápsula Vibratória Recarregável Vibrito", "brand": "Olove", "price_brl": 126.50, "image": "/products/capsula-vibratoria-recarregavel-olove-vibrito-rosa.jpg", "note": "Compacto, de silicone macio e corpo flexível. Um primeiro vibrador sem cerimônia.", "badge": "Para começar" },
+    { "section": "explorar", "handle": "dedeira-vibratoria-recarregavel-sweet-vibe-cafune-rosa", "name": "Dedeira Vibratória Recarregável Cafuné", "brand": "Sweet Vibe", "price_brl": 141.90, "image": "/products/dedeira-vibratoria-recarregavel-sweet-vibe-cafune-rosa.jpg", "note": "Encaixa entre dois dedos e transforma carinho em descoberta. São 10 níveis de vibração." },
+    { "section": "explorar", "handle": "estimulador-de-clitoris-recarregavel-olove-suga", "name": "Estimulador de Clitóris Recarregável Suga", "brand": "Olove", "price_brl": 196.90, "image": "/products/estimulador-de-clitoris-recarregavel-olove-suga.jpg", "note": "Ondas de pressão num formato que cabe na bolsa. 6 intensidades pra começar devagar.", "badge": "Cabe na bolsa" },
+    { "section": "explorar", "handle": "dedeira-vibratoria-recarregavel-sweet-vibe-afago", "name": "Dedeira Vibratória Recarregável Soft Afago", "brand": "Sweet Vibe", "price_brl": 209.90, "image": "/products/dedeira-vibratoria-recarregavel-sweet-vibe-afago.jpg", "note": "Dedeira texturizada: o controle continua nas suas mãos. Literalmente." },
+    { "section": "explorar", "handle": "vibrador-e-estimulador-recarregavel-sweet-vibe-soft-mimoso", "name": "Vibrador e Estimulador Recarregável Soft Mimoso", "brand": "Sweet Vibe", "price_brl": 219.90, "image": "/products/vibrador-e-estimulador-recarregavel-sweet-vibe-soft-mimoso.jpg", "note": "Formato ergonômico e 10 modos pra explorar no seu ritmo, do suave ao intenso." },
+    { "section": "explorar", "handle": "anel-vibratorio-com-controle-recarregavel-sweet-vibe-soft-fofinho", "name": "Anel Vibratório com Controle Soft Fofinho", "brand": "Sweet Vibe", "price_brl": 279.90, "image": "/products/anel-vibratorio-com-controle-recarregavel-sweet-vibe-soft-fofinho.jpg", "note": "Anel vibratório com controle remoto, pensado pra momentos a dois.", "badge": "A dois" },
+    { "section": "explorar", "handle": "vibrador-varinha-magica-recarregavel-sweet-vibe-soft-pomposo", "name": "Vibrador Varinha Mágica Recarregável Soft Pomposo", "brand": "Sweet Vibe", "price_brl": 279.90, "image": "/products/vibrador-varinha-magica-recarregavel-sweet-vibe-soft-pomposo.jpg", "note": "A varinha clássica, agora recarregável e com haste flexível. Vibração ampla e envolvente." },
+    { "section": "explorar", "handle": "vibrador-e-estimulador-de-clitoris-recarregavel-sweet-vibe-soft-afeto", "name": "Vibrador e Estimulador de Clitóris Soft Afeto", "brand": "Sweet Vibe", "price_brl": 289.90, "image": "/products/vibrador-e-estimulador-de-clitoris-recarregavel-sweet-vibe-soft-afeto.jpg", "note": "Ondas de pressão e vibração num só, com dois motores e controles independentes." },
 
-    { "section": "premium", "handle": "vibrador-recarregavel-my-one", "name": "Vibrador Recarregável My One", "brand": "Dermosex", "price_brl": 141.90, "image": "/products/vibrador-recarregavel-my-one.jpg" },
-    { "section": "premium", "handle": "vibrador-e-estimulador-sugador-recarregavel-sensevibe-double", "name": "Vibrador e Estimulador Sugador Double", "brand": "Sensevibe", "price_brl": 218.90, "image": "/products/vibrador-e-estimulador-sugador-recarregavel-sensevibe-double.jpg" },
-    { "section": "premium", "handle": "vibrador-multivelocidade-recarregavel-dona-intense-13-cm-x-2-cm", "name": "Vibrador Multivelocidade Recarregável Intense", "brand": "Dona", "price_brl": 273.65, "image": "/products/vibrador-multivelocidade-recarregavel-dona-intense-13-cm-x-2-cm.jpg" },
-    { "section": "premium", "handle": "estimulador-de-clitoris-recarregavel-my-touch", "name": "Estimulador de Clitóris Recarregável My Touch", "brand": "Dermosex", "price_brl": 361.90, "image": "/products/estimulador-de-clitoris-recarregavel-my-touch.jpg" },
-    { "section": "premium", "handle": "estimulador-de-clitoris-recarregavel-sensevibe-multi", "name": "Estimulador de Clitóris Recarregável Multi", "brand": "Sensevibe", "price_brl": 416.90, "image": "/products/estimulador-de-clitoris-recarregavel-sensevibe-multi.jpg" }
+    { "section": "premium", "handle": "vibrador-recarregavel-my-one", "name": "Vibrador Recarregável My One", "brand": "Dermosex", "price_brl": 141.90, "image": "/products/vibrador-recarregavel-my-one.jpg", "note": "Clássico, recarregável e com um acessório que vira dedeira. Ótimo como primeiro vibrador.", "badge": "Para começar" },
+    { "section": "premium", "handle": "vibrador-e-estimulador-sugador-recarregavel-sensevibe-double", "name": "Vibrador e Estimulador Sugador Double", "brand": "Sensevibe", "price_brl": 218.90, "image": "/products/vibrador-e-estimulador-sugador-recarregavel-sensevibe-double.jpg", "note": "Ondas de pressão e vibração ao mesmo tempo, em silicone certificado livre de ftalatos." },
+    { "section": "premium", "handle": "vibrador-multivelocidade-recarregavel-dona-intense-13-cm-x-2-cm", "name": "Vibrador Multivelocidade Recarregável Intense", "brand": "Dona", "price_brl": 273.65, "image": "/products/vibrador-multivelocidade-recarregavel-dona-intense-13-cm-x-2-cm.jpg", "note": "Design elegante, silicone com ranhuras e pegada firme. Discreto na mesa de cabeceira." },
+    { "section": "premium", "handle": "estimulador-de-clitoris-recarregavel-my-touch", "name": "Estimulador de Clitóris Recarregável My Touch", "brand": "Dermosex", "price_brl": 361.90, "image": "/products/estimulador-de-clitoris-recarregavel-my-touch.jpg", "note": "Ondas de pressão e \"tapping\" no mesmo aparelho, com um estojo que vai com você." },
+    { "section": "premium", "handle": "estimulador-de-clitoris-recarregavel-sensevibe-multi", "name": "Estimulador de Clitóris Recarregável Multi", "brand": "Sensevibe", "price_brl": 416.90, "image": "/products/estimulador-de-clitoris-recarregavel-sensevibe-multi.jpg", "note": "4 bocais intercambiáveis, 6 intensidades de sucção e 10 de batidas. Resistente à água." }
   ]
 }

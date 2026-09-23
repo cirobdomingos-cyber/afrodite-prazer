@@ -68,3 +68,5 @@ O Railway publica automaticamente cada mudança na branch `main`. O fluxo é:
 
 - `docs/`: configuração de DNS e o funil de e-mails.
 - `_arquivo/`: material do protótipo anterior (site antigo, scripts de extração do catálogo, marca antiga). Não é usado pelo site; fica guardado para consulta.
+
+<!-- Teste de fluxo de PR automatico (2026-09-23) -->

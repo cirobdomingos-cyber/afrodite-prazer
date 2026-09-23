@@ -517,6 +517,7 @@
     aspect-ratio: auto;
     height: 180px;
     object-fit: contain;
+    background: #fff;
   }
   .seeAll {
     width: 100%;

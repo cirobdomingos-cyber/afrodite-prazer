@@ -126,6 +126,14 @@ ul.li li b{color:var(--wine);font-weight:600}
 .diagram svg{width:100%;height:auto;display:block}
 .diagram .cap{font-size:9px;text-align:center;opacity:.65;margin-top:2px;font-style:italic}
 
+.anat{margin:0 0 6px;padding:0;background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 6px 18px -10px rgba(88,25,49,.2)}
+.anat svg{display:block;height:326px;width:auto;max-width:100%;margin:0 auto}
+.duo{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:6px 14px}
+.duo li{position:relative;padding:0 0 0 18px;font-size:11.2px;line-height:1.45}
+.duo li svg{position:absolute;left:0;top:3px;width:10px;height:10px;color:var(--teal)}
+.duo li b{display:block;color:var(--wine);font-weight:600}
+.anat figcaption{font-size:8px;line-height:1.4;text-align:center;opacity:.6;padding:4px 10px 7px;background:var(--card)}
+.anat figcaption a{color:inherit}
 /* ---------- técnicas ---------- */
 .tech{display:grid;grid-template-columns:30px 1fr;gap:10px;margin:0 0 7px}
 .tech .n{font-family:var(--display);font-size:26px;line-height:.9;color:var(--terracotta);font-weight:600}
@@ -309,6 +317,9 @@ ul.li li b{color:var(--wine);font-weight:600}
   .feel .f{grid-template-columns:1fr;gap:3px}
   .day .sets{grid-template-columns:1fr 1fr}
   .links{grid-auto-flow:row}
+  .anat svg{width:100%;height:auto}
+  .duo{grid-template-columns:1fr}
+  .duo li{font-size:13px}
   .end .logo{margin-top:24px}
   .save{right:12px;bottom:12px;padding:12px 16px}
 }
@@ -388,44 +399,30 @@ ul.li li b{color:var(--wine);font-weight:600}
   <div class="run"><span>Pompoar, prazer.</span><span class="ch c-teal"><svg><use href="#s4"/></svg>Cuidado</span></div>
   <p class="kicker">Conhecer</p>
   <h2>Muito prazer: o seu <span class="ac">assoalho pélvico</span>.</h2>
-  <p class="tx">É um conjunto de músculos que fica na base da pelve, entre o osso do púbis (na frente) e o cóccix (atrás). Imagine uma <b>rede</b>, ou uma cama elástica, sustentando por baixo a bexiga, o útero e o intestino. Por ela passam três aberturas: a uretra, a vagina e o ânus.</p>
-  <div class="diagram">
-    <svg viewBox="0 14 460 196" role="img" aria-label="Esquema simplificado da pelve vista de lado: a rede de músculos do assoalho pélvico sustenta bexiga, útero e intestino.">
-      <!-- contorno da pelve -->
-      <path d="M52 42 C40 96 58 150 118 176" fill="none" stroke="#581931" stroke-width="3" stroke-linecap="round" opacity=".35"/>
-      <path d="M408 42 C424 98 404 150 344 176" fill="none" stroke="#581931" stroke-width="3" stroke-linecap="round" opacity=".35"/>
-      <!-- órgãos -->
-      <ellipse cx="150" cy="138" rx="46" ry="30" fill="#f2a6ce" opacity=".55"/>
-      <text x="150" y="142" text-anchor="middle" font-family="Montserrat" font-size="11" font-weight="600" fill="#581931">bexiga</text>
-      <path d="M210 96 C202 64 264 64 256 96 C252 124 244 150 233 166 C222 150 214 124 210 96Z" fill="#da7811" opacity=".35"/>
-      <text x="233" y="104" text-anchor="middle" font-family="Montserrat" font-size="11" font-weight="600" fill="#581931">útero</text>
-      <path d="M296 84 C338 80 360 106 350 132 C344 150 326 160 300 176" fill="none" stroke="#8a9a5b" stroke-width="22" stroke-linecap="round" opacity=".5"/>
-      <text x="338" y="112" text-anchor="middle" font-family="Montserrat" font-size="11" font-weight="600" fill="#3d2317">intestino</text>
-      <!-- a rede -->
-      <path d="M92 150 C150 214 310 214 372 150" fill="none" stroke="#1a7562" stroke-width="10" stroke-linecap="round"/>
-      <path d="M92 150 C150 214 310 214 372 150" fill="none" stroke="#fbf3e4" stroke-width="1.4" stroke-dasharray="3 6" stroke-linecap="round"/>
-      <!-- aberturas -->
-      <circle cx="176" cy="188" r="5.5" fill="#fbf3e4" stroke="#581931" stroke-width="2"/>
-      <circle cx="232" cy="197" r="5.5" fill="#fbf3e4" stroke="#581931" stroke-width="2"/>
-      <circle cx="292" cy="190" r="5.5" fill="#fbf3e4" stroke="#581931" stroke-width="2"/>
-      <!-- rótulos -->
-      <text x="58" y="34" font-family="Montserrat" font-size="9.5" font-weight="700" letter-spacing="1.6" fill="#581931" opacity=".7">PÚBIS · FRENTE</text>
-      <text x="402" y="34" text-anchor="end" font-family="Montserrat" font-size="9.5" font-weight="700" letter-spacing="1.6" fill="#581931" opacity=".7">CÓCCIX · TRÁS</text>
-      <text x="132" y="204" text-anchor="end" font-family="Cormorant Garamond" font-style="italic" font-size="15" font-weight="600" fill="#1a7562">a rede</text>
-      <text x="176" y="176" text-anchor="middle" font-family="Montserrat" font-size="8.5" fill="#3d2317">uretra</text>
-      <text x="232" y="185" text-anchor="middle" font-family="Montserrat" font-size="8.5" fill="#3d2317">vagina</text>
-      <text x="292" y="178" text-anchor="middle" font-family="Montserrat" font-size="8.5" fill="#3d2317">ânus</text>
+  <p class="tx">Um conjunto de músculos na base da pelve, entre o púbis (na frente) e o cóccix (atrás). Funciona como uma <b>rede</b> que sustenta a bexiga, o útero e o intestino. Por ela passam a uretra, a vagina e o ânus.</p>
+  <figure class="anat">
+    <svg viewBox="0 30 1500 1320" role="img" aria-label="Ilustração da pelve feminina vista de lado: os músculos do assoalho pélvico sustentam bexiga, útero e reto; por eles passam uretra, vagina e ânus.">
+      <image href="/ebook/img/assoalho-pelvico.jpg" x="0" y="0" width="1500" height="1355"/>
+      <g font-family="Montserrat,sans-serif" font-weight="600" font-size="54" fill="#3d2317" stroke="#fffbf3" stroke-width="16" stroke-linejoin="round" paint-order="stroke">
+        <text x="462" y="118" text-anchor="end">Útero</text>
+        <text x="1135" y="198" text-anchor="middle">Reto</text>
+        <text x="268" y="478" text-anchor="end">Bexiga</text>
+        <text x="22" y="636">Osso do púbis</text>
+        <text x="233" y="1104" text-anchor="end">Uretra</text>
+        <text x="368" y="1224" text-anchor="end">Vagina</text>
+        <text x="1172" y="1222">Ânus</text>
+        <text x="650" y="1316" text-anchor="middle" font-weight="700" font-size="58" fill="#1a7562">Músculos do assoalho pélvico</text>
+      </g>
     </svg>
-    <div class="cap">Esquema simplificado, sem escala.</div>
-  </div>
+    <figcaption>Ilustração: Blausen Medical (BruceBlaus), <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.pt-br" target="_blank" rel="noopener">CC BY-SA 4.0</a>, com rótulos traduzidos.</figcaption>
+  </figure>
   <h3>O que ele faz por você</h3>
-  <ul class="li">
-    <li><svg><use href="#s4"/></svg><b>Sustenta</b> os órgãos da pelve, o dia inteiro.</li>
-    <li><svg><use href="#s4"/></svg><b>Segura e solta</b> o xixi e o cocô na hora certa, inclusive quando você ri, tosse ou espirra.</li>
-    <li><svg><use href="#s4"/></svg><b>Participa do prazer</b>: as contrações do orgasmo acontecem ali.</li>
-    <li><svg><use href="#s4"/></svg><b>Trabalha em equipe</b> com a respiração e o abdômen pra estabilizar o tronco.</li>
+  <ul class="duo">
+    <li><svg><use href="#s4"/></svg><b>Sustenta</b>os órgãos da pelve, o dia inteiro.</li>
+    <li><svg><use href="#s4"/></svg><b>Segura e solta</b>o xixi e o cocô, até quando você ri, tosse ou espirra.</li>
+    <li><svg><use href="#s4"/></svg><b>Participa do prazer</b>as contrações do orgasmo acontecem ali.</li>
+    <li><svg><use href="#s4"/></svg><b>Trabalha em equipe</b>com a respiração e o abdômen.</li>
   </ul>
-  <p class="pull" style="margin-bottom:0">Como todo músculo, ele pode ficar fraco, tenso ou só esquecido. E, como todo músculo, responde a treino.</p>
   <div class="foot">4</div>
 </section>
 

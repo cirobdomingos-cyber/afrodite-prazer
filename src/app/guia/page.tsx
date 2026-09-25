@@ -6,12 +6,18 @@ import LeadForm from "@/components/LeadForm";
 import SiteFooter from "@/components/SiteFooter";
 import SiteNav from "@/components/SiteNav";
 import { ACCESS_COOKIE, verifyAccessToken } from "@/lib/ebookAccess";
+import { OG_IMAGE, SITE_NAME } from "@/lib/seo";
 import styles from "./page.module.css";
 
+const GUIA_TITLE = "Guia de pompoar para iniciantes (grátis)";
+const GUIA_DESCRIPTION =
+  "Pompoarismo para iniciantes: encontre o assoalho pélvico, aprenda a respirar junto com ele e faça seu primeiro treino de 7 dias. Guia gratuito da Afrodite.";
+
 export const metadata: Metadata = {
-  title: "Guia gratuito de pompoar",
-  description:
-    "Pompoar, prazer.: o guia da iniciante. Do primeiro “onde fica?” ao seu primeiro treino de 7 dias — no seu ritmo, pra você.",
+  title: GUIA_TITLE,
+  description: GUIA_DESCRIPTION,
+  alternates: { canonical: "/guia" },
+  openGraph: { title: GUIA_TITLE, description: GUIA_DESCRIPTION, url: "/guia", type: "website", locale: "pt_BR", siteName: SITE_NAME, images: [OG_IMAGE] },
 };
 
 const MOVEMENTS = [

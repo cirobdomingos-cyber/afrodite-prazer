@@ -5,7 +5,8 @@ import { notFound } from "next/navigation";
 import ProductBrowser from "@/components/ProductBrowser";
 import SiteFooter from "@/components/SiteFooter";
 import SiteNav from "@/components/SiteNav";
-import { getSection, productsForSection, ritualSteps, sectionHref, sections } from "@/lib/catalog";
+import { affiliateUrl, getSection, productsForSection, ritualSteps, sectionHref, sections } from "@/lib/catalog";
+import { OG_IMAGE, SECTION_SEO, SITE_NAME, breadcrumbJsonLd, itemListJsonLd, jsonLd } from "@/lib/seo";
 import styles from "./page.module.css";
 
 type Params = { params: { secao: string } };
@@ -26,10 +27,13 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: Params): Metadata {
   const section = getSection(params.secao);
   if (!section) return {};
+  const seo = SECTION_SEO[section.id] ?? { title: section.title, description: section.subtitle };
+  const url = sectionHref(section.id);
   return {
-    title: section.title,
-    description: section.subtitle,
-    alternates: { canonical: sectionHref(section.id) },
+    title: seo.title,
+    description: seo.description,
+    alternates: { canonical: url },
+    openGraph: { title: seo.title, description: seo.description, url, type: "website", locale: "pt_BR", siteName: SITE_NAME, images: [OG_IMAGE] },
   };
 }
 
@@ -44,6 +48,21 @@ export default function SectionPage({ params }: Params) {
 
   return (
     <div className={`${styles.page} ${THEME[section.id] ?? ""}`}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: jsonLd([
+            breadcrumbJsonLd([
+              { name: "Início", path: "/" },
+              { name: section.title, path: sectionHref(section.id) },
+            ]),
+            itemListJsonLd(
+              section.title,
+              products.map((p) => ({ name: p.name, url: affiliateUrl(p) })),
+            ),
+          ]),
+        }}
+      />
       <SiteNav />
 
       <header className={styles.hero}>
